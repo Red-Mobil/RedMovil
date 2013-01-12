@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+<head>
+<script type="text/javascript">
+function mandarMail() { 
+	
+		
+debugger;
+	
+		var contenedor = document.getElementById('mail').value;
+		var NameButton = document.getElementById('nb').value;
+
+		if (validarEmail(contenedor))
+{
+	document.getElementById("vista").innerHTML= '<center><FORM id="comentarios" name="comentarios" method="POST" action="mailto:'+contenedor+'?subject=Prueba"><INPUT TYPE="submit" style="width:320px" VALUE="'+NameButton+'"></FORM><center>';
+		}
+}
+		
+</script>
+
+<script type="text/javascript">
+function validarEmail(valor) {
+
+        if (/^[0-9a-zA-Z]+(?:[._][0-9a-zA-Z]+)*@[0-9a-zA-Z]+(?:[._-][0-9a-zA-Z]+)*\.[0-9a-zA-Z]{2,4}$/.test(valor))
+                //alert("La dirección de email " + valor + " es correcta.");
+return true;
+        else
+            //    alert("La dirección de email es incorrecta.");
+return false;
+                
+}
+
+
+</script>
+
+</head>
+<body>
+<center>
+<table border="1">
+<tr>
+<td width="150">
+Nombre de la Pagina </br>
+
+</td>
+<td id="vista" width="400">
+</td>
+<td width="320">
+<center>
+Pagina de Prueba</br></br>
+
+
+<div class="divspoiler">
+<input type="button" value="Contacto" style='width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Contacto'; }" />
+</div><div><div class="spoiler" style="display: none;">
+<form name="formmail" method="post" action=""> 
+Nombre Boton: <input type="text" id="nb" name"nameb">
+</br>
+Mail de contacto: <input type="text" id="mail" name="correo">
+</br>
+<button type="button" onclick="mandarMail()">Visualizar</button></form>
+</div></div>
+
+</br>
+</center>
+</td>
+</tr>
+</table>
+</center>
+
+
+
+</body>
+</html>
