@@ -9,7 +9,15 @@
 function VerTexto()
 {
 var z = nicEditors.findEditor("demo");
-document.getElementById("vista").innerHTML=z.getContent();
+var a = z.getContent();
+var aux = a.length;
+/* if (a.length > 50)
+	{
+		mmmmmm
+	}
+	**/
+//document.getElementById("vista").innerHTML=z.getContent();
+document.getElementById("vista").innerHTML=a;
 }
 function Limpiar()
 {
