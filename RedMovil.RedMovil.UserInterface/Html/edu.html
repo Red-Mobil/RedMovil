@@ -30,19 +30,26 @@ z.setContent("");
 </head>
 <body>
 <center>
-  <div id="contenedor">
-    <p>&nbsp;</p>
-  <div id="menu">
+<div id="contenedor">
+      <div id="menu">
     <p>menu</p>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <p>7</p>
+    <p>8</p>
+    <p>9</p>
+    <p>10</p>
+    <p>&nbsp;</p>
   </div>
   <div id="editor">
-    <p><center>
-Pagina de Prueba</br></br>
+    <p>
+      <textarea id="demo" name="texto" cols="50" rows="7" onkeyup="VerTexto()"></textarea>
+    <button type="button" onclick="VerTexto()">Ver</button><button type="button" onclick="Limpiar()">Limpiar</button>
 
-
-<textarea id="demo" name="texto" cols="25" rows="5" onkeyup="VerTexto()"></textarea><br>
-<button type="button" onclick="VerTexto()">Ver</button><button type="button" onclick="Limpiar()">Limpiar</button>
-</div></div>
 
 <div class="divspoiler">
 <input type="button" value="Galeria" style='width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Galeria'; }" />
@@ -74,19 +81,12 @@ Aquí el contenido que queremos ocultar
 		<input type="submit" value="Crear Pagina" style='width:320px;' /></br>
 		</form>			
 		</br>
+  </div></div>
+  <div id="preview"><p>&nbsp;</p> <div id="vista"
+>
   </div>
-
-</br>
-</center></p>
-  </div>
-<div id="vista">
-  
-</div>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-  <p>&nbsp;</p>
-</div>
+  	</div>
+		</div>
 
 	 
 </body>

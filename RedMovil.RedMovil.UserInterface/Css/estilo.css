@@ -1,3 +1,45 @@
 @charset "utf-8";
 /* CSS Document */
 
+#contenedor {
+	width: 910px;
+	padding: 3px;
+	height: 500px;
+}
+#menu {
+	float: left;
+	width: 200px;
+	height: 500px;
+	border-right-width: thin;
+	border-top-color: #22AFD4;
+	border-right-color: #22AFD4;
+	border-bottom-color: #22AFD4;
+	border-left-color: #22AFD4;
+	border-right-style: double;
+	text-align: left;
+	margin-top: 20px;
+}
+#editor {
+	float: left;
+	width: 440px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-top: 20px;
+}
+#preview {
+	float: left;
+	width: 250px;
+	background-image: url(../imagenes/telefono1.png);
+	height: 415px;
+	background-repeat: no-repeat;
+	margin-top: 50px;
+}
+
+#vista {
+	height: 310px;
+	width: 213px;
+	float: none;
+	margin-left: 18px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+}
