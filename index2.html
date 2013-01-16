@@ -2,36 +2,70 @@
 
 <html>
 <head>
+ <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqAulARZMjKX6_jdcvbb1nIyBQ44Vw9eU&sensor=true">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(-34.397, 150.644),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"),
+            mapOptions);
+      }
+    </script>
+    
+
 <script type="text/javascript">
-function mandarMail() { 
+function mostrarMail() { 
 	
 		
 debugger;
-	
-		var contenedor = document.getElementById('mail').value;
-		var NameButton = document.getElementById('nb').value;
-
-		if (validarEmail(contenedor))
+		
+		var email = document.getElementById('mail').value;
+		
+		if (validarEmail(email))
 {
-	document.getElementById("vista").innerHTML= '<center><FORM id="comentarios" name="comentarios" method="POST" action="mailto:'+contenedor+'?subject=Prueba"><INPUT TYPE="submit" style="width:320px" VALUE="'+NameButton+'"></FORM><center>';
+	document.getElementById("vista").innerHTML= '<center><FORM id="comentarios" name="comentarios" method="POST" action="mailto:'+email+'?subject=Prueba"><INPUT TYPE="submit" style="width:320px" VALUE="Contactanos"></FORM><center>';
 		}
 }
 		
 </script>
 
 <script type="text/javascript">
+function mostrarFono() {
+	var telefono = document.getElementById('tel').value;
+	
+	document.getElementById("vista2").innerHTML= '<center><FORM id="comentarios" name="comentarios" method="POST" action="tel:+56'+telefono+'"><INPUT TYPE="submit" style="width:320px" VALUE="Llamanos"></FORM><center>';
+}
+</script>
+
+<script type="text/javascript">
 function validarEmail(valor) {
 
         if (/^[0-9a-zA-Z]+(?:[._][0-9a-zA-Z]+)*@[0-9a-zA-Z]+(?:[._-][0-9a-zA-Z]+)*\.[0-9a-zA-Z]{2,4}$/.test(valor))
-                //alert("La dirección de email " + valor + " es correcta.");
 return true;
         else
-            //    alert("La dirección de email es incorrecta.");
 return false;
                 
 }
 
 
+</script>
+
+<script type="text/javascript">
+function validarTelefono() {
+	if ((event.keyCode < 48) || (event.keyCode > 57)) 
+  event.returnValue = false;
+}
 </script>
 
 </head>
@@ -43,7 +77,10 @@ return false;
 Nombre de la Pagina </br>
 
 </td>
-<td id="vista" width="400">
+<td width="400">
+<div id="vista" width="400"></div>
+<div id="vista2" width="400"></div>
+
 </td>
 <td width="320">
 <center>
@@ -54,12 +91,20 @@ Pagina de Prueba</br></br>
 <input type="button" value="Contacto" style='width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Contacto'; }" />
 </div><div><div class="spoiler" style="display: none;">
 <form name="formmail" method="post" action=""> 
-Nombre Boton: <input type="text" id="nb" name"nameb">
-</br>
 Mail de contacto: <input type="text" id="mail" name="correo">
 </br>
-<button type="button" onclick="mandarMail()">Visualizar</button></form>
+<button type="button" onclick="mostrarMail()">Visualizar</button></form>
+<form name="formmail" method="post" action=""> 
+Telefono de contacto: <input type="text" id="tel" name="fono" onkeypress="validarTelefono()">
+</br>
+<button type="button" onclick="mostrarFono()">Visualizar</button></form>
+</br>
+<div><input type="text" maxlength="100" id="address" placeholder="Dirección" />
+<input type="button" id="search" value="Buscar" onclick="initialize()"/></div>
+
 </div></div>
+
+
 
 </br>
 </center>
@@ -68,7 +113,7 @@ Mail de contacto: <input type="text" id="mail" name="correo">
 </table>
 </center>
 
-
+<div id='map_canvas' style="width:600px; height:400px;"></div>
 
 </body>
 </html>
