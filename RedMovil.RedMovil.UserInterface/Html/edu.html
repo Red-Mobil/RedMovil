@@ -32,27 +32,33 @@ z.setContent("");
 <center>
 <div id="contenedor">
       <div id="menu">
-    <p>menu</p>
-    <p>1</p>
-    <p>2</p>
-    <p>3</p>
-    <p>4</p>
-    <p>5</p>
-    <p>6</p>
-    <p>7</p>
-    <p>8</p>
-    <p>9</p>
-    <p>10</p>
-    <p>&nbsp;</p>
+      <div class="divspoiler">
+      <input type="button"value="Mi pagina"style='width:150px;'/>
+         </div>
+      <div class="divspoiler">
+      <input type="button"value="Texto"style='width:150px;'/>
+         </div>
+    <div class="divspoiler">
+      <input type="button"value="Galeria"style='width:150px;'/>
+         </div>
+         <div class="divspoiler">
+      <input type="button"value="Contacto" style='width:150px;'
+      />
+         </div>
+  
   </div>
   <div id="editor">
     <p>
       <textarea id="demo" name="texto" cols="50" rows="7" onkeyup="VerTexto()"></textarea>
-    <button type="button" onclick="VerTexto()">Ver</button><button type="button" onclick="Limpiar()">Limpiar</button>
+      <div class="divspoiler">
+      <input type="button"value="ver" onclick="VerTexto()"/>
+      <input type="button" value="Limpiar" onclick="Limpiar()"/>
+      </div>
+ 
 
-
-<div class="divspoiler">
-<input type="button" value="Galeria" style='width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Galeria'; }" />
+    <div class="divspoiler">
+<input type="button" value="Galeria" style='
+   width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Galeria'; }" />
 </div><div><div class="spoiler" style="display: none;">
 Aquí el contenido que queremos ocultar
 </div></div>
@@ -74,19 +80,19 @@ Aquí el contenido que queremos ocultar
 </div><div><div class="spoiler" style="display: none;">
 Aquí el contenido que queremos ocultar
 </div></div>
-<div id= nombre pagina> </br>
+<div id= nombre pagina > </br>
 		<form id="crear" action="index.php?grabar" method="post" style="margin:0px;">
 		Nombre de la Pagina:
 		  <input type="text" name="pagina" size="20" maxlength="15"/></br>
-		<input type="submit" value="Crear Pagina" style='width:320px;' /></br>
+		<div class="divspoiler"><input type="submit" class="spoiler" style='width:320px;' value="Crear Pagina" /></br>
 		</form>			
 		</br>
-  </div></div>
+  </div></div></div>
   <div id="preview"><p>&nbsp;</p> <div id="vista"
 >
   </div>
   	</div>
-		</div>
+		
 
 	 
 </body>
