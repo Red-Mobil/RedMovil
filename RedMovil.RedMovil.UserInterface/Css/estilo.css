@@ -1,6 +1,7 @@
 @charset "utf-8";
 body {
 	background-image: url(../imagenes/subtle_dots.png);
+
 }
 
 /* CSS Document */
@@ -45,10 +46,11 @@ body {
 	float: none;
 	margin-left: 18px;
 	margin-bottom: 10px;
-	margin-top: 30px;
+	margin-top: 10px;
 	text-align: center;
 	margin-right: 18px;
-	overflow:scroll;
+	overflow-y: scroll;
+		padding: 6px;
 }
 
 .divspoiler input {
@@ -86,3 +88,4 @@ body {
    border-top-color: #1b435e;
    background: #1b435e;
    }
+
