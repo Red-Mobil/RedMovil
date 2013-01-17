@@ -79,6 +79,9 @@ body {
 	padding-bottom: 5px;
 	padding-left: 10px;
    }
+.spoiler input {
+}
+
 .divspoiler input:hover {
    border-top-color: #28597a;
    background: #28597a;
@@ -88,4 +91,3 @@ body {
    border-top-color: #1b435e;
    background: #1b435e;
    }
-
