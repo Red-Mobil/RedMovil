@@ -1,3 +1,5 @@
+/* Deja todas las funcionalidades en un solo archivo */
+
 function mostrarFono() {
 	var telefono = document.getElementById('tel').value;
 	
