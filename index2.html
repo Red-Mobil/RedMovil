@@ -34,7 +34,7 @@ debugger;
 		
 		if (validarEmail(email))
 {
-	document.getElementById("vista").innerHTML= '<center><FORM id="comentarios" name="comentarios" method="POST" action="mailto:'+email+'?subject=Prueba"><INPUT TYPE="submit" style="width:320px" VALUE="Contactanos"></FORM><center>';
+	document.getElementById("vista").innerHTML= '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'+email+'\'"><center>';
 		}
 }
 		
@@ -44,7 +44,7 @@ debugger;
 function mostrarFono() {
 	var telefono = document.getElementById('tel').value;
 	
-	document.getElementById("vista2").innerHTML= '<center><FORM id="comentarios" name="comentarios" method="POST" action="tel:+56'+telefono+'"><INPUT TYPE="submit" style="width:320px" VALUE="Llamanos"></FORM><center>';
+	document.getElementById("vista2").innerHTML= '<center><input type="button" value="Enviar un email" onclick="parent.location=\'tel:+56'+telefono'\'"><center>';
 }
 </script>
 
