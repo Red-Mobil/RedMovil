@@ -1,0 +1,3 @@
+Aca dejaremos los scripts externos que usemos.
+
+Sean JQuery o Mootools

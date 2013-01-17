@@ -1,0 +1,88 @@
+@charset "utf-8";
+body {
+	background-image: url(../imagenes/subtle_dots.png);
+}
+
+/* CSS Document */
+
+#contenedor {
+	width: 910px;
+	padding: 3px;
+	height: 500px;
+}
+#menu {
+	float: left;
+	width: 200px;
+	height: 500px;
+	border-right-width: thin;
+	border-top-color: #22AFD4;
+	border-right-color: #22AFD4;
+	border-bottom-color: #22AFD4;
+	border-left-color: #22AFD4;
+	border-right-style: dotted;
+	text-align: left;
+	margin-top: 20px;
+}
+#editor {
+	float: left;
+	width: 440px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding-top: 20px;
+}
+#preview {
+	float: left;
+	width: 250px;
+	background-image: url(../imagenes/telefono1.png);
+	height: 415px;
+	background-repeat: no-repeat;
+	margin-top: 50px;
+}
+
+#vista {
+	height: 310px;
+	max-width: 213px;
+	float: none;
+	margin-left: 18px;
+	margin-bottom: 10px;
+	margin-top: 30px;
+	text-align: center;
+	margin-right: 18px;
+	overflow:scroll;
+}
+
+.divspoiler input {
+	border-top: 1px solid #96d1f8;
+	background: #65a9d7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+	background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+	background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+	background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+	background: -o-linear-gradient(top, #3e779d, #65a9d7);
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	-webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	-moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+	box-shadow: rgba(0,0,0,1) 0 1px 0;
+	text-shadow: rgba(0,0,0,.4) 0 1px 0;
+	color: white;
+	font-size: 14px;
+	font-family: Georgia, serif;
+	text-decoration: none;
+	vertical-align: middle;
+	margin-top: 5px;
+	padding-top: 5px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+   }
+.divspoiler input:hover {
+   border-top-color: #28597a;
+   background: #28597a;
+   color: #ccc;
+   }
+.divspoiler input:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
