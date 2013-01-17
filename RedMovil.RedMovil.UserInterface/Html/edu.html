@@ -47,13 +47,17 @@ z.setContent("");
          </div>
   
   </div>
-  <div id="editor">
+      
+<div class="divspoiler">
+<input type="button" value="Texto" style='
+   width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Texto'; }" />
+  </div><div id="editor"><div class="spoiler" style="display: none;">
     <p>
       <textarea id="demo" name="texto" cols="50" rows="7" onkeyup="VerTexto()"></textarea>
       <div class="divspoiler">
       <input type="button"value="ver" onclick="VerTexto()"/>
       <input type="button" value="Limpiar" onclick="Limpiar()"/>
-      </div>
+    </div></div>
  
 
     <div class="divspoiler">
