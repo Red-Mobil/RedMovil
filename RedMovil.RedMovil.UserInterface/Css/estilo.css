@@ -49,7 +49,7 @@ body {
 	margin-top: 10px;
 	text-align: center;
 	margin-right: 18px;
-	overflow-y: scroll;
+	overflow:hidden;
 		padding: 6px;
 }
 
@@ -79,8 +79,7 @@ body {
 	padding-bottom: 5px;
 	padding-left: 10px;
    }
-.spoiler input {
-}
+
 
 .divspoiler input:hover {
    border-top-color: #28597a;
