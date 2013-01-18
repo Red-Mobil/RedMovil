@@ -3,6 +3,7 @@
 
 <html>
 <head>
+<<<<<<< HEAD
 
 
 
@@ -19,8 +20,22 @@
 <script> var max = 3</script>
 
 
+=======
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100% }
+    </style>
+>>>>>>> 453d8fdd69f7e18765af576365d564d106362cc1
 <script src="http://js.nicedit.com/nicEdit-latest.js" type="text/javascript"></script>
 <script src="fotos.js" type="text/javascript"></script><script type="text/javascript">bkLib.onDomLoaded(nicEditors.allTextAreas);</script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqAulARZMjKX6_jdcvbb1nIyBQ44Vw9eU&sensor=true"></script>
+<script src="../Scripts/inimap.js" type="text/javascript"></script>
+<script src="../Scripts/mail.js" type="text/javascript"></script>
+<script src="../Scripts/fono.js" type="text/javascript"></script>
+<script src="../Scripts/valmail.js" type="text/javascript"></script>
+<script src="../Scripts/valfono.js" type="text/javascript"></script>
 <script>
 
 function VerTexto()
@@ -91,8 +106,20 @@ Telefono de contacto: <input id="tel" name="fono" onkeypress="validarTelefono()"
 
 <input type="button" value="Redes Sociales" style='width:150px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Redes Sociales'; }" />
 </div><div><div class="spoiler" style="display: none;">
+<<<<<<< HEAD
 <input type="text" name="face" placeholder="Ingrese su Facebook"/></br>
 <input type="text" name="twit" placeholder="Ingrese su Twitter"/></br>
+=======
+<form name="formmail" method="post" action=""> 
+Mail de contacto: <input type="text" id="mail" name="correo">
+</br>
+<button type="button" onclick="mostrarMail()">Visualizar</button></form>
+<form name="formmail" method="post" action=""> 
+Telefono de contacto: <input type="text" id="tel" name="fono" onkeypress="validarTelefono()">
+</br>
+<button type="button" onclick="mostrarFono()">Visualizar</button></form>
+</br>
+>>>>>>> 453d8fdd69f7e18765af576365d564d106362cc1
 </div></div>
 </div>
          </div><div class="divspoiler"><input type="submit" class="spoiler" style='width:150px;' value="Crear Pagina" /></div>
@@ -107,12 +134,19 @@ Telefono de contacto: <input id="tel" name="fono" onkeypress="validarTelefono()"
 
 
 		</br>
+<<<<<<< HEAD
 				
 		</br					
 /div></div>
   <div id="preview"><p>&nbsp;</p> <div id="vista"
 >
+=======
+  </div></div></div>
+  <div id="preview"><p>&nbsp;</p> <div id="vista">
+>>>>>>> 453d8fdd69f7e18765af576365d564d106362cc1
   </div>
+  <div id="vista2"></div>
+  <div id="vista3"></div>
   	</div>
 		
 
