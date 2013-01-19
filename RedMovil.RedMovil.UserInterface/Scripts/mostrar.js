@@ -1,14 +1,22 @@
 /* Deja todas las funcionalidades en un solo archivo */
 
+function CamposValidos() {
+	return true;
+}
+
 function mostrartodo() {
 	var telefono = document.getElementById('tel').value;
-        var email = document.getElementById('mail').value;
+    var email = document.getElementById('mail').value;
 		
 	// Validar que el correo y el TELEFONO para mostrarlos en el skin del Aifon
 	// Antes de volver a dibujar los botones de Llamanos y Contactanos,
-	// validar que no existan, si existen borrarlos del html	
-		
-		
+	// validar que no existan, si existen borrarlos del html
+	
+	debugger;
+	if (CamposValidos(telefono, email)){
+		alert(1);
+	}
+	
 	if (validarEmail(email))
 	{
 	document.getElementById("escribenos").innerHTML= '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'+email+'\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'+telefono+'\'"><center>';
