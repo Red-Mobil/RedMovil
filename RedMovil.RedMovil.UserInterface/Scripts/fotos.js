@@ -27,17 +27,17 @@ function eliminar(id)
 	padre.removeChild(elemento);
 	obj = "im"+id+'1';	
 	elemento = document.getElementById(obj);		
-	lista.insertAdjacentHTML("beforeend",'</br><img src="./images/'+elemento.value+'" style="WIDTH: 120px;"></br>');
+	lista.insertAdjacentHTML("beforeend",'</br><img src="../prototipo/images/'+elemento.value+'" style="WIDTH: 120px;"></br>');
 	padre = elemento.parentNode;
 	padre.removeChild(elemento);
 	obj = "im"+id+'2';	
 	elemento = document.getElementById(obj);	
-	lista.insertAdjacentHTML("beforeend",'<img src="./images/'+elemento.value+'" style="WIDTH: 120px;"></br>');
+	lista.insertAdjacentHTML("beforeend",'<img src="../prototipo/images/'+elemento.value+'" style="WIDTH: 120px;"></br>');
 	padre = elemento.parentNode;
 	padre.removeChild(elemento);
 	obj = "im"+id+'3';	
 	elemento = document.getElementById(obj);	
-	lista.insertAdjacentHTML("beforeend",'<img src="./images/'+elemento.value+'" style="WIDTH: 120px;"></br>');
+	lista.insertAdjacentHTML("beforeend",'<img src="../prototipo/images/'+elemento.value+'" style="WIDTH: 120px;"></br>');
 	padre = elemento.parentNode;
 	padre.removeChild(elemento);		
 }
