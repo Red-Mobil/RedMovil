@@ -8,5 +8,6 @@
       center: latlng,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
+
     map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
   }
