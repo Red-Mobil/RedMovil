@@ -1,9 +1,13 @@
 /* Deja todas las funcionalidades en un solo archivo */
-/* Deja todas las funcionalidades en un solo archivo */
 
 function mostrartodo() {
 	var telefono = document.getElementById('tel').value;
         var email = document.getElementById('mail').value;
+		
+	// Validar que el correo y el TELEFONO para mostrarlos en el skin del Aifon
+	// Antes de volver a dibujar los botones de Llamanos y Contactanos,
+	// validar que no existan, si existen borrarlos del html	
+		
 		
 	if (validarEmail(email))
 	{
