@@ -1,50 +1,38 @@
-/* Deja todas las funcionalidades en un solo archivo */
+function camposValidos(email, telefono) {
 
-function CamposValidos() {
-	return true;
+    if ((email != null) || (telefono != null)) {
+        if (validarEmail(email) && telefonoValido(telefono)) {
+            return true;
+        }
+    }
+
+    return false;
 }
 
-function mostrartodo() {
-	var telefono = document.getElementById('tel').value;
-    var email = document.getElementById('mail').value;
-		
-	// Validar que el correo y el TELEFONO para mostrarlos en el skin del Aifon
-	// Antes de volver a dibujar los botones de Llamanos y Contactanos,
-	// validar que no existan, si existen borrarlos del html
-	
-	debugger;
-	if (CamposValidos(telefono, email)){
-		alert(1);
-	}
-	
-	if (validarEmail(email))
-	{
-	document.getElementById("escribenos").innerHTML= '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'+email+'\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'+telefono+'\'"><center>';
-	var address = document.getElementById("address").value;
-	geocoder.geocode( { 'address': address}, function(results, status) {
-		if (status == google.maps.GeocoderStatus.OK) {
-			map.setCenter(results[0].geometry.location);
-			var marker = new google.maps.Marker({
-			map: map,
-			position: results[0].geometry.location
-			});
-		} else {
-			alert("Geocode was not successful for the following reason: " + status);
-		}
-	});
-	} else {
-                document.getElementById("llamanos").innerHTML= '<center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'+telefono+'\'"><center>';
-		var address = document.getElementById("address").value;
-		geocoder.geocode( { 'address': address}, function(results, status) {
-		if (status == google.maps.GeocoderStatus.OK) {
-			 map.setCenter(results[0].geometry.location);
-			var marker = new google.maps.Marker({
-			 map: map,
-			position: results[0].geometry.location
-			});
-		} else {
-			alert("Geocode was not successful for the following reason: " + status);
-		}
-		});
-	}
-        }
+function mostrarTodo() {
+
+    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {
+
+        $("#escribenos").html(
+            '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
+            + document.getElementById('mail').value
+            + '\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
+            + document.getElementById('tel').value
+            + '\'"><center>');
+        
+        inicializarGoogleMaps();
+        geocoder.geocode({ 'address': document.getElementById('address').value }, function (results, status) {
+
+            if (status == google.maps.GeocoderStatus.OK) {
+                map.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location
+                });
+                document.getElementById("mapa").style.display = 'block';
+            } else {
+                alert("La direccion no se pudo localizar: " + status);
+            }
+        });
+    }
+};
