@@ -5,10 +5,11 @@
         document.getElementById('bb2').style.display = 'none';
 	}
 	
-	function mostrar(id)
-	{
+	function mostrar(titulo)
+	{		
 		hideall();
-		document.getElementById(id).style.display = 'block';
+		document.getElementById('bb0').style.display = 'block';        
+		
 	}
 
 $(document).ready(function () {
@@ -29,8 +30,8 @@ $(document).ready(function () {
             tt = "tt".concat(id);
             bb = "bb".concat(id);
             $("#texto").append("<textarea id=" + t + " style='width:320px;'>Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;'></textarea><br>");
-            $("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
-			//$("#preview_vista_botones").append("<button id=" + tt + " onclick='mostrar("+bb+")' >Titulo"+(id+1)+"</button><br>");
+            //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
+			$("#preview_vista_botones").append("<button id=" + tt + " onclick='mostrar("+bb+")' >Titulo"+(id+1)+"</button><br>");
             $("#preview_vista_texto").append("<p id=" + bb + "></p>");
             asd = new nicEditor({ fullPanel: true }).panelInstance(b);
             id++;
@@ -44,7 +45,7 @@ $(document).ready(function () {
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "block");
         //        $("formulario_contacto").css("display", "none");
-		
+
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'block';
         document.getElementById('formulario_contacto').style.display = 'none';

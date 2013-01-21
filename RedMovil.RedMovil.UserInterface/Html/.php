@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+<html>
+<head>
+</head>
+<body>
+<center>
+</br></br>
+<img src=../images/Killers-P.jpg width="320"></br><div class="divspoiler">.
+<input type="button" value="Texto"style='width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Texto'; }" />
+</div><div><div class="spoiler" style="display: none;">
+
+</div></div><div class="divspoiler">.
+<input type="button" value="Galeria + Texto"style='width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Galeria + Texto'; }" />
+</div><div><div class="spoiler" style="display: none;">
+<table>
+<tr>
+<td><img src=../images/ width="100"></td>
+</td>
+<td></td></table><table>
+<tr>
+<td><img src=../images/ width="100"></td>
+</td>
+<td></td></table><table>
+<tr>
+<td><img src=../images/ width="100"></td>
+</td>
+<td></td></table></div></div><div class="divspoiler">.
+<input type="button" value="Redes Sociales"style='width:320px;' onclick="if (this.parentNode.nextSibling.childNodes[0].style.display != '') { this.parentNode.nextSibling.childNodes[0].style.display = ''; this.value = 'Ocultar'; } else { this.parentNode.nextSibling.childNodes[0].style.display = 'none'; this.value = 'Redes Sociales'; }" />
+</div><div><div class="spoiler" style="display: none;">
+</div></div>
+</center>
+</body>
+</html>
