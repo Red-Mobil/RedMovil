@@ -31,7 +31,7 @@ $(document).ready(function () {
             $("#texto").append("<textarea id=" + t + " style='width:320px;'>Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;'></textarea><br>");
             $("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
 			//$("#preview_vista_botones").append("<button id=" + tt + " onclick='mostrar("+bb+")' >Titulo"+(id+1)+"</button><br>");
-            $("#preview_vista_texto").append("<p id=" + bb + "></p>");
+            $("#preview_vista_texto").append("<div id=" + bb + "></div>");
             asd = new nicEditor({ fullPanel: true }).panelInstance(b);
             id++;
             max -= 1;
