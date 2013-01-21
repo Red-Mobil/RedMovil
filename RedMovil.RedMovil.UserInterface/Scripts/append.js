@@ -1,3 +1,16 @@
+	function hideall()
+	{
+		document.getElementById('bb0').style.display = 'none';
+        document.getElementById('bb1').style.display = 'none';
+        document.getElementById('bb2').style.display = 'none';
+	}
+	
+	function mostrar(titulo)
+	{
+		hideall();
+		document.getElementById(titulo).style.display = 'block';
+	}
+
 $(document).ready(function () {
     // Levantar el editor de texto en el area de trabajo //
     $("#add").click(function () {
@@ -15,8 +28,9 @@ $(document).ready(function () {
             b = "b".concat(id);
             tt = "tt".concat(id);
             bb = "bb".concat(id);
-            $("#texto").append("<textarea id=" + t + " style='width:320px;'></textarea><textarea id=" + b + " style='width:320px;'></textarea><br>");
-            $("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + ">Titulo"+(id+1)+"</button></a><br>");
+            $("#texto").append("<textarea id=" + t + " style='width:320px;'>Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;'></textarea><br>");
+            //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
+			$("#preview_vista_botones").append("<button id=" + tt + " onclick='mostrar("+bb+")' >Titulo"+(id+1)+"</button><br>");
             $("#preview_vista_texto").append("<p id=" + bb + "></p>");
             asd = new nicEditor({ fullPanel: true }).panelInstance(b);
             id++;
@@ -46,4 +60,6 @@ $(document).ready(function () {
         //        $("galeria").css("display", "none");
         //        $("formulario_contacto").css("display", "block");
     });
+
+
 });
