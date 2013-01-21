@@ -3,14 +3,21 @@
 		document.getElementById('bb0').style.display = 'block';
         document.getElementById('bb1').style.display = 'block';
         document.getElementById('bb2').style.display = 'block';		
+		document.getElementById('home').style.display = 'none';
+		document.getElementById('tt0').style.display = 'block';
+        document.getElementById('tt1').style.display = 'block';
+        document.getElementById('tt2').style.display = 'block';
 	}
-	
 	
 	function hideall()
 	{
+		document.getElementById('home').style.display = 'block';
 		document.getElementById('bb0').style.display = 'none';
         document.getElementById('bb1').style.display = 'none';
         document.getElementById('bb2').style.display = 'none';
+		document.getElementById('tt0').style.display = 'none';
+        document.getElementById('tt1').style.display = 'none';
+        document.getElementById('tt2').style.display = 'none';
 	}
 	
 	function mostrar(id)
@@ -68,6 +75,10 @@ $(document).ready(function () {
         //        $("galeria").css("display", "none");
         //        $("formulario_contacto").css("display", "block");
     });
+	
+    $("#home").click(function () {
 
+		showall();
+    });	
 
 });
