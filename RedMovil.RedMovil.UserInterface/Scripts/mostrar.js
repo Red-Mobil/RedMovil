@@ -13,7 +13,7 @@ function mostrarTodo() {
 
     if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {
 
-        $("#escribenos").html(
+        $("#preview_vista_contacto").html(
             '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
             + document.getElementById('mail').value
             + '\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
