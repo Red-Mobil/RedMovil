@@ -1,3 +1,10 @@
+	function hidetext()
+	{
+		document.getElementById('bb0').style.display = 'none';
+        document.getElementById('bb1').style.display = 'none';
+        document.getElementById('bb2').style.display = 'none';	
+	}
+	
 	function showall()
 	{
 		document.getElementById('home').style.display = 'none';
@@ -50,6 +57,7 @@ $(document).ready(function () {
             asd = new nicEditor({ fullPanel: true }).panelInstance(b);
             id++;
             max -= 1;
+			hidetext();
         }
     });
 
