@@ -5,10 +5,10 @@
         document.getElementById('bb2').style.display = 'none';
 	}
 	
-	function mostrar(titulo)
+	function mostrar(id)
 	{
 		hideall();
-		document.getElementById(titulo).style.display = 'block';
+		document.getElementById(id).style.display = 'block';
 	}
 
 $(document).ready(function () {
@@ -44,7 +44,7 @@ $(document).ready(function () {
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "block");
         //        $("formulario_contacto").css("display", "none");
-
+		
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'block';
         document.getElementById('formulario_contacto').style.display = 'none';
