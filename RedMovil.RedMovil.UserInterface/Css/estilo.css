@@ -112,20 +112,18 @@ body {
 	width: 100%;
 	margin-top: 10px;
 }
-.overflow {
-	background-color: #333;
-}
+
 #titulo {
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: large;
 	font-weight: bold;
 }
 #bb0 {
-	height: 364px;
+	height: 100%;
 }
 #bb1 {
-	height: 364px;
+	height: 100%;
 }
 #bb2 {
-	height: 364px;
+	height: 100%;
 }
