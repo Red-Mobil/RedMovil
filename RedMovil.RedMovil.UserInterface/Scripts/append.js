@@ -1,9 +1,9 @@
 	function showall()
 	{
+		document.getElementById('home').style.display = 'none';
 		document.getElementById('bb0').style.display = 'block';
         document.getElementById('bb1').style.display = 'block';
         document.getElementById('bb2').style.display = 'block';		
-		document.getElementById('home').style.display = 'none';
 		document.getElementById('tt0').style.display = 'block';
         document.getElementById('tt1').style.display = 'block';
         document.getElementById('tt2').style.display = 'block';
