@@ -4,12 +4,13 @@ body {
 
 }
 
+
 /* CSS Document */
 
 #contenedor {
 	width: 910px;
 	padding: 3px;
-	height: 500px;
+	height: 600px;
 }
 #menu {
 	float: left;
@@ -33,26 +34,25 @@ body {
 }
 #preview {
 	float: left;
-	width: 250px;
-	background-image: url(../imagenes/telefono1.png);
-	height: 415px;
+	max-width: 250px;
+	background-image: url(../imagenes/telefono2.png);
+	height: 515px;
 	background-repeat: no-repeat;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 #vista {
-	height: 310px;
-	max-width: 213px;
-	float: none;
-	margin-left: 18px;
-	margin-bottom: 10px;
-	margin-top: 30px;
+	height: 352px;
+	width: 193px;
+	float: left;
+	margin-left: 24px;
+	margin-right: 23px;
+	margin-bottom: 74px;
+	margin-top: 79px;
 	text-align: center;
-	margin-right: 18px;
 	padding: 6px;
-	overflow-y: auto;
-
-
+	overflow: auto;
+	
 }
 
 .divspoiler input {
@@ -94,39 +94,10 @@ body {
    background: #1b435e;
    }
 
-#mapa {
-	height: 70%;
-	width: 100%;
-	margin-top: 10px;
-}
-#escribenos {
-}
-#llamanos {
-}
+
+
 #texto {
 	width: 100%;
 	margin-top: 8px;
 }
 
-.botones {
-	height: 8%;
-	width: 100%;
-	margin-top: 10px;
-}
-.overflow {
-	background-color: #333;
-}
-#titulo {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: large;
-	font-weight: bold;
-}
-#bb0 {
-	height: 364px;
-}
-#bb1 {
-	height: 364px;
-}
-#bb2 {
-	height: 364px;
-}
