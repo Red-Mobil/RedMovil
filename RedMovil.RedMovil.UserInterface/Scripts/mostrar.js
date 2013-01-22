@@ -11,53 +11,20 @@ function camposValidos(email, telefono) {
 
 function mostrarTodo() {
 
-
-        if (document.getElementById('mail').value == "" && document.getElementById('tel').value != "" && document.getElementById('address').value != ""){
-		
-	    $("#preview_vista_contacto").html('<center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
-            + document.getElementById('tel').value
-            + '\'"><center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
-	}
 	
-	if (document.getElementById('mail').value != "" && document.getElementById('tel').value == "" && document.getElementById('address').value != ""){
+	if (document.getElementById('tel').value != ""){
 		
-	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {
-	    
-	    $("#preview_vista_contacto").html(
-            '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
-            + document.getElementById('mail').value
-            + '\'"><center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
-	    }
-	    
-	}
-	
-	if (document.getElementById('mail').value != "" && document.getElementById('tel').value != "" && document.getElementById('address').value == ""){
-		
-	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {
-	    
-	    $("#preview_vista_contacto").html(
-            '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
-            + document.getElementById('mail').value
-            + '\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
-            + document.getElementById('tel').value
-            + '\'">');
-	    }
-		
-	}
-	
-	if (document.getElementById('mail').value == "" && document.getElementById('tel').value != "" && document.getElementById('address').value == ""){
-		
-	    $("#preview_vista_contacto").html(
+	    $("#llamanos").html(
             '<center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
             + document.getElementById('tel').value
             + '\'">');
 	    
 	}
 	
-	if (document.getElementById('mail').value != "" && document.getElementById('tel').value == "" && document.getElementById('address').value == ""){
+	if (document.getElementById('mail').value != ""){
 		
 	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {	
-	    $("#preview_vista_contacto").html(
+	    $("#escribenos").html(
             '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
             + document.getElementById('mail').value
             + '\'">');
@@ -65,25 +32,13 @@ function mostrarTodo() {
 	    
 	}
 	 
-	if (document.getElementById('mail').value == "" && document.getElementById('tel').value == "" && document.getElementById('address').value != ""){   
+	if (document.getElementById('address').value != ""){   
 	    
-	    $("#preview_vista_contacto").html(
+	    $("#ubicanos").html(
             '<center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
 	    
 	}
 	    
-	if (document.getElementById('mail').value != "" && document.getElementById('tel').value != "" && document.getElementById('address').value != ""){    
-	    
-	    
-	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {
-	    $("#preview_vista_contacto").html(
-            '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
-            + document.getElementById('mail').value
-            + '\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
-            + document.getElementById('tel').value
-            + '\'"><center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
-	    }
-	}
         
     
 }
