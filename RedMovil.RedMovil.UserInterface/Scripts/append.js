@@ -151,5 +151,16 @@ $(document).ready(function () {
 		showall();
 		hidetext();
     });	
-
+	
+    $("#crear").click(function () {
+		var yourDOCTYPE = "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>";
+		var printPreview = window.open('about:blank', 'print_preview');
+		var printDocument = printPreview.document;
+		printDocument.open();
+		printDocument.write(yourDOCTYPE+
+           "<html>"+
+               document.documentElement.innerHTML+
+           "</html>");
+		printDocument.close();
+    });	
 });
