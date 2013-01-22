@@ -4,12 +4,12 @@
 		{
 		document.getElementById('bb0').style.display = 'none';
 		}
-		if (max == 2)
+		if (max == 1)
 		{
 		document.getElementById('bb0').style.display = 'none';
         document.getElementById('bb1').style.display = 'none';
 		}
-		if (max == 2)
+		if (max == 0)
 		{
 		document.getElementById('bb0').style.display = 'none';
         document.getElementById('bb1').style.display = 'none';
