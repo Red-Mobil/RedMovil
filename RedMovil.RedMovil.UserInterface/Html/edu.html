@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head><script type='text/javascript' src='../Scripts/dragdivscroll.js'>
+</script> 
+
+
+    <script src="../ExtLibs/jquery-1.8.3.min.js" type="text/javascript"></script>
+    <script src="../ExtLibs/nicEdit.js" type="text/javascript"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJh5o52Jocg2sFYFF6RI3O_sv9axSmbVw&sensor=false"></script>
+    <script type="text/javascript">        var id = 0; </script>
+    <script type="text/javascript">        var max = 3;</script>
+    <script src="../Scripts/fotos.js" type="text/javascript"></script>
+    <script src="../Scripts/mapa.js" type="text/javascript"></script>
+    <script src="../Scripts/mostrar.js" type="text/javascript"></script>
+    <script src="../Scripts/valfono.js" type="text/javascript"></script>
+    <script src="../Scripts/valmail.js" type="text/javascript"></script>
+    <script src="../Scripts/ver.js" type="text/javascript"></script>
+    <script src="../Scripts/rs.js" type="text/javascript"></script>
+    <script src="../Scripts/append.js" type="text/javascript"></script>
+    <link href="../Css/estilo.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/estilomovil.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <center>
+        <div id="contenedor">
+            <div id="menu">
+                <div class="divspoiler">
+                    <input type="button" value="Mi pagina" style='width: 150px;' />
+                </div>
+                <div>
+                    <div class="spoiler" style="display: none; width: 150px;">
+                     <!--   <form id="crear" action="" method="post" style="margin: 0px;" /> -->
+                        Nombre de la Pagina:
+                        <input type="text" name="pagina" size="20" maxlength="15" />
+                    </div>
+                </div>
+                <div class="divspoiler">
+                    <input id="add" type="button" value="Texto" style='width: 150px;' />
+                </div>
+                                <div class="divspoiler">
+                    <input type="button" id="btn_galeria" value="Galeria" style='width: 150px;' />
+                </div>
+                <div>
+                    <div class="spoiler" style="display: none; width: 150px;">
+                        <input type="file" accept="image/*" name="img1" style="width: 100px;" />
+                    </div>
+                </div>
+                <div class="divspoiler">
+                    <input type="button" id="btn_contacto" value="Contacto" style='width: 150px;' />
+                </div>
+                <div class="divspoiler">
+                    <input type="button" id="btn_rs" value="Redes Sociales" style='width: 150px;' />
+                </div>
+		</br>
+                <div class="divspoiler">
+                    <input type="submit" class="spoiler" style='width: 150px;' value="Crear Pagina" />
+                </div>
+            </div>
+            <div id="editor">
+                <div id="texto" style="display: none">
+                <div class="divspoiler">
+                    <input type="button" value="ver" onclick="ver()" />
+                    <input type="button" value="Limpiar" onclick="Limpiar()" />
+                	</div>
+                </div>
+                <div id="galeria" style="display: none">
+                    INSERTAR GALERIA AQUI
+                </div>
+                <div id="formulario_contacto" style="display: none">
+                    Mail de contacto:
+                    <input id="mail" name="correo" type="text" />
+                    <br />
+                    Telefono de contacto:
+                    <input id="tel" name="fono" onkeypress="validarTelefono()" type="text" />
+                    <br />
+                    Ubicacion:
+                    <input id="address" type="textbox" value="" />
+                    <button type="button" id="btn_visualizar" onclick="mostrarTodo()">
+                        Visualizar</button>
+                    <br />
+                    <br />
+                </div>
+		<div id="formulario_rs" style="display: none">
+		     Facebook:
+		     <input id="face" type="text" name="face" placeholder="Ingrese su Facebook" />
+                     <br/>
+		     Twitter:
+                     <input id="twit" type="text" name="twit" placeholder="Ingrese su Twitter" /><br/>
+		     <button type="button" id="btn_rss" onclick="mostrarRS()">
+                        Visualizar</button>
+                  </div>
+		
+            </div>
+            <div id="preview">
+              <div id="vista">
+              <script type='text/javascript'>
+				new DragDivScroll( 'vista' );
+			  </script>
+              		<div id="expandible">
+                  		<div id="preview_vista_botones">
+		            	<button id="home" style="display: none">Home</button><br>
+                   		</div>
+                    	<div id="preview_vista_texto">
+                    	</div>
+                    	<div id="preview_vista_galeria">
+                    	</div>
+                    	<div id="preview_vista_contacto">
+                    	</div>
+		    	<div id="mapa" style="display:none">	
+		        </div>
+			<div id="preview_vista_rs">
+			</div>
+                </div>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
