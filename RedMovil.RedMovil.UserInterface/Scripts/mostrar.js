@@ -18,9 +18,14 @@ function mostrarTodo() {
             + document.getElementById('mail').value
             + '\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
             + document.getElementById('tel').value
-            + '\'"><center>');
+            + '\'"><center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
         
-        inicializarGoogleMaps();
+    }
+}
+
+function mostrarMapa() {
+	
+	inicializarGoogleMaps();
         geocoder.geocode({ 'address': document.getElementById('address').value }, function (results, status) {
 
             if (status == google.maps.GeocoderStatus.OK) {
@@ -34,5 +39,5 @@ function mostrarTodo() {
                 alert("La direccion no se pudo localizar: " + status);
             }
         });
-    }
+	
 };
