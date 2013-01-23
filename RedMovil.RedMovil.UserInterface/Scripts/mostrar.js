@@ -35,7 +35,7 @@ function mostrarTodo() {
 	if (document.getElementById('address').value != ""){   
 	    
 	    $("#ubicanos").html(
-            '<center></br><center><input type="button" id="ubicanos" value="Ubicacion" onclick="mostrarMapa()"></center>');
+            '<center></br><center><input type="button" id="ubicacion" value="Ubicacion" onclick="mostrarMapa()"></center>');
 	    
 	}
 	    
@@ -44,6 +44,8 @@ function mostrarTodo() {
 }
 
 function mostrarMapa() {
+	
+	hideall();
 	
 	inicializarGoogleMaps();
         geocoder.geocode({ 'address': document.getElementById('address').value }, function (results, status) {
@@ -58,6 +60,14 @@ function mostrarMapa() {
             } else {
                 alert("La direccion no se pudo localizar");
             }
-        });
+	});
+	
+	vamap();
+	
 	
 };
+
+function vamap() {
+	var idmap = 2;
+	return idmap;
+}
