@@ -34,8 +34,8 @@ function mostrarTodo() {
 	 
 	if (document.getElementById('address').value != ""){   
 	    
-	    $("#ubicar").html(
-            '<center></br><center><input type="button" id="ubicanos" value="Ubicacion" onclick="mostrarMapa()"></center>');
+	    $("#ubicanos").html(
+            '<center></br><center><input type="button" id="ubicar" value="Ubicacion" onclick="mostrarMapa()"></center>');
 	    
 	}
 	    
