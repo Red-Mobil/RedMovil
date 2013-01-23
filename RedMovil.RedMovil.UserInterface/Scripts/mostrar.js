@@ -56,7 +56,7 @@ function mostrarMapa() {
                     map: map,
                     position: results[0].geometry.location
                 });
-                document.getElementById("mapa").style.display = 'block';
+		document.getElementById("mapa").style.display = 'block';
             } else {
                 alert("La direccion no se pudo localizar");
             }
