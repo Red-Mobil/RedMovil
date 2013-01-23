@@ -1,5 +1,4 @@
 	function hidetext()
-<<<<<<< HEAD
 	{
 		document.getElementById('bb0').style.display = 'none';
         document.getElementById('bb1').style.display = 'none';
@@ -26,114 +25,7 @@
 		document.getElementById('tt0').style.display = 'none';
         document.getElementById('tt1').style.display = 'none';
         document.getElementById('tt2').style.display = 'none';
-=======
-	{
-		if (max == 2)
-		{
-		document.getElementById('bb0').style.display = 'none';
-		}
-		if (max == 1)
-		{
-		document.getElementById('bb0').style.display = 'none';
-        document.getElementById('bb1').style.display = 'none';
-		}
-		if (max == 0)
-		{
-		document.getElementById('bb0').style.display = 'none';
-        document.getElementById('bb1').style.display = 'none';
-        document.getElementById('bb2').style.display = 'none';	
-		}
 	}
-	
-	function showall()
-	{
-		if (max == 2)
-		{
-			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
-			document.getElementById('tt0').style.display = 'block';
-			document.getElementById('preview_vista_contacto').style.display = 'block';
-			document.getElementById('preview_vista_rs').style.display = 'block';
-			document.getElementById('mapa').style.display = 'none';
-		}
-		else if (max == 1)
-		{
-			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
-			document.getElementById('bb1').style.display = 'block';
-			document.getElementById('tt0').style.display = 'block';
-			document.getElementById('tt1').style.display = 'block';
-			document.getElementById('preview_vista_contacto').style.display = 'block';
-			document.getElementById('preview_vista_rs').style.display = 'block';
-			document.getElementById('mapa').style.display = 'none';
-		}
-		else if (max == 0)
-		{
-			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
-			document.getElementById('bb1').style.display = 'block';
-			document.getElementById('bb2').style.display = 'block';
-			document.getElementById('tt0').style.display = 'block';
-			document.getElementById('tt1').style.display = 'block';
-			document.getElementById('tt2').style.display = 'block';
-			document.getElementById('preview_vista_contacto').style.display = 'block';
-			document.getElementById('preview_vista_rs').style.display = 'block';
-			document.getElementById('mapa').style.display = 'none';
-		}
-		else if (vamap()==2){
-			document.getElementById('home').style.display = 'none';
-			document.getElementById('preview_vista_contacto').style.display = 'block';
-			document.getElementById('preview_vista_rs').style.display = 'block';
-			document.getElementById('mapa').style.display = 'none';	
-		}
-	}
-	
-	function hideall()
-	{
-		if (max == 2)
-		{
-			document.getElementById('home').style.display = 'block';
-			document.getElementById('bb0').style.display = 'none';
-			document.getElementById('tt0').style.display = 'none';
-			document.getElementById('preview_vista_contacto').style.display = 'none';
-			document.getElementById('preview_vista_rs').style.display = 'none';
-			document.getElementById('mapa').style.display = 'none';
-		}
-		else if (max == 1)
-		{
-			document.getElementById('home').style.display = 'block';
-			document.getElementById('bb0').style.display = 'none';
-			document.getElementById('bb1').style.display = 'none';
-			document.getElementById('tt0').style.display = 'none';
-			document.getElementById('tt1').style.display = 'none';
-			document.getElementById('preview_vista_contacto').style.display = 'none';
-			document.getElementById('preview_vista_rs').style.display = 'none';
-			document.getElementById('mapa').style.display = 'none';
-		}
-		else if (max == 0)
-		{
-			document.getElementById('home').style.display = 'block';
-			document.getElementById('bb0').style.display = 'none';
-			document.getElementById('bb1').style.display = 'none';
-			document.getElementById('bb2').style.display = 'none';
-			document.getElementById('tt0').style.display = 'none';
-			document.getElementById('tt1').style.display = 'none';
-			document.getElementById('tt2').style.display = 'none';
-			document.getElementById('preview_vista_contacto').style.display = 'none';
-			document.getElementById('preview_vista_rs').style.display = 'none';
-			document.getElementById('mapa').style.display = 'none';
-		}
-		else if (vamap()==2){
-			document.getElementById('home').style.display = 'block';
-			document.getElementById('preview_vista_contacto').style.display = 'none';
-			document.getElementById('preview_vista_rs').style.display = 'none';
-			document.getElementById('mapa').style.display = 'none';	
-		}
-		
->>>>>>> 0e12f47a4d0cc2d723aceb6dd3eda8feffd523a4
-	}
-	
-	
 	
 	function mostrar(id)
 	{
@@ -191,33 +83,10 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'block';
 	document.getElementById('formulario_rs').style.display = 'none';
-<<<<<<< HEAD
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "none");
         //        $("formulario_contacto").css("display", "block");
     });
-    
-    //Levantar el formulario de Redes Sociales en el area de trabajo //
-     $("#btn_rs").click(function () {
-
-        document.getElementById('texto').style.display = 'none';
-        document.getElementById('galeria').style.display = 'none';
-        document.getElementById('formulario_contacto').style.display = 'none';
-	document.getElementById('formulario_rs').style.display = 'block';
-=======
->>>>>>> 0e12f47a4d0cc2d723aceb6dd3eda8feffd523a4
-        //        $("texto").css("display", "none");
-        //        $("galeria").css("display", "none");
-        //        $("formulario_contacto").css("display", "block");
-    });
-<<<<<<< HEAD
-	
-    $("#home").click(function () {
-
-		showall();
-		hidetext();
-    });	
-=======
     
     //Levantar el formulario de Redes Sociales en el area de trabajo //
      $("#btn_rs").click(function () {
@@ -232,23 +101,9 @@ $(document).ready(function () {
     });
 	
     $("#home").click(function () {
->>>>>>> 0e12f47a4d0cc2d723aceb6dd3eda8feffd523a4
 
 		showall();
 		hidetext();
-    });
-      
-	
-    $("#crear").click(function () {
-		var yourDOCTYPE = "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>";
-		var printPreview = window.open('about:blank', 'print_preview');
-		var printDocument = printPreview.document;
-		printDocument.open();
-		printDocument.write(yourDOCTYPE+
-           "<html>"+
-               document.documentElement.innerHTML+
-           "</html>");
-		printDocument.close();
-    });
-    
+    });	
+
 });

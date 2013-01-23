@@ -11,7 +11,6 @@ function camposValidos(email, telefono) {
 
 function mostrarTodo() {
 
-<<<<<<< HEAD
 
         if (document.getElementById('mail').value == "" && document.getElementById('tel').value != "" && document.getElementById('address').value != ""){
 		
@@ -60,30 +59,12 @@ function mostrarTodo() {
 	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {	
 	    $("#preview_vista_contacto").html(
             '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
-=======
-	
-	if (document.getElementById('tel').value != ""){
-		
-	    $("#llamanos").html(
-            '<center></br><center><input type="button" id="llamanos" value="Llamar" onclick="parent.location=\'tel:+56'
-            + document.getElementById('tel').value
-            + '\'">');
-	    
-	}
-	
-	if (document.getElementById('mail').value != ""){
-		
-	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {	
-	    $("#escribenos").html(
-            '<center><input type="button" id="escribenos" value="Enviar email" onclick="parent.location=\'mailto:'
->>>>>>> 0e12f47a4d0cc2d723aceb6dd3eda8feffd523a4
             + document.getElementById('mail').value
             + '\'">');
 	    }
 	    
 	}
 	 
-<<<<<<< HEAD
 	if (document.getElementById('mail').value == "" && document.getElementById('tel').value == "" && document.getElementById('address').value != ""){   
 	    
 	    $("#preview_vista_contacto").html(
@@ -103,26 +84,12 @@ function mostrarTodo() {
             + '\'"><center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
 	    }
 	}
-=======
-	if (document.getElementById('address').value != ""){   
-	    
-	    $("#ubicanos").html(
-            '<center></br><center><input type="button" id="ubicacion" value="Ubicacion" onclick="mostrarMapa()"></center>');
-	    
-	}
-	    
->>>>>>> 0e12f47a4d0cc2d723aceb6dd3eda8feffd523a4
         
     
 }
 
 function mostrarMapa() {
 	
-<<<<<<< HEAD
-=======
-	hideall();
-	
->>>>>>> 0e12f47a4d0cc2d723aceb6dd3eda8feffd523a4
 	inicializarGoogleMaps();
         geocoder.geocode({ 'address': document.getElementById('address').value }, function (results, status) {
 
@@ -132,24 +99,10 @@ function mostrarMapa() {
                     map: map,
                     position: results[0].geometry.location
                 });
-		document.getElementById("mapa").style.display = 'block';
+                document.getElementById("mapa").style.display = 'block';
             } else {
                 alert("La direccion no se pudo localizar");
             }
-<<<<<<< HEAD
         });
 	
 };
-=======
-	});
-	
-	vamap();
-	
-	
-};
-
-function vamap() {
-	var idmap = 2;
-	return idmap;
-}
->>>>>>> 0e12f47a4d0cc2d723aceb6dd3eda8feffd523a4
