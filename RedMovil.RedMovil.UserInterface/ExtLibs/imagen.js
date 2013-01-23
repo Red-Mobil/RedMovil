@@ -17,7 +17,15 @@ $(document).ready(function(){
 			button.text('Upload');
 			// enable upload button
 			this.enable();			
+<<<<<<< HEAD
 			// Agrega archivo a la lista						
 		}	
 	});
 });
+=======
+			// Agrega archivo a la lista
+			$('#lista').appendTo('.files').text(file);
+		}	
+	});
+});
+>>>>>>> 0e12f47a4d0cc2d723aceb6dd3eda8feffd523a4
