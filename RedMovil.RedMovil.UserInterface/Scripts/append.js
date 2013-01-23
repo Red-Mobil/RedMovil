@@ -24,6 +24,8 @@
 			document.getElementById('home').style.display = 'none';
 			document.getElementById('bb0').style.display = 'block';
 			document.getElementById('tt0').style.display = 'block';
+			document.getElementById('preview_vista_contacto').style.display = 'block';
+			document.getElementById('preview_vista_rs').style.display = 'block';
 		}
 		else if (max == 1)
 		{
@@ -32,6 +34,8 @@
 			document.getElementById('bb1').style.display = 'block';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('tt1').style.display = 'block';
+			document.getElementById('preview_vista_contacto').style.display = 'block';
+			document.getElementById('preview_vista_rs').style.display = 'block';
 		}
 		else if (max == 0)
 		{
@@ -41,7 +45,9 @@
 			document.getElementById('bb2').style.display = 'block';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('tt1').style.display = 'block';
-			document.getElementById('tt2').style.display = 'block';	
+			document.getElementById('tt2').style.display = 'block';
+			document.getElementById('preview_vista_contacto').style.display = 'block';
+			document.getElementById('preview_vista_rs').style.display = 'block';
 		}
 	}
 	
@@ -52,6 +58,9 @@
 			document.getElementById('home').style.display = 'block';
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('tt0').style.display = 'none';
+			document.getElementById('preview_vista_contacto').style.display = 'none';
+			document.getElementById('preview_vista_rs').style.display = 'none';
+			document.getElementById('mapa').style.display = 'none';
 		}
 		else if (max == 1)
 		{
@@ -60,6 +69,9 @@
 			document.getElementById('bb1').style.display = 'none';
 			document.getElementById('tt0').style.display = 'none';
 			document.getElementById('tt1').style.display = 'none';
+			document.getElementById('preview_vista_contacto').style.display = 'none';
+			document.getElementById('preview_vista_rs').style.display = 'none';
+			document.getElementById('mapa').style.display = 'none';
 		}
 		else if (max == 0)
 		{
@@ -69,7 +81,10 @@
 			document.getElementById('bb2').style.display = 'none';
 			document.getElementById('tt0').style.display = 'none';
 			document.getElementById('tt1').style.display = 'none';
-			document.getElementById('tt2').style.display = 'none';	
+			document.getElementById('tt2').style.display = 'none';
+			document.getElementById('preview_vista_contacto').style.display = 'none';
+			document.getElementById('preview_vista_rs').style.display = 'none';
+			document.getElementById('mapa').style.display = 'none';
 		}
 	}
 	
@@ -162,5 +177,23 @@ $(document).ready(function () {
                document.documentElement.innerHTML+
            "</html>");
 		printDocument.close();
-    });	
+    });
+    
+    $("#ubicacion").click(function() {
+	       document.getElementById('home').style.display = 'block';
+	       document.getElementById('bb0').style.display = 'none';
+	       document.getElementById('bb1').style.display = 'none';
+	       document.getElementById('bb2').style.display = 'none';
+	       document.getElementById('tt0').style.display = 'none';
+	       document.getElementById('tt1').style.display = 'none';
+	       document.getElementById('tt2').style.display = 'none';
+	       document.getElementById('preview_vista_galeria').style.display = 'none';
+	       document.getElementById('llamanos').style.display = 'none';
+	       document.getElementById('escribenos').style.display = 'none';
+	       document.getElementById('ubicanos').style.display = 'block';
+	       document.getElementById('preview_vista_rs').style.display = 'none';
+	       
+	
+	
+    });
 });
