@@ -45,6 +45,8 @@ function mostrarTodo() {
 
 function mostrarMapa() {
 	
+	hideall();
+	
 	inicializarGoogleMaps();
         geocoder.geocode({ 'address': document.getElementById('address').value }, function (results, status) {
 
@@ -60,4 +62,12 @@ function mostrarMapa() {
             }
         });
 	
+	vamap();
+	
 };
+
+function vamap(){
+	
+	var idmap=2;
+	return idmap;
+}
