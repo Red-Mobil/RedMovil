@@ -1,4 +1,16 @@
 @charset "utf-8";
+
+#home {
+
+	width: 80%;
+	height: 8%;
+	font-size: medium;
+	float: left;
+	margin-left: 11%;
+	margin-top: 3px;
+	
+	
+}
 /* CSS Document */
 
 #bb0 {
@@ -20,4 +32,47 @@
 #expandible {
 	height: 100%;
 	width: 100%;
+}
+#tt0 {
+	width: 80%;
+	height: 8%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: medium;
+	float: left;
+	margin-left: 11%;
+	margin-top: 3px;
+}
+#tt1 {
+	width: 80%;
+	height: 8%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: medium;
+	float: left;
+	margin-left: 11%;
+	margin-top: 3px;
+}
+#tt2 {
+	width: 80%;
+	height: 8%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: medium;
+	float: left;
+	margin-left: 11%;
+	margin-top: 3px;
+}
+#llamanos {
+}
+#escribenos {
+}
+#ubicanos {
+}
+#facebook {
+}
+#twitter {
 }
