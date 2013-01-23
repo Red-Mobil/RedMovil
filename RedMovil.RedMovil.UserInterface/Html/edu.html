@@ -2,19 +2,16 @@
 <html>
 <head><script type='text/javascript' src='../Scripts/dragdivscroll.js'>
 </script> 
-	
-	<script language="javascript" src="../ExtLibs/jquery-1.3.1.min.js"></script>
-	<script language="javascript" src="../ExtLibs/AjaxUpload.2.0.min.js"></script>
-	<script language="javascript" src="../ExtLibs/imagen.js"></script>			
-	<script src="../Scripts/mostratimagen.js" type="text/javascript"></script>	
+
+<script language="javascript" src="../ExtLibs/jquery-1.3.1.min.js"></script>
+ <script language="javascript" src="../ExtLibs/AjaxUpload.2.0.min.js"></script>
+ <script language="javascript" src="../ExtLibs/imagen.js"></script>
 
     <script src="../ExtLibs/jquery-1.8.3.min.js" type="text/javascript"></script>
     <script src="../ExtLibs/nicEdit.js" type="text/javascript"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJh5o52Jocg2sFYFF6RI3O_sv9axSmbVw&sensor=false"></script>
     <script type="text/javascript">        var id = 0; </script>
     <script type="text/javascript">        var max = 3;</script>
-	<script type="text/javascript">        var imagen='';</script>
-	<script type="text/javascript">        var c_ima = 0; </script>
     <script src="../Scripts/fotos.js" type="text/javascript"></script>
     <script src="../Scripts/mapa.js" type="text/javascript"></script>
     <script src="../Scripts/mostrar.js" type="text/javascript"></script>
@@ -26,14 +23,16 @@
     <link href="../Css/estilo.css" rel="stylesheet" type="text/css" />
     <link href="../Css/estilomovil.css" rel="stylesheet" type="text/css">
 </head>
-<body>						
+<body>
+	<center>
      <div id="contenedor">
             <div id="menu">
                 <div class="divspoiler">
                     <input type="button" value="Mi pagina" style='width: 150px;' />
                 </div>
                 <div>
-                    <div class="spoiler" style="display: none; width: 150px;">          
+                    <div class="spoiler" style="display: none; width: 150px;">
+                     <!--   <form id="crear" action="" method="post" style="margin: 0px;" /> -->
                         Nombre de la Pagina:
                         <input type="text" name="pagina" size="20" maxlength="15" />
                     </div>
@@ -45,7 +44,8 @@
                     <input type="button" id="btn_galeria" value="Galeria" style='width: 150px;' />
                 </div>
                 <div>
-                    <div class="spoiler" style="display: none; width: 150px;">                        
+                    <div class="spoiler" style="display: none; width: 150px;">
+                        <input type="file" accept="image/*" name="img1" style="width: 100px;" />
                     </div>
                 </div>
                 <div class="divspoiler">
@@ -56,7 +56,7 @@
                 </div>
 		</br>
                 <div class="divspoiler">
-                    <input type="submit" class="spoiler" style='width: 150px;' value="Crear Pagina" />
+                    <input type="button" id="crear" style='width: 150px;' value="Crear Pagina" />
                 </div>
             </div>
             <div id="editor">
@@ -67,21 +67,7 @@
                 	</div>
                 </div>
                 <div id="galeria" style="display: none">
-				<!--   Galeria Empieza aca -->
-					
-					<input type="text" style="WIDTH: 320px;" name="ngaleria" id="ng" placeholder="Ingrese Nombre Galeria"/></br></br>
-					<div id="upload_button">Subir Imagen</div>
-					<input type="text" style="WIDTH: 320px;" name="f1" id="f1" /></br>
-					<input type="text" style="WIDTH: 320px;" name="f2" id="f2" /></br>
-					<input type="text" style="WIDTH: 320px;" name="f3" id="f3" /></br>
-					
-					<div id="lista">					
-					
-					</div>
-					<input type="button" value="mostrar" onclick="mostrarimagen()" />					
-					<input type="button" value="Mostrar Imagenes" onClick="javascript: window.open('../../RedMovil.RedMovil.Backend/imagenes.php', 'Imagenes', 'width = 500, height = 200');">
-					
-				<!--   Galeria Termina aca -->
+                    <div id="upload_button">Upload</div>
                 </div>
                 <div id="formulario_contacto" style="display: none">
                     Mail de contacto:
@@ -122,24 +108,29 @@
                     	<div id="preview_vista_galeria">
                     	</div>
                     	<div id="preview_vista_contacto">
-                        	<div id="llamanos">
+                            <div id="llamanos">
                             </div>
+			   
                             <div id="escribenos">
                             </div>
+			   
                             <div id="ubicanos">
                             </div>
+			   
                     	</div>
 		    			<div id="mapa" style="display:none">	
 		        		</div>
 						<div  id="preview_vista_rs">
                         	<div id="facebook">
-                            </div>
-                            <div id="twitter">
-                            </div>
+                                </div>
+				
+			        		<div id="twitter">
+			       			 </div>
 						</div>
                 	</div>
             	</div>
         	</div>
-    </div>	
+    	</div>
+    </center>
 </body>
 </html>
