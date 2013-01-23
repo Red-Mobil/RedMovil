@@ -11,41 +11,84 @@ function camposValidos(email, telefono) {
 
 function mostrarTodo() {
 
-	
-	if (document.getElementById('tel').value != ""){
+
+        if (document.getElementById('mail').value == "" && document.getElementById('tel').value != "" && document.getElementById('address').value != ""){
 		
-	    $("#llamanos").html(
-            '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'
+	    $("#preview_vista_contacto").html('<center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
+            + document.getElementById('tel').value
+            + '\'"><center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
+	}
+	
+	if (document.getElementById('mail').value != "" && document.getElementById('tel').value == "" && document.getElementById('address').value != ""){
+		
+	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {
+	    
+	    $("#preview_vista_contacto").html(
+            '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
+            + document.getElementById('mail').value
+            + '\'"><center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
+	    }
+	    
+	}
+	
+	if (document.getElementById('mail').value != "" && document.getElementById('tel').value != "" && document.getElementById('address').value == ""){
+		
+	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {
+	    
+	    $("#preview_vista_contacto").html(
+            '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
+            + document.getElementById('mail').value
+            + '\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
+            + document.getElementById('tel').value
+            + '\'">');
+	    }
+		
+	}
+	
+	if (document.getElementById('mail').value == "" && document.getElementById('tel').value != "" && document.getElementById('address').value == ""){
+		
+	    $("#preview_vista_contacto").html(
+            '<center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
             + document.getElementById('tel').value
             + '\'">');
 	    
 	}
 	
-	if (document.getElementById('mail').value != ""){
+	if (document.getElementById('mail').value != "" && document.getElementById('tel').value == "" && document.getElementById('address').value == ""){
 		
 	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {	
-	    $("#escribenos").html(
-            '<center><input type="button" id="escribir" value="Enviar email" onclick="parent.location=\'mailto:'
+	    $("#preview_vista_contacto").html(
+            '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
             + document.getElementById('mail').value
             + '\'">');
 	    }
 	    
 	}
 	 
-	if (document.getElementById('address').value != ""){   
+	if (document.getElementById('mail').value == "" && document.getElementById('tel').value == "" && document.getElementById('address').value != ""){   
 	    
-	    $("#ubicanos").html(
-            '<center></br><center><input type="button" id="ubicar" value="Ubicacion" onclick="mostrarMapa()"></center>');
+	    $("#preview_vista_contacto").html(
+            '<center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
 	    
 	}
 	    
+	if (document.getElementById('mail').value != "" && document.getElementById('tel').value != "" && document.getElementById('address').value != ""){    
+	    
+	    
+	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {
+	    $("#preview_vista_contacto").html(
+            '<center><input type="button" value="Enviar email" onclick="parent.location=\'mailto:'
+            + document.getElementById('mail').value
+            + '\'"><center></br><center><input type="button" value="Llamar" onclick="parent.location=\'tel:+56'
+            + document.getElementById('tel').value
+            + '\'"><center></br><center><input type="button" value="Ubicacion" onclick="mostrarMapa()"></center>');
+	    }
+	}
         
     
 }
 
 function mostrarMapa() {
-	
-	hideall();
 	
 	inicializarGoogleMaps();
         geocoder.geocode({ 'address': document.getElementById('address').value }, function (results, status) {
@@ -62,12 +105,4 @@ function mostrarMapa() {
             }
         });
 	
-	vamap();
-	
 };
-
-function vamap(){
-	
-	var idmap=2;
-	return idmap;
-}
