@@ -17,8 +17,7 @@ $(document).ready(function(){
 			button.text('Upload');
 			// enable upload button
 			this.enable();			
-			// Agrega archivo a la lista
-			$('#lista').appendTo('.files').text(file);
+			// Agrega archivo a la lista						
 		}	
 	});
 });

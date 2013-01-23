@@ -89,4 +89,10 @@ function grabar()
 		fclose($fp);			
 	}
 }		
+
+function lis()
+{
+	echo 'hola';
+}
+
 ?>
