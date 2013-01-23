@@ -2,6 +2,8 @@
 
 #home {
 
+	
+
 	width: 80%;
 	height: 8%;
 	font-size: medium;
@@ -66,13 +68,15 @@
 	margin-left: 11%;
 	margin-top: 3px;
 }
-#llamanos {
+
+#llamar {
+		 	   
 }
-#escribenos {
+#escribir {
 }
-#ubicanos {
+#ubicar {
 }
-#facebook {
+#face {
 }
-#twitter {
+#twit {
 }
