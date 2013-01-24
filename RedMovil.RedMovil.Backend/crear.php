@@ -1,8 +1,8 @@
 <?php
 // $cliente = // obtener cliente logeado
+$q=$_GET["q"];
 
-
-$fp = fopen($_POST["pagina"].".php","w");
+$fp = fopen("pagina.html","w");
 fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n");
 fwrite($fp, "<html>\n");
 fwrite($fp, "<head>\n");
@@ -30,5 +30,13 @@ fwrite($fp, "	<script src="../Scripts/rs.js" type="text/javascript"></script>");
 fwrite($fp, "	<script src="../Scripts/append.js" type="text/javascript"></script>");
 fwrite($fp, "	<link href="../Css/estilo.css" rel="stylesheet" type="text/css" />");
 fwrite($fp, "	<link href="../Css/estilomovil.css" rel="stylesheet" type="text/css">");
+fwrite($fp, "</head>");
+fwrite($fp, "<body>");
+fwrite($fp, q);
+fwrite($fp, "</body>");
+fwrite($fp, "</html>");
+fclose("pagina.html");
+$response = "hola";
+echo $response;
 
 ?>
