@@ -32,3 +32,27 @@ function vaim(){
 	var idim =2;
 	return idim;
 }
+	function showPopup(refe)
+{
+	window.showModalDialog('../../RedMovil.RedMovil.Backend/imagenes.php?'+refe,window,'center:yes');
+}
+
+function setTheVal(valFromPopup,i)
+{
+	if (i=='a')
+	{				
+		document.aForm.f1.value=valFromPopup;
+	}
+	else if (i=='b')
+	{
+		document.aForm.f2.value=valFromPopup;
+	}
+	else if (i=='c')
+	{
+		document.aForm.f3.value=valFromPopup;
+	}  
+	else if (i=='g')
+	{
+		document.bForm.gal.value=valFromPopup;
+	}  
+}
