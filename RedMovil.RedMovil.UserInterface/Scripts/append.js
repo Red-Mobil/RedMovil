@@ -141,9 +141,10 @@
 			document.getElementById('preview_vista_galeria').style.display = 'none';
 			document.getElementById('preview_vista_contacto').style.display = 'block';
 			document.getElementById('preview_vista_rs').style.display = 'block';
-			document.getElementById('gale').style.display = 'block';
+			document.getElementById('gale').style.display = 'block';			
 			document.getElementById('mapa').style.display = 'none'; 
 		}
+		document.getElementById('portada').style.display = 'block';
 		
 	}
 	
@@ -195,8 +196,9 @@
 			document.getElementById('preview_vista_contacto').style.display = 'none';
 			document.getElementById('preview_vista_rs').style.display = 'none';
 			document.getElementById('gale').style.display = 'none';
-			document.getElementById('mapa').style.display = 'none'; 
+			document.getElementById('mapa').style.display = 'none'; 			
 		}
+		document.getElementById('portada').style.display = 'none';
 		
 	}
 	
