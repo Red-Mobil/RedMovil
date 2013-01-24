@@ -1,9 +1,17 @@
+
+	
 	function hacer()
 	{
 		var mandar;
 		mandar = "<div id='vista'>\n";
 		mandar += "<script type='text/javascript'>new DragDivScroll( 'vista' );</script>\n";
 		mandar += "<div id='expandible'>\n";
+		mandar += "<div id='preview_vista_portada'>\n";
+		if (document.getElementById('gal').value != "")
+		{
+			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="200" id="portada" /></br>\n';
+		}
+		mandar += "</div>\n";
 		mandar += "<div id='preview_vista_botones'>\n";
 		mandar += "<button id='home' style='display: none'>Home</button><br>\n";
 		if (max == 2)
@@ -52,7 +60,7 @@
 		{
 			if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value))
 			{	
-				mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+document.getElementById('tel').value+ '\'">\n';
+				mandar += '<center><input type="button" id="escribir" value="Enviar email" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">\n';
 			}
 		}
 		mandar += "</div>\n";
@@ -108,7 +116,7 @@
 				window.open(xmlhttp.responseText);
 			}
 		}
-		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php?q="+str,true);
+		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php?q="+hacer(),true);
 		xmlhttp.send();
 	}
 
