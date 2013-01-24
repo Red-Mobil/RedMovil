@@ -15,7 +15,7 @@ function mostrarTodo() {
 	if (document.getElementById('tel').value != ""){
 		
 	    $("#llamanos").html(
-            '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'
+            '<center></br><center><input type="button" value="" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'
             + document.getElementById('tel').value
             + '\'">');
 	    
@@ -25,7 +25,7 @@ function mostrarTodo() {
 		
 	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {	
 	    $("#escribenos").html(
-            '<center><input type="button" id="escribir" value="Enviar email" onclick="parent.location=\'mailto:'
+            '<center><input type="button" id="escribir" class="contacto" value="" onclick="parent.location=\'mailto:'
             + document.getElementById('mail').value
             + '\'">');
 	    }
@@ -35,7 +35,7 @@ function mostrarTodo() {
 	if (document.getElementById('address').value != ""){   
 	    
 	    $("#ubicanos").html(
-            '<center></br><center><input type="button" id="ubicar" value="Ubicacion" onclick="mostrarMapa()"></center>');
+            '<center></br><center><input type="button" id="ubicar" class="contacto" value="" onclick="mostrarMapa()"></center>');
 	}
 	    
         
