@@ -1,6 +1,6 @@
 function mostrarportada() 
 {
-	texto = '<img src="../images/' + document.getElementById('gal').value + '"width="200" id=portada /></br>';	
+	texto = '<img src="../images/' + document.getElementById('gal').value + '"width="200" id="portada" /></br>';	
 	$("#preview_vista_portada").html(texto);
 
 }

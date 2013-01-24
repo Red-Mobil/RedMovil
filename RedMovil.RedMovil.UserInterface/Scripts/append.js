@@ -139,6 +139,7 @@
 	{
 		if (max == 2)
 		{
+			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
 			document.getElementById('bb0').style.display = 'block';
 			document.getElementById('tt0').style.display = 'block';
@@ -150,6 +151,7 @@
 		}
 		else if (max == 1)
 		{
+			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
 			document.getElementById('bb0').style.display = 'block';
 			document.getElementById('bb1').style.display = 'block';
@@ -163,6 +165,7 @@
 		}
 		else if (max == 0)
 		{
+			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
 			document.getElementById('bb0').style.display = 'block';
 			document.getElementById('bb1').style.display = 'block';
@@ -178,6 +181,7 @@
 		}
 		else if (vamap()==2)
 		{
+			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
 			document.getElementById('preview_vista_contacto').style.display = 'block';
@@ -185,7 +189,7 @@
 			document.getElementById('gale').style.display = 'block';			
 			document.getElementById('mapa').style.display = 'none'; 
 		}
-		document.getElementById('portada').style.display = 'block';
+		
 		
 	}
 	
@@ -193,6 +197,7 @@
 	{
 		if (max == 2)
 		{
+			document.getElementById('preview_vista_portada').style.display = 'none';
 			document.getElementById('home').style.display = 'block';
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('tt0').style.display = 'none';
@@ -204,6 +209,7 @@
 		}
 		else if (max == 1)
 		{
+			document.getElementById('preview_vista_portada').style.display = 'none';
 			document.getElementById('home').style.display = 'block';
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('bb1').style.display = 'none';
@@ -217,6 +223,7 @@
 		}
 		else if (max == 0)
 		{
+			document.getElementById('preview_vista_portada').style.display = 'none';
 			document.getElementById('home').style.display = 'block';
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('bb1').style.display = 'none';
@@ -232,6 +239,7 @@
 		}
 		else if (vamap()==2)
 		{
+			document.getElementById('preview_vista_portada').style.display = 'none';
 			document.getElementById('home').style.display = 'block';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
 			document.getElementById('preview_vista_contacto').style.display = 'none';
@@ -239,7 +247,6 @@
 			document.getElementById('gale').style.display = 'none';
 			document.getElementById('mapa').style.display = 'none'; 			
 		}
-		document.getElementById('portada').style.display = 'none';
 		
 	}
 	
