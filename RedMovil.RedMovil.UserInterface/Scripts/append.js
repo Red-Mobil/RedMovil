@@ -39,6 +39,51 @@
 			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>\n";
 		}
 		mandar += "</div>\n";
+		
+		mandar += "<div id='preview_vista_contacto'>\n";
+		mandar += "<div id='llamanos'>\n";
+		if (document.getElementById('tel').value != "")
+		{
+			mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+ document.getElementById('tel').value+ '\'">\n';
+		}
+		mandar += "</div>\n";
+		mandar += "<div id='escribenos'>\n";
+		if (document.getElementById('mail').value != "")
+		{
+			if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value))
+			{	
+				mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+document.getElementById('tel').value+ '\'">\n';
+			}
+		}
+		mandar += "</div>\n";
+		mandar += "<div id='ubicanos'>\n";
+		if (document.getElementById('address').value != "")
+		{   
+			mandar += '<center></br><center><input type="button" id="ubicar" value="Ubicacion" onclick="mostrarMapa()"></center>\n';
+		}
+		mandar += "</div>\n";
+		mandar += "</div>\n";
+		mandar += "<div id='mapa' style='display:none'>\n";
+		
+		//debo ver como meter el mapa aca, lo dejo asi mientras.
+		
+		mandar += "</div>\n";
+		mandar += "<div id='preview_vista_rs'>\n";
+		mandar += "<div id='facebook'>\n";
+		if (document.getElementById('face').value != "")
+		{
+                        mandar += '<center><input type="button" id="facebook" value="Face" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">\n';
+		}
+		mandar += "</div>\n";
+		mandar += "<div id='twitter'>\n";
+		if (document.getElementById('twit').value != "")
+		{
+                      mandar +=  '<center></br><center><input id="twit" type="button" value="Twitter" onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">\n';
+		}
+		mandar += "</div>\n";
+		mandar += "</div>\n";
+		mandar += "</div>\n";
+		mandar += "</div>\n";
 		return mandar;
 	}
 	
@@ -205,13 +250,21 @@
 	}
 
 $(document).ready(function () {
+	
+    $("#mp").click(function() {
+	document.getElementById('mipagina').style.display = 'block';
+        document.getElementById('texto').style.display = 'none';
+        document.getElementById('galeria').style.display = 'none';
+        document.getElementById('formulario_contacto').style.display = 'none';
+	document.getElementById('formulario_rs').style.display = 'none';
+    });
     // Levantar el editor de texto en el area de trabajo //
     $("#add").click(function () {
 
         //        $("texto").css("display", "block");
         //        $("galeria").css("display", "none");
         //        $("formulario_contacto").css("display", "none");
-
+	document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'block';
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
@@ -239,7 +292,7 @@ $(document).ready(function () {
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "block");
         //        $("formulario_contacto").css("display", "none");
-		
+	document.getElementById('mipagina').style.display = 'none';	
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'block';
         document.getElementById('formulario_contacto').style.display = 'none';
@@ -249,7 +302,7 @@ $(document).ready(function () {
 
     // Levantar el formulario de contacto en el area de trabajo //
     $("#btn_contacto").click(function () {
-
+	document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'block';
@@ -261,7 +314,7 @@ $(document).ready(function () {
     
     //Levantar el formulario de Redes Sociales en el area de trabajo //
      $("#btn_rs").click(function () {
-
+	document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
