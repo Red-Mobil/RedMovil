@@ -1,3 +1,48 @@
+	function hacer()
+	{
+		var mandar;
+		mandar = "<div id='vista'>\n"
+		mandar += "<script type='text/javascript'>new DragDivScroll( 'vista' );</script>\n";
+		mandar += "<div id='expandible'>\n";
+		mandar += "<div id='preview_vista_botones'>\n";
+		mandar += "<button id='home' style='display: none'>Home</button><br>\n"
+		if (max == 2)
+		{
+			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n"
+		}
+		if (max == 1)
+		{
+			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n"
+			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo1</button>\n"
+		}
+		if (max == 1)
+		{
+			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n"
+			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo2</button>\n"
+			mandar += "<button id='tt2' onclick='mostrar(bb2)' >Titulo3</button>\n"
+		}
+		mandar += "</div>\n";
+		mandar += "<div id='preview_vista_texto'>\n";
+		if (max == 2)
+		{
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
+		}
+		if (max == 2)
+		{
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById(bb1).innerHTML+"\n"+"</div>\n";
+		}
+		if (max == 2)
+		{
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById(bb1).innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById(bb2).innerHTML+"\n"+"</div>\n";
+		}
+		mandar += "</div>\n";
+	}
+	
+	
+	
 	
 	function crear()
 	{
