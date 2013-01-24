@@ -31,10 +31,7 @@
 </head>
 <body>										
 
-	<form name='bForm' method='post'>
-	<input type="text" style="WIDTH: 160px;" name="gal" id="gal"><a href='javascript:showPopup("g")'>Seleccione Imagen</a></br>	
-	<input type="button" value="mostrar" onclick="mostrarportada()" />										
-	</form>
+	
 
 
 
@@ -43,12 +40,7 @@
                 <div class="divspoiler">
                     <input type="button" value="Mi pagina" style='width: 150px;' />
                 </div>
-                <div>
-                    <div class="spoiler" style="display: none; width: 150px;">          
-                        Nombre de la Pagina:
-                        <input type="text" name="pagina" size="20" maxlength="15" />
-                    </div>
-                </div>
+                
                 <div class="divspoiler">
                     <input id="add" type="button" value="Texto" style='width: 150px;' />
                 </div>
@@ -71,6 +63,19 @@
                 </div>
             </div>
             <div id="editor">
+            	<div id="mipagina style="display:none">
+                
+                    <div class="spoiler" style="; width: 150px;">          
+                        Nombre de la Pagina:
+                        <input type="text" name="pagina" size="20" maxlength="15" />
+                    </div>
+                
+                
+                <form name='bForm' method='post'>
+	<input type="text" style="WIDTH: 160px;" name="gal" id="gal"><a href='javascript:showPopup("g")'>Seleccione Imagen</a></br>	
+	<input type="button" value="mostrar" onclick="mostrarportada()" />										
+	</form>
+                </div>
                 <div id="texto" style="display: none">
                 <div class="divspoiler">
                     <input type="button" value="ver" onclick="ver()" />
