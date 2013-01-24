@@ -10,12 +10,12 @@
 		{
 			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n"
 		}
-		if (max == 1)
+		else if (max == 1)
 		{
 			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n"
 			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo1</button>\n"
 		}
-		if (max == 1)
+		else if (max == 1)
 		{
 			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n"
 			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo2</button>\n"
@@ -27,12 +27,12 @@
 		{
 			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
 		}
-		if (max == 2)
+		else if (max == 2)
 		{
 			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
 			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById(bb1).innerHTML+"\n"+"</div>\n";
 		}
-		if (max == 2)
+		else if (max == 2)
 		{
 			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
 			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById(bb1).innerHTML+"\n"+"</div>\n";
