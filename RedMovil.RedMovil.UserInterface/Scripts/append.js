@@ -90,7 +90,7 @@
 	
 	
 	
-	function crear()
+	function crear(str)
 	{
 		var xmlhttp;
 		if (window.XMLHttpRequest)
@@ -103,13 +103,12 @@
 		}
 		xmlhttp.onreadystatechange=function()
 		{
-			if (xmlhttp.readyState==4)// && xmlhttp.status==200)
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
-				//document.getElementById("tt0").innerHTML=xmlhttp.responseText;
-				alert(xmlhttp.responseText);
+				window.open(xmlhttp.responseText);
 			}
 		}
-		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php",true);
+		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php?q="+str,true);
 		xmlhttp.send();
 	}
 
