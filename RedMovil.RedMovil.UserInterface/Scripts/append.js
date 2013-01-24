@@ -1,3 +1,4 @@
+	
 	function crear()
 	{
 		var xmlhttp;
