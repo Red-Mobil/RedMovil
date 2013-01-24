@@ -25,26 +25,27 @@
 		mandar += "<div id='preview_vista_texto'>\n";
 		if (max == 2)
 		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>\n";
 		}
 		else if (max == 2)
 		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
-			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById(bb1).innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>\n";
 		}
 		else if (max == 2)
 		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById(bb0).innerHTML+"\n"+"</div>\n";
-			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById(bb1).innerHTML+"\n"+"</div>\n";
-			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById(bb2).innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>\n";
 		}
 		mandar += "</div>\n";
+		return mandar;
 	}
 	
 	
 	
 	
-	function crear()
+	function crear(str)
 	{
 		var xmlhttp;
 		if (str.length==0)
@@ -279,15 +280,8 @@ $(document).ready(function () {
     });	
 	
     $("#crear").click(function () {
-		var yourDOCTYPE = "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>";
-		var printPreview = window.open('about:blank', 'print_preview');
-		var printDocument = printPreview.document;
-		printDocument.open();
-		printDocument.write(yourDOCTYPE+
-           "<html>"+
-               document.documentElement.innerHTML+
-           "</html>");
-		printDocument.close();
+		var send = hacer();
+		crear(send);
     });
     
 });
