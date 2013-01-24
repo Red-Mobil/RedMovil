@@ -39,6 +39,51 @@
 			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>\n";
 		}
 		mandar += "</div>\n";
+		
+		mandar += "<div id='preview_vista_contacto'>\n";
+		mandar += "<div id='llamanos'>\n";
+		if (document.getElementById('tel').value != "")
+		{
+			mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+ document.getElementById('tel').value+ '\'">\n';
+		}
+		mandar += "</div>\n";
+		mandar += "<div id='escribenos'>\n";
+		if (document.getElementById('mail').value != "")
+		{
+			if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value))
+			{	
+				mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+document.getElementById('tel').value+ '\'">\n';
+			}
+		}
+		mandar += "</div>\n";
+		mandar += "<div id='ubicanos'>\n";
+		if (document.getElementById('address').value != "")
+		{   
+			mandar += '<center></br><center><input type="button" id="ubicar" value="Ubicacion" onclick="mostrarMapa()"></center>\n';
+		}
+		mandar += "</div>\n";
+		mandar += "</div>\n";
+		mandar += "<div id='mapa' style='display:none'>\n";
+		
+		//debo ver como meter el mapa aca, lo dejo asi mientras.
+		
+		mandar += "</div>\n";
+		mandar += "<div id='preview_vista_rs'>\n";
+		mandar += "<div id='facebook'>\n";
+		if (document.getElementById('face').value != "")
+		{
+                        mandar += '<center><input type="button" id="facebook" value="Face" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">\n';
+		}
+		mandar += "</div>\n";
+		mandar += "<div id='twitter'>\n";
+		if (document.getElementById('twit').value != "")
+		{
+                      mandar +=  '<center></br><center><input id="twit" type="button" value="Twitter" onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">\n';
+		}
+		mandar += "</div>\n";
+		mandar += "</div>\n";
+		mandar += "</div>\n";
+		mandar += "</div>\n";
 		return mandar;
 	}
 	

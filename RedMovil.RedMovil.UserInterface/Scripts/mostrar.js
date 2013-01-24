@@ -18,7 +18,6 @@ function mostrarTodo() {
             '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'
             + document.getElementById('tel').value
             + '\'">');
-	    bottel();
 	    
 	}
 	
@@ -29,7 +28,6 @@ function mostrarTodo() {
             '<center><input type="button" id="escribir" value="Enviar email" onclick="parent.location=\'mailto:'
             + document.getElementById('mail').value
             + '\'">');
-	    botmail();
 	    }
 	    
 	}
@@ -38,7 +36,6 @@ function mostrarTodo() {
 	    
 	    $("#ubicanos").html(
             '<center></br><center><input type="button" id="ubicar" value="Ubicacion" onclick="mostrarMapa()"></center>');
-	    botmap();
 	}
 	    
         
