@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 #home {
-
+	
 	width: 80%;
 	height: 8%;
 	font-size: medium;
@@ -12,13 +12,25 @@
 }
 
 #bb0 {
-		height: 100%;
+	float:left;
+	width: 90%;
+	min-height:40%;
+	background-color: #CCC;
+	margin-left: 6%;
 }
 #bb1 {
-	height: 100%;
+	float:left;
+	width: 90%;
+	min-height:40%;
+	background-color: #CCC;
+	margin-left: 6%;
 }
 #bb2 {
-	height: 100%;
+	float:left;
+	width: 90%;
+	min-height:40%;
+	background-color: #CCC;
+	margin-left: 6%;
 }
 
 
@@ -74,6 +86,12 @@ width: 80%;
 	float: left;
 	margin-left: 11%;
 	margin-top: 3px;
+}
+.contacto {
+	background-color: #333;
+	float: left;
+	height: 7%;
+	width: 10%;
 }
 #llamar {
 			 	   
