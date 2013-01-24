@@ -45,14 +45,9 @@
 	
 	
 	
-	function crear(str)
+	function crear()
 	{
 		var xmlhttp;
-		if (str.length==0)
-		{ 
-			document.getElementById("txtHint").innerHTML="";
-			return;
-		}
 		if (window.XMLHttpRequest)
 		{// code for IE7+, Firefox, Chrome, Opera, Safari
 			xmlhttp=new XMLHttpRequest();
@@ -65,10 +60,11 @@
 		{
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
-			document.getElementById("tt0").innerHTML=xmlhttp.responseText;
+			//document.getElementById("tt0").innerHTML=xmlhttp.responseText;
+			alert(xmlhttp.responseText);
 		}
 		}
-		xmlhttp.open("GET","crear.php?q="+str,true);
+		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php",true);
 		xmlhttp.send();
 	}
 
@@ -283,7 +279,8 @@ $(document).ready(function () {
 	
     $("#crear").click(function () {
 		var send = hacer();
-		crear(send);
+		//alert(send);
+		//crear(send);
     });
     
 });
