@@ -29,7 +29,15 @@
     <link href="../Css/estilo.css" rel="stylesheet" type="text/css" />
     <link href="../Css/estilomovil.css" rel="stylesheet" type="text/css">
 </head>
-<body>						
+<body>										
+
+<form name='bForm' method='post'>
+					<input type="text" style="WIDTH: 160px;" name="gal" id="gal"><a href='javascript:showPopup("g")'>Seleccione Imagen</a></br>
+					<input type="text" style="WIDTH: 320px;" name="galt" id="galt" placeholder="Ingrese Comentario"/></br></br>
+</form>
+
+
+
      <div id="contenedor">
             <div id="menu">
                 <div class="divspoiler">
@@ -73,18 +81,18 @@
 				<!--   Galeria Empieza aca -->
 										
 					<div id="upload_button">Subir Imagen</div>
-					<input type="text" style="WIDTH: 320px;" name="f1" id="f1" placeholder="Ingrese Nombre Foto 1"/></br>
-					<input type="text" style="WIDTH: 320px;" name="f1" id="f11" placeholder="Ingrese Comentario Foto 1"/></br></br>
-					<input type="text" style="WIDTH: 320px;" name="f2" id="f2" placeholder="Ingrese Nombre Foto 2"/></br>
-					<input type="text" style="WIDTH: 320px;" name="f1" id="f22" placeholder="Ingrese Comentario Foto 2"/></br></br>
-					<input type="text" style="WIDTH: 320px;" name="f3" id="f3" placeholder="Ingrese Nombre Foto 3"/></br>
-					<input type="text" style="WIDTH: 320px;" name="f1" id="f33" placeholder="Ingrese Comentario Foto 3"/></br></br>
-					
+					<form name='aForm' method='post'>
+					<input type="text" style="WIDTH: 160px;" name="f1" id="f1"><a href='javascript:showPopup("a")'>Seleccione Imagen</a></br>
+					<input type="text" style="WIDTH: 320px;" name="f11" id="f11" placeholder="Ingrese Comentario Foto 1"/></br></br>
+					<input type="text" style="WIDTH: 160px;" name="f2" id="f2"><a href='javascript:showPopup("b")'>Seleccione Imagen</a></br>
+					<input type="text" style="WIDTH: 320px;" name="f22" id="f22" placeholder="Ingrese Comentario Foto 2"/></br></br>
+					<input type="text" style="WIDTH: 160px;" name="f3" id="f3"><a href='javascript:showPopup("c")'>Seleccione Imagen</a></br>
+					<input type="text" style="WIDTH: 320px;" name="f33" id="f33" placeholder="Ingrese Comentario Foto 3"/></br></br>
+					</form>																																			
 					<div id="lista">					
 					
 					</div>
-					<input type="button" value="mostrar" onclick="mostrarimagen()" />					
-					<input type="button" value="Mostrar Imagenes" onClick="javascript: window.open('../../RedMovil.RedMovil.Backend/imagenes.php', 'Imagenes', 'width = 500, height = 200');">
+					<input type="button" value="mostrar" onclick="mostrarimagen()" />										
 					
 				<!--   Galeria Termina aca -->
                 </div>

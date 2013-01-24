@@ -1,0 +1,33 @@
+<html>
+<head>
+<script type="text/javascript">
+function showPopup(refe)
+{
+	window.showModalDialog('../../RedMovil.RedMovil.Backend/imagenes.php?'+refe,window,'center:yes');
+}
+
+function setTheVal(valFromPopup,i)
+{
+	if (i=='a')
+	{
+		document.aForm.aField.value=valFromPopup;
+	}
+	else if (i=='b')
+	{
+		document.aForm.bField.value=valFromPopup;
+	}
+	else if (i=='c')
+	{
+		document.aForm.cField.value=valFromPopup;
+	}  
+}
+</script>
+</head>
+<body>
+<form name='aForm' method='post'>
+<input type='text' name='aField'/><a href='javascript:showPopup("a")'>Show popup</a></br>
+<input type='text' name='bField'/><a href='javascript:showPopup("b")'>Show popup</a></br>
+<input type='text' name='cField'/><a href='javascript:showPopup("c")'>Show popup</a></br>
+</form>
+</body>
+</html>
