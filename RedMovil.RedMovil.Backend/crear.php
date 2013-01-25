@@ -13,6 +13,7 @@ fwrite($fp, "	<script language='javascript' src='../ExtLibs/imagen.js'></script>
 fwrite($fp, "	<script src='../Scripts/mostratimagen.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../ExtLibs/jquery-1.7.2.min.js'></script>\n");
 fwrite($fp, "	<script src='../ExtLibs/lightbox.js'></script>\n");
+fwrite($fp, "	<script src='../ExtLibs/dragdivscroll.js'></script>\n");
 fwrite($fp, "	<link href='../Css/lightbox.css' rel='stylesheet' />\n");
 fwrite($fp, "	<script src='../ExtLibs/jquery-1.8.3.min.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../ExtLibs/nicEdit.js' type='text/javascript'></script>\n");
