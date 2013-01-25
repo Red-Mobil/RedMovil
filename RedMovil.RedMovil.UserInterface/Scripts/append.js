@@ -3,95 +3,89 @@
 	function hacer()
 	{
 		var mandar;
-		mandar = "<div id='vista'>\n";
-		mandar += "<script type='text/javascript'>new DragDivScroll( 'vista' );</script>\n";
-		mandar += "<div id='expandible'>\n";
-		mandar += "<div id='preview_vista_portada'>\n";
-		if (document.getElementById('gal').value != "")
-		{
-			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="200" id="portada" /></br>\n';
-		}
-		mandar += "</div>\n";
-		mandar += "<div id='preview_vista_botones'>\n";
-		mandar += "<button id='home' style='display: none'>Home</button><br>\n";
+		mandar = "<div id='vista'>-skip";
+		mandar += "<script type='text/javascript'>new DragDivScroll( 'vista' );</script>-skip";
+		mandar += "<div id='expandible'>-skip";
+		mandar += "<div id='preview_vista_botones'>-skip";
+		mandar += "<button id='home' style='display: none'>Home</button><br>-skip";
 		if (max == 2)
 		{
-			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n";
+			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>-skip";
 		}
 		else if (max == 1)
 		{
-			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n";
-			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo1</button>\n";
+			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>-skip";
+			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo2</button>-skip";
+		}
+		else if (max == 0)
+		{
+			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>-skip";
+			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo2</button>-skip";
+			mandar += "<button id='tt2' onclick='mostrar(bb2)' >Titulo3</button>-skip";
+		}
+		mandar += "</div>-skip";
+		mandar += "<div id='preview_vista_texto'>-skip";
+		if (max == 2)
+		{
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
 		}
 		else if (max == 1)
 		{
-			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>\n";
-			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo2</button>\n";
-			mandar += "<button id='tt2' onclick='mostrar(bb2)' >Titulo3</button>\n";
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>-skip";
 		}
-		mandar += "</div>\n";
-		mandar += "<div id='preview_vista_texto'>\n";
-		if (max == 2)
+		else if (max == 0)
 		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>\n";
+			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>-skip";
 		}
-		else if (max == 2)
-		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>\n";
-			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>\n";
-		}
-		else if (max == 2)
-		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>\n";
-			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>\n";
-			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>\n";
-		}
-		mandar += "</div>\n";
+		mandar += "</div>-skip";
 		
-		mandar += "<div id='preview_vista_contacto'>\n";
-		mandar += "<div id='llamanos'>\n";
+		mandar += "<div id='preview_vista_contacto'>-skip";
+		mandar += "<div id='llamanos'>-skip";
 		if (document.getElementById('tel').value != "")
 		{
-			mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+ document.getElementById('tel').value+ '\'">\n';
+			mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+ document.getElementById('tel').value+ '\'">-skip';
 		}
-		mandar += "</div>\n";
-		mandar += "<div id='escribenos'>\n";
+		mandar += "</div>-skip";
+		mandar += "<div id='escribenos'>-skip";
 		if (document.getElementById('mail').value != "")
 		{
 			if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value))
 			{	
-				mandar += '<center><input type="button" id="escribir" value="Enviar email" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">\n';
+				mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+document.getElementById('tel').value+ '\'">-skip';
 			}
 		}
-		mandar += "</div>\n";
-		mandar += "<div id='ubicanos'>\n";
+		mandar += "</div>-skip";
+		mandar += "<div id='ubicanos'>-skip";
 		if (document.getElementById('address').value != "")
 		{   
-			mandar += '<center></br><center><input type="button" id="ubicar" value="Ubicacion" onclick="mostrarMapa()"></center>\n';
+			mandar += '<center></br><center><input type="button" id="ubicar" value="Ubicacion" onclick="mostrarMapa()"></center>-skip';
 		}
-		mandar += "</div>\n";
-		mandar += "</div>\n";
-		mandar += "<div id='mapa' style='display:none'>\n";
+		mandar += "</div>-skip";
+		mandar += "</div>-skip";
+		mandar += "<div id='mapa' style='display:none'>-skip";
 		
 		//debo ver como meter el mapa aca, lo dejo asi mientras.
 		
-		mandar += "</div>\n";
-		mandar += "<div id='preview_vista_rs'>\n";
-		mandar += "<div id='facebook'>\n";
+		mandar += "</div>-skip";
+		mandar += "<div id='preview_vista_rs'>-skip";
+		mandar += "<div id='facebook'>-skip";
 		if (document.getElementById('face').value != "")
 		{
-                        mandar += '<center><input type="button" id="facebook" value="Face" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">\n';
+                        mandar += '<center><input type="button" id="facebook" value="Face" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">-skip';
 		}
-		mandar += "</div>\n";
-		mandar += "<div id='twitter'>\n";
+		mandar += "</div>-skip";
+		mandar += "<div id='twitter'>-skip";
 		if (document.getElementById('twit').value != "")
 		{
-                      mandar +=  '<center></br><center><input id="twit" type="button" value="Twitter" onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">\n';
+                      mandar +=  '<center></br><center><input id="twit" type="button" value="Twitter" onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
 		}
-		mandar += "</div>\n";
-		mandar += "</div>\n";
-		mandar += "</div>\n";
-		mandar += "</div>\n";
+		mandar += "</div>-skip";
+		mandar += "</div>-skip";
+		mandar += "</div>-skip";
+		mandar += "</div>-skip";
 		return mandar;
 	}
 	
