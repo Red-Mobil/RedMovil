@@ -121,7 +121,7 @@
 				window.open(xmlhttp.responseText);
 			}
 		}
-		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php?q="+hacer(),true);
+		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php?q="+str,true);
 		xmlhttp.send();
 	}
 
@@ -350,9 +350,8 @@ $(document).ready(function () {
     });	
 	
     $("#crear").click(function () {
-		//var send = hacer();
-		//alert(send);
-		crear();
+		var send = hacer();
+		crear(send);
     });
     
 });
