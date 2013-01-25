@@ -3,10 +3,7 @@
 	function hacer()
 	{
 		var mandar;
-		mandar = "<center>-skip";
-		mandar += "<div id='vista'>-skip";
-		mandar += "<script type='text/javascript'>new DragDivScroll( 'vista' );</script>-skip";
-		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
+		mandar = "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
