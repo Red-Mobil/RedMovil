@@ -5,7 +5,6 @@
 		var mandar;
 		mandar = "<center>-skip";
 		mandar += "<div id='vista'>-skip";
-		mandar += "<script type='text/javascript'>new DragDivScroll( 'vista' );</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
@@ -48,7 +47,8 @@
 			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>-skip";
 		}
 		mandar += "</div>-skip";
-		
+		mandar += "<div id='preview_vista_galeria'>-skip";
+		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_contacto'>-skip";
 		mandar += "<div id='llamanos'>-skip";
 		if (document.getElementById('tel').value != "")
