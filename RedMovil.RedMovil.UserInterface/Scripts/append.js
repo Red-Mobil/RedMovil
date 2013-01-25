@@ -3,9 +3,16 @@
 	function hacer()
 	{
 		var mandar;
-		mandar = "<div id='vista'>-skip";
+		mandar = "<center>-skip";
+		mandar += "<div id='vista'>-skip";
 		mandar += "<script type='text/javascript'>new DragDivScroll( 'vista' );</script>-skip";
 		mandar += "<div id='expandible'>-skip";
+		mandar += "<div id='preview_vista_portada'>-skip";
+		if (document.getElementById('gal').value != "")
+		{
+			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="200" id="portada" /></br>-skip';
+		}
+		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";
 		mandar += "<button id='home' style='display: none'>Home</button><br>-skip";
 		if (max == 2)
@@ -54,7 +61,7 @@
 		{
 			if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value))
 			{	
-				mandar += '<center></br><center><input type="button" id="llamar" value="Llamar" onclick="parent.location=\'tel:+56'+document.getElementById('tel').value+ '\'">-skip';
+				mandar += '<center><input type="button" id="escribir" class="contacto" value="" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">-skip';
 			}
 		}
 		mandar += "</div>-skip";
@@ -86,6 +93,7 @@
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
+		mandar += "</center>-skip";
 		return mandar;
 	}
 	
