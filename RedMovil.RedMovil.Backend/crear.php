@@ -36,9 +36,11 @@ fwrite($fp, "	<link href='../Css/estilo3.css' rel='stylesheet' type='text/css' /
 fwrite($fp, "	<link href='../Css/estilomovil.css' rel='stylesheet' type='text/css'>\n");
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
+fwrite($fp, "<center>\n");
 fwrite($fp, "<div id=\"preview\">\n");
 fwrite($fp, $aux);
 fwrite($fp, "</div>\n");
+fwrite($fp, "</center>\n");
 fwrite($fp, "</body>\n");
 fwrite($fp, "</html>\n");
 fclose("pagina.html\n");
@@ -76,8 +78,10 @@ fwrite($fp, "	<script src='../Scripts/append.js' type='text/javascript'></script
 fwrite($fp, "	<link href='../Css/estilomovil.css' rel='stylesheet' type='text/css'>\n");
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
+fwrite($fp, "<center>\n");
 fwrite($fp, $aux);
 fwrite($fp, "</body>\n");
+fwrite($fp, "</center>\n");
 fwrite($fp, "</html>\n");
 fclose("cel.html\n");
 // ---------------------- Fin PopUp
