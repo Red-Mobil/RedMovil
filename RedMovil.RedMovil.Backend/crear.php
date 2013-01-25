@@ -81,11 +81,9 @@ fwrite($fp, "	<link href='../Css/estilomovil.css' rel='stylesheet' type='text/cs
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
 fwrite($fp, "<center>\n");
-fwrite($fp, "<div id='vista'>\n");
 fwrite($fp, $aux);
-fwrite($fp, "</div>\n");
-fwrite($fp, "</body>\n");
 fwrite($fp, "</center>\n");
+fwrite($fp, "</body>\n");
 fwrite($fp, "</html>\n");
 fclose($fp);
 // ---------------------- Fin Cel

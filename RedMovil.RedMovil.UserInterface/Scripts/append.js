@@ -133,8 +133,6 @@
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
-		mandar += "</div>-skip";
-		//mandar += "</center>-skip";
 		return mandar;
 	}
 	
