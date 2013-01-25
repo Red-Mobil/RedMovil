@@ -88,30 +88,53 @@ width: 80%;
 	margin-top: 3px;
 }
 .contacto {
-	background-color: #333;
-	float: left;
-	height: 7%;
-	width: 10%;
+		background: #65a9d7;
+		float: left;
+	height: 18%;
+	width: 33%;
+	overflow: hidden;
+	position: static;
+	margin-right: 70%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-top:2%;
+	 
 }
+.contacto:hover {
+	background: #3e779d;
+		 }
 #llamar {
+	background-image: url(../imagenes/phone.png);
+	background-repeat: no-repeat;
 			 	   
 }
-#llamar:active {
- 	   
+#llamar:hover {
+	background-image:url(../imagenes/phone-copia.png)
 }
 #escribir {
+	background-image:url(../imagenes/mail-back.png)
 }
-#escribir:active {
+#escribir:hover {
+	background-image:url(../imagenes/mail-back-copia.png)
 }
 #ubicar {
+	background-image:url(../imagenes/location.png)
 }
-#ubicar:active {
+#ubicar:hover {
+	background-image:url(../imagenes/location-copia.png)
 }
-#face {
+#faceb {
+	background-image:url(../imagenes/facebook.png)
+		
 }
-#face:active {
+#faceb:hover {
+	background-image:url(../imagenes/facebook.png)
+	
 }
-#twit {
+#twitt {
+	background-image:url(../imagenes/twitter.png)
 }
-#twit:active {
+#twitt:hover {
+	background-image:url(../imagenes/twitter-copia.png)
 }
