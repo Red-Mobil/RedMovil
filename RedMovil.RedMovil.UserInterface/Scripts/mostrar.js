@@ -1,3 +1,5 @@
+var direccion;
+
 function camposValidos(email, telefono) {
 
     if ((email != null) || (telefono != null)) {
@@ -45,9 +47,32 @@ function mostrarTodo() {
 function mostrarMapa() {
 	
 	hideall();
-	
+	direccion = document.getElementById('address').value;
 	inicializarGoogleMaps();
         geocoder.geocode({ 'address': document.getElementById('address').value }, function (results, status) {
+
+            if (status == google.maps.GeocoderStatus.OK) {
+                map.setCenter(results[0].geometry.location);
+                var marker = new google.maps.Marker({
+                    map: map,
+                    position: results[0].geometry.location
+                });
+                document.getElementById("mapa").style.display = 'block';
+            } else {
+                alert("La direccion no se pudo localizar");
+            }
+        });
+	
+	vamap();
+	
+};
+
+function mostrarMP(direct) {
+	
+	hideall();
+	
+	inicializarGoogleMaps();
+        geocoder.geocode({ 'address': direct }, function (results, status) {
 
             if (status == google.maps.GeocoderStatus.OK) {
                 map.setCenter(results[0].geometry.location);
