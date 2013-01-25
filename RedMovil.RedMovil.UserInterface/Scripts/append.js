@@ -48,6 +48,8 @@
 			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>-skip";
 		}
 		mandar += "</div>-skip";
+		mandar += "<div id='gale'>-skip";
+		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_galeria'>-skip";
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_contacto'>-skip";
