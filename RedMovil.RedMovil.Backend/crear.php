@@ -84,7 +84,7 @@ fwrite($fp, "</body>\n");
 fwrite($fp, "</center>\n");
 fwrite($fp, "</html>\n");
 fclose("cel.html\n");
-// ---------------------- Fin PopUp
+// ---------------------- Fin Cel
 
 $response = "cel.html";
 echo $response;
