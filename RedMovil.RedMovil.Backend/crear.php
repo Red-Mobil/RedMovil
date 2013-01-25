@@ -32,11 +32,13 @@ fwrite($fp, "	<script src='../Scripts/valmail.js' type='text/javascript'></scrip
 fwrite($fp, "	<script src='../Scripts/ver.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../Scripts/rs.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../Scripts/append.js' type='text/javascript'></script>\n");
-fwrite($fp, "	<link href='../Css/estilo.css' rel='stylesheet' type='text/css' />\n");
+fwrite($fp, "	<link href='../Css/estilo3.css' rel='stylesheet' type='text/css' />\n");
 fwrite($fp, "	<link href='../Css/estilomovil.css' rel='stylesheet' type='text/css'>\n");
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
+fwrite($fp, "<div id=\"preview\">\n");
 fwrite($fp, $aux);
+fwrite($fp, "</div>\n");
 fwrite($fp, "</body>\n");
 fwrite($fp, "</html>\n");
 fclose("pagina.html\n");
@@ -71,7 +73,6 @@ fwrite($fp, "	<script src='../Scripts/valmail.js' type='text/javascript'></scrip
 fwrite($fp, "	<script src='../Scripts/ver.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../Scripts/rs.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../Scripts/append.js' type='text/javascript'></script>\n");
-fwrite($fp, "	<link href='../Css/estilo2.css' rel='stylesheet' type='text/css' />\n");
 fwrite($fp, "	<link href='../Css/estilomovil.css' rel='stylesheet' type='text/css'>\n");
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
