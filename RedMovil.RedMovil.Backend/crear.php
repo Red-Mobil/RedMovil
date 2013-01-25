@@ -43,7 +43,7 @@ fwrite($fp, "</div>\n");
 fwrite($fp, "</center>\n");
 fwrite($fp, "</body>\n");
 fwrite($fp, "</html>\n");
-fclose("pagina.html\n");
+fclose($fp);
 // ---------------------- Fin PopUp
 
 // ---------------------- PaginaCel
@@ -83,7 +83,7 @@ fwrite($fp, $aux);
 fwrite($fp, "</body>\n");
 fwrite($fp, "</center>\n");
 fwrite($fp, "</html>\n");
-fclose("cel.html\n");
+fclose($fp);
 // ---------------------- Fin Cel
 
 $response = "cel.html";
