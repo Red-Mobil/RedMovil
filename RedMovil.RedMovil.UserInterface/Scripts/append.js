@@ -1,4 +1,4 @@
-
+	
 	
 	function hacer()
 	{
@@ -134,7 +134,7 @@
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
-		mandar += "</center>-skip";
+		//mandar += "</center>-skip";
 		return mandar;
 	}
 	
