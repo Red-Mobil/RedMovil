@@ -50,8 +50,48 @@
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='gale'>-skip";
+				
+		if (document.getElementById('f1').value == '' && document.getElementById('f2').value == '' && document.getElementById('f3').value == '')
+		{			
+		}
+		else
+		{
+		mandar += '<center></br><center><input type="button" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \></br></br>-skip';		
+		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_galeria'>-skip";
+		if (document.getElementById('f1').value == '' && document.getElementById('f2').value == '' && document.getElementById('f3').value == '')
+		{
+		}
+		else
+		{
+		mandar += '<div class="imageRow"><div class="set">-skip';
+		if (document.getElementById('f1').value != '')
+		{
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100"/></a></div>-skip';
+			if (document.getElementById('f2').value != '')
+			{	
+				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100" /></a></div>-skip';
+			}
+			if (document.getElementById('f3').value != '')
+			{
+				mandar += '<div class="single first" id=i3 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100" /></a></div>-skip';
+			}
+		}	
+		else if (document.getElementById('f2').value != '')
+		{
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100" /></a></div>-skip';
+			if (document.getElementById('f3').value != '')
+			{
+				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100" /></a></div>-skip';
+			}
+		}
+		else if (document.getElementById('f3').value != '')
+		{
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100" /></a></div>-skip';
+		}
+		mandar += '</div></div>-skip';
+		}				
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_contacto'>-skip";
 		mandar += "<div id='llamanos'>-skip";
