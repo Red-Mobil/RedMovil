@@ -7,7 +7,7 @@ function mostrarportada()
 
 function mostrarimagen() 
 {			
-	$("#gale").html('<center></br><center><input type="button" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \></br></br>');
+	$("#gale").html('<center></br><center><input type="button" class="tt" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \></br></br>');
 	
 	texto = '<div class="imageRow"><div class="set">';	
 	texto = texto + '<div class="single first" id=i1><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100"/></a></div>';

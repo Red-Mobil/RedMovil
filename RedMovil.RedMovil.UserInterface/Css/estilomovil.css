@@ -107,11 +107,7 @@ width: 80%;
  	box-shadow:inset 0px 0px 0px -50px #bbdaf7;
 }
 #botonimagen:hover{
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378de5), color-stop(59%, #79bbff) );
-	background:-moz-linear-gradient( center top, #378de5 46%, #79bbff 59% );
-	background:-ms-linear-gradient( top, #378de5 46%, #79bbff 59% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
-	background-color:#378de5;
+	
 }
 .contacto {
 		background: #65a9d7;
