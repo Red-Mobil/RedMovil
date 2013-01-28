@@ -4,7 +4,10 @@
 #expandible{
 	background-image: url(../imagenes/bg-checker.png);
 	background-attachment: fixed;
-	background-repeat: repeat;	
+	background-repeat: repeat;
+	float: left;
+	width: 100%;
+	min-height: 200%;
 	}
 #home {
 	
@@ -39,10 +42,7 @@
 	width: 100%;
 	margin-top: 10px;
 }
-#expandible {
-	height: 100%;
-	width: 100%;
-}
+
 .tt{
 	width: 80%;
 	height: 10%;
