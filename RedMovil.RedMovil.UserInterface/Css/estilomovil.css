@@ -3,8 +3,8 @@
 
 #expandible{
 	background-image: url(../imagenes/bg-checker.png);
-	background-attachment:
-	scroll; 
+	background-attachment: fixed;
+	background-repeat: repeat;	
 	}
 #home {
 	
