@@ -12,7 +12,7 @@
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";
-		mandar += "<button id='home' style='display: none'>Home</button><br>-skip";
+		mandar += "<button id='home' class = 'tt' style='display: none'>Home</button><br>-skip";
 		if (max == 2)
 		{
 			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >Titulo1</button>-skip";
@@ -53,7 +53,7 @@
 		}
 		else
 		{
-		mandar += '<center></br><center><input type="button" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \></br></br>-skip';		
+		mandar += '<center></br><center><input type="button" value="Galeria" class = "tt" onclick="mostrarimagenes()" id="botonimagen" \></br></br>-skip';		
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_galeria'>-skip";
