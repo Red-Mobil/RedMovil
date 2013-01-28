@@ -89,21 +89,23 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	
 }
 .contacto {
-		background: #65a9d7;
-		float: left;
-		width: 80%;
-		height: 10%;
-		margin-left: 11%;
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		border-radius: 8px;
-	
+	background: #65a9d7;
+	float: left;
+	width: 80%;
+	height: 10%;
+	margin-left: 11%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: #FFF;	
 	 
 }
 .contacto:hover {
 	background: #3e779d;
 		 }
-#llamar {
+/*#llamar {
 	background-image: url(../imagenes/phone.png);
 
 	background-repeat: no-repeat;
@@ -151,3 +153,4 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	background-image:url(../imagenes/twitter-copia.png);background-repeat: no-repeat;
 	background-position: center;	
 }
+*/
