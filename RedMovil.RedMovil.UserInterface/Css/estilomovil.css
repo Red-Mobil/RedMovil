@@ -1,6 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 
+#expandible{
+	background-image: url(../imagenes/bg-checker.png);
+}
 #home {
 	
 	}
