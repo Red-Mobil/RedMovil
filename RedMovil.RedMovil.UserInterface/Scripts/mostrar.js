@@ -28,7 +28,7 @@ function mostrarTodo() {
 		
 	    if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value)) {	
 	    $("#escribenos").html(
-            '<center><input type="button" id="escribir" class="contacto" value"escribenos"  onclick="parent.location=\'mailto:'
+            '<center><input type="button" id="escribir" class="contacto" value="escribenos"  onclick="parent.location=\'mailto:'
 			// '<center><input type="button" id="escribir" class="contacto" value="" onclick="parent.location=\'mailto:'
             + document.getElementById('mail').value
             + '\'">');
@@ -39,7 +39,7 @@ function mostrarTodo() {
 	if (document.getElementById('address').value != ""){   
 	    
 	    $("#ubicanos").html(
-            '<center></br><center><input type="button" id="ubicar" class="contacto" value"ubicanos"  onclick="mostrarMapa()"></center>'
+            '<center></br><center><input type="button" id="ubicar" class="contacto" value="ubicanos"  onclick="mostrarMapa()"></center>'
 			//'<center></br><center><input type="button" id="ubicar" class="contacto" value="" onclick="mostrarMapa()"></center>');
 			);
 	}
