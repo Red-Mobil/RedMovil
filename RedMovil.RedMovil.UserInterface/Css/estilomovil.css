@@ -16,6 +16,7 @@
 	color: #036;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: medium;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
 }
 #bb0 {
 	
@@ -89,6 +90,8 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	
 }
 .contacto {
+	font-weight: bolder;
+	text-transform: uppercase;
 	font-size: large;
 	margin-top: 3px;
 		float: left;
@@ -174,3 +177,11 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	background-position: center;	
 }
 */
+.image row{
+margin-top: 2%;	
+}
+.single,single first,single last {
+	width: 80%;
+	margin-top: 2%;
+	margin-left:10%;
+}
