@@ -54,6 +54,7 @@ $fp = fopen("../RedMovil.RedMovil.UserInterface/Html/cel.html","w");
 fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n");
 fwrite($fp, "<html>\n");
 fwrite($fp, "<head>\n");
+fwrite($fp, "<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no' />\n");
 fwrite($fp, "	<script language='javascript' src='../ExtLibs/jquery-1.3.1.min.js'></script>\n");
 fwrite($fp, "	<script language='javascript' src='../ExtLibs/AjaxUpload.2.0.min.js'></script>\n");
 fwrite($fp, "	<script language='javascript' src='../ExtLibs/imagen.js'></script>\n");
