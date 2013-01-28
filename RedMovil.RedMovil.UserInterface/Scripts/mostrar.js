@@ -17,7 +17,7 @@ function mostrarTodo() {
 	if (document.getElementById('tel').value != ""){
 		
 	    $("#llamanos").html(
-            '<center></br><center><input type="button" value"llamanos" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'
+            '<center></br><center><input type="button" value="llamanos" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'
 			//'<center></br><center><input type="button" value="" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'
             + document.getElementById('tel').value
             + '\'">');
