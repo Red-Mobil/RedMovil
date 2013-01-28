@@ -299,8 +299,8 @@
 	function mostrar(id)
 	{
 		hideall();
-		//var aux = "tt"+id.id[2]
-		//document.getElementById(aux).style.display = 'block';
+		var aux = "tt"+id.id[2]
+		document.getElementById(aux).style.display = 'block';
 		id.style.display = 'block';
 	}
 
