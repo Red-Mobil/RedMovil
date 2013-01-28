@@ -34,7 +34,7 @@ body {
 }
 #preview {
 	float: left;
-	max-width: 250px;
+	width: 250px;
 	background-image: url(../imagenes/telefono2.png);
 	height: 515px;
 	background-repeat: no-repeat;
@@ -42,13 +42,11 @@ body {
 }
 
 #vista {
-	height: 352px;
-	width: 193px;
+	height: 363px;
+	width: 205px;
 	float: left;
 	margin-left: 24px;
-	margin-right: 23px;
-	margin-bottom: 74px;
-	margin-top: 79px;
+		margin-top: 79px;
 	text-align: center;
 	overflow: auto;
 	

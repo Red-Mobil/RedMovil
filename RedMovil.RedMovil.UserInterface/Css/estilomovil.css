@@ -3,7 +3,9 @@
 
 #expandible{
 	background-image: url(../imagenes/bg-checker.png);
-}
+	background-attachment:
+	scroll; 
+	}
 #home {
 	
 	}
@@ -43,7 +45,7 @@
 }
 .tt{
 	width: 80%;
-	height: 8%;
+	height: 10%;
 	font-family: "Trebuchet MS", 	Arial, Helvetica, sans-serif;
 	font-weight: bolder;
 	text-transform: uppercase;
