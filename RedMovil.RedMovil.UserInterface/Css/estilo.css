@@ -9,8 +9,7 @@ body {
 
 #contenedor {
 	width: 910px;
-	padding: 3px;
-	height: 600px;
+		height: 600px;
 }
 #menu {
 	float: left;
