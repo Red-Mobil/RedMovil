@@ -8,7 +8,7 @@
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
 		{
-			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="200" id="portada" /></br>-skip';
+			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";
