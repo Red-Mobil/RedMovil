@@ -89,6 +89,7 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	
 }
 .contacto {
+	font-size: large;
 	margin-top: 3px;
 		float: left;
 	width: 80%;
