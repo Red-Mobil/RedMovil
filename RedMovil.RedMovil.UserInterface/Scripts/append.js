@@ -15,18 +15,18 @@
 		mandar += "<button id='home' class = 'tt' style='display: none'>Home</button><br>-skip";
 		if (max == 2)
 		{
-			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >Titulo1</button>-skip";
+			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
 		}
 		else if (max == 1)
 		{
-			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >Titulo1</button>-skip";
-			mandar += "<button id='tt1' class= 'tt' onclick='mostrar(bb1)' >Titulo2</button>-skip";
+			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
+			mandar += "<button id='tt1' class= 'tt' onclick='mostrar(bb1)' >"+document.getElementById("tt1").innerHTML+"</button>-skip";
 		}
 		else if (max == 0)
 		{
-			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >Titulo1</button>-skip";
-			mandar += "<button id='tt1' class= 'tt' onclick='mostrar(bb1)' >Titulo2</button>-skip";
-			mandar += "<button id='tt2' class= 'tt' onclick='mostrar(bb2)' >Titulo3</button>-skip";
+			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
+			mandar += "<button id='tt1' class= 'tt' onclick='mostrar(bb1)' >"+document.getElementById("tt1").innerHTML+"</button>-skip";
+			mandar += "<button id='tt2' class= 'tt' onclick='mostrar(bb2)' >"+document.getElementById("tt2").innerHTML+"</button>-skip";
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_texto'>-skip";
