@@ -42,18 +42,16 @@ body {
 }
 
 #vista {
-	height: 352px;
-	width: 193px;
+	height: 363px;
+	width: 205px;
 	float: left;
 	margin-left: 24px;
-	margin-right: 23px;
-	margin-bottom: 74px;
-	margin-top: 79px;
+		margin-top: 79px;
 	text-align: center;
-	padding: 6px;
 	overflow: auto;
 	
 }
+
 
 .divspoiler input {
 	border-top: 1px solid #96d1f8;
