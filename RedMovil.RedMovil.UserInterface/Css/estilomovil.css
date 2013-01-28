@@ -176,13 +176,12 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	background-image:url(../imagenes/twitter-copia.png);background-repeat: no-repeat;
 	background-position: center;	
 }
-*/.imagerow {
-	float: left;
-	width: 80%;
-	margin-top: 3px;
-	margin-left: 11%;
+*/
+.image row{
+margin-top: 2%;	
 }
-.single {
+.single,single first,single last {
 	width: 80%;
 	margin-top: 2%;
+	margin-left:10%;
 }
