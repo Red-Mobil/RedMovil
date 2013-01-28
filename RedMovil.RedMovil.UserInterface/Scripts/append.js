@@ -110,14 +110,11 @@
 		mandar += "<div id='ubicanos'>-skip";
 		if (document.getElementById('address').value != "")
 		{   
-			mandar += '<center></br><center><input type="button" id="ubicar" class="contacto" value="ubicanos" onclick="mostrarMapa()"></center>-skip';
+			mandar += '<center></br><center><input type="button" id="ubicar" class="contacto" value="ubicanos" onclick="mostrarMP(\''+document.getElementById('address').value+'\')"></center>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
 		mandar += "<div id='mapa' style='display:none'>-skip";
-		
-		//debo ver como meter el mapa aca, lo dejo asi mientras.
-		
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_rs'>-skip";
 		mandar += "<div id='facebook'>-skip";
