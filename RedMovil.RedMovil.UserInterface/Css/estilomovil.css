@@ -11,6 +11,7 @@
 	background-color: #79bbff;
 	margin-left: 6%;
 	border-radius: 7px;
+	margin-top:2%;
 	color: #036;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: medium;
@@ -91,7 +92,6 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 		float: left;
 		width: 80%;
 		height: 10%;
-		margin-top:3%;
 		margin-left: 11%;
 		-webkit-border-radius: 8px;
 		-moz-border-radius: 8px;
