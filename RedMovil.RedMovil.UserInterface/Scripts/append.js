@@ -94,7 +94,8 @@
 		mandar += "<div id='llamanos'>-skip";
 		if (document.getElementById('tel').value != "")
 		{
-			mandar += '<center></br><center><input type="button" value="" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'+ document.getElementById('tel').value+ '\'">-skip';
+			mandar += '<center></br><center><input type="button" value="llamanos" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'
+			+ document.getElementById('tel').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='escribenos'>-skip";
@@ -102,14 +103,14 @@
 		{
 			if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value))
 			{	
-				mandar += '<center><input type="button" id="escribir" class="contacto" value="" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">-skip';
+				mandar += '<center><input type="button" id="escribir" class="contacto" value="escribenos" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">-skip';
 			}
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='ubicanos'>-skip";
 		if (document.getElementById('address').value != "")
 		{   
-			mandar += '<center></br><center><input type="button" id="ubicar" class="contacto" value="" onclick="mostrarMapa()"></center>-skip';
+			mandar += '<center></br><center><input type="button" id="ubicar" class="contacto" value="ubicanos" onclick="mostrarMapa()"></center>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
@@ -122,13 +123,13 @@
 		mandar += "<div id='facebook'>-skip";
 		if (document.getElementById('face').value != "")
 		{
-                        mandar += '<center><input type="button" id="faceb" class="contacto"value="" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">-skip';
+                        mandar += '<center><input type="button" id="faceb" class="contacto"value="Facebook" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='twitter'>-skip";
 		if (document.getElementById('twit').value != "")
 		{
-                      mandar +=  '<center></br><center><input id="twitt" class="contacto" value="" type="button"  onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
+                      mandar +=  '<center></br><center><input id="twitt" class="contacto" value="Twitter" type="button"  onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
