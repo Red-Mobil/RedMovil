@@ -1,12 +1,9 @@
-
+	
 	
 	function hacer()
 	{
 		var mandar;
-		mandar = "<center>-skip";
-		mandar += "<div id='vista'>-skip";
-		mandar += "<script type='text/javascript'>new DragDivScroll( 'vista' );</script>-skip";
-		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
+		mandar = "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
@@ -15,38 +12,38 @@
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";
-		mandar += "<button id='home' style='display: none'>Home</button><br>-skip";
+		mandar += "<button id='home' class = 'tt' style='display: none'>Home</button><br>-skip";
 		if (max == 2)
 		{
-			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>-skip";
+			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
 		}
 		else if (max == 1)
 		{
-			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>-skip";
-			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo2</button>-skip";
+			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
+			mandar += "<button id='tt1' class= 'tt' onclick='mostrar(bb1)' >"+document.getElementById("tt1").innerHTML+"</button>-skip";
 		}
 		else if (max == 0)
 		{
-			mandar += "<button id='tt0' onclick='mostrar(bb0)' >Titulo1</button>-skip";
-			mandar += "<button id='tt1' onclick='mostrar(bb1)' >Titulo2</button>-skip";
-			mandar += "<button id='tt2' onclick='mostrar(bb2)' >Titulo3</button>-skip";
+			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
+			mandar += "<button id='tt1' class= 'tt' onclick='mostrar(bb1)' >"+document.getElementById("tt1").innerHTML+"</button>-skip";
+			mandar += "<button id='tt2' class= 'tt' onclick='mostrar(bb2)' >"+document.getElementById("tt2").innerHTML+"</button>-skip";
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_texto'>-skip";
 		if (max == 2)
 		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb0' class = 'bb' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
 		}
 		else if (max == 1)
 		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
-			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb0' class = 'bb' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb1' class = 'bb' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>-skip";
 		}
 		else if (max == 0)
 		{
-			mandar += "<div id='bb0' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
-			mandar += "<div id='bb1' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>-skip";
-			mandar += "<div id='bb2' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb0' class = 'bb' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb1' class = 'bb' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='bb2' class = 'bb' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>-skip";
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='gale'>-skip";
@@ -56,7 +53,7 @@
 		}
 		else
 		{
-		mandar += '<center></br><center><input type="button" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \></br></br>-skip';		
+		mandar += '<center></br><center><input type="button" value="Galeria" class = "tt" onclick="mostrarimagenes()" id="botonimagen" \></br></br>-skip';		
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_galeria'>-skip";
@@ -136,8 +133,6 @@
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
-		mandar += "</div>-skip";
-		mandar += "</center>-skip";
 		return mandar;
 	}
 	
@@ -306,6 +301,8 @@
 	function mostrar(id)
 	{
 		hideall();
+		var aux = "tt"+id.id[2]
+		document.getElementById(aux).style.display = 'block';
 		id.style.display = 'block';
 	}
 
@@ -337,11 +334,12 @@ $(document).ready(function () {
             bb = "bb".concat(id);
             $("#texto").append("<textarea id=" + t + " style='width:320px;' >Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
             //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
-			$("#preview_vista_botones").append("<button id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+"</button><br>");
-            $("#preview_vista_texto").append("<div id=" + bb + "></div>");
+			$("#preview_vista_botones").append("<button class='tt' id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+" </button><br>");
+            $("#preview_vista_texto").append("<div class='bb'id=" + bb + "></div>");
             asd = new nicEditor({ fullPanel: true }).panelInstance(b);
             id++;
             max -= 1;
+			showall();
 			hidetext();
         }
     });

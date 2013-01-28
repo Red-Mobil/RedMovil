@@ -1,13 +1,13 @@
 function mostrarportada() 
 {
-	texto = '<img src="../images/' + document.getElementById('gal').value + '"width="200" id="portada" /></br>';	
+	texto = '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" />';	
 	$("#preview_vista_portada").html(texto);
 
 }
 
 function mostrarimagen() 
 {			
-	$("#gale").html('<center></br><center><input type="button" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \></br></br>');
+	$("#gale").html('<center></br><center><input type="button" class="tt" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \>');
 	
 	texto = '<div class="imageRow"><div class="set">';	
 	texto = texto + '<div class="single first" id=i1><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100"/></a></div>';
