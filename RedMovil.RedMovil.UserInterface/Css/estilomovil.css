@@ -11,8 +11,8 @@
 	}
 #home:before {
 	content:url(../imagenes/home.png);
-	float:left;
-	 	}
+		float:left;
+			 	}
 
 .bb{
 	float: left;
@@ -80,7 +80,12 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
 	background-color:#378de5;
 }
-#tt0 {
+      	
+
+#tt0:before {
+	content:url(../imagenes/llamar.png)
+	
+	
 	
 }
 
@@ -136,6 +141,7 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
 	background-color:#378de5;
 		 }
+		
 /*#llamar {
 	background-image: url(../imagenes/phone.png);
 
