@@ -14,6 +14,16 @@
 		float:left;
 			 	}
 
+.title{
+	width: 80%;
+	margin-left: 11%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: x-large;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #09F;
+	text-align: left;
+}
 .bb{
 	float: left;
 	width: 72%;
