@@ -336,6 +336,7 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
 	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'none';
     });
     // Levantar el editor de texto en el area de trabajo //
     $("#add").click(function () {
@@ -348,6 +349,7 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
 	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'none';
 
         if (max > 0) {
 			aux = ["j","k","l"];
@@ -358,7 +360,11 @@ $(document).ready(function () {
             bb = "bb".concat(id);
 			title = "title".concat(id);
 			$("#texto").append("<div><a href='javascript:showPopup(\""+aux[id]+"\")'>Seleccione Imagen</a><br>");
+<<<<<<< HEAD
 			$("#texto").append("<input type='text' id ="+h+" >");
+=======
+			$("#texto").append("<input type='hidden' id ="+h+" value='vacio'>");
+>>>>>>> f415985cd004fba8c743ae2c0734f59c351ae238
             $("#texto").append("<textarea id=" + t + " style='width:320px;' >Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
             //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
 			$("#preview_vista_botones").append("<button class='tt' id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+" </button><br>");
@@ -383,6 +389,7 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'block';
         document.getElementById('formulario_contacto').style.display = 'none';
 	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'none';
 	
     });
 
@@ -393,6 +400,7 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'block';
 	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'none';
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "none");
         //        $("formulario_contacto").css("display", "block");
@@ -405,10 +413,20 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
 	document.getElementById('formulario_rs').style.display = 'block';
+	document.getElementById('formulario_diseno').style.display = 'none';
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "none");
         //        $("formulario_contacto").css("display", "block");
     });
+     
+     $("#btn_dise").click(function (){
+	document.getElementById('mipagina').style.display = 'none';
+        document.getElementById('texto').style.display = 'none';
+        document.getElementById('galeria').style.display = 'none';
+        document.getElementById('formulario_contacto').style.display = 'none';
+	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'block';
+	});
 	
     $("#home").click(function () {
 

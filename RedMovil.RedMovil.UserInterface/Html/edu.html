@@ -54,6 +54,10 @@
                     <input type="button" id="btn_rs" value="Redes Sociales" style='width: 150px;' />
                 </div>
 		</br>
+		<div class="divspoiler">
+                    <input type="button" id="btn_dise" value="Diseño" style='width: 150px;' />
+                </div>
+		</br>
                 <div class="divspoiler">
                     <input type="button" id="crear"class="spoiler" style='width: 150px;' value="Crear Pagina" />
                 </div>
@@ -72,7 +76,9 @@
 	<input type="button" value="mostrar" onclick="mostrarportada()" />										
 	</form>
                 </div>
+				<form name="cForm" method="post">
                 <div id="texto" style="display: none">
+				</form>
                 <div class="divspoiler">
                     <input type="button" value="ver" onclick="ver()" />
                     <input type="button" value="Limpiar" onclick="Limpiar()" />
@@ -120,9 +126,21 @@
 		     <button type="button" id="btn_rss" onclick="mostrarRS()">
                         Visualizar</button>
                   </div>
+		<div id="formulario_diseno" style="display: none">
+		  <form>
+		  Seleccione la plantilla: <select id="plantillas" name="plan">
+			<option value="../Plantillas/lana.css">Lana</option>
+			<option value="../Css/estilomovil.css">Default</option>
+			<option value="../Plantillas/diente.css">Diente</option>
+		  </select>
+		  </br>
+		  
+		  <button type="button" onclick="cambiarArchivoCss(plan.options[plan.selectedIndex].value)">Visualizar</button>
+		  </form>
+	   </div>
 		
             </div>
-            <div id="preview">
+            <div id="preview"> 
               <div id="vista">
               <script type='text/javascript'>
 				new DragDivScroll( 'vista' );
@@ -160,6 +178,7 @@
                 	</div>
             	</div>
         	</div>
+    
     </div>	
 </body></center>
 </html>

@@ -4,7 +4,14 @@ function ver() {
 		document.getElementById("title0").innerHTML = document.getElementById("t0").value;
         var z = nicEditors.findEditor("b0");
         var y = z.getContent();
-        document.getElementById("bb0").innerHTML = y;
+		if (document.getElementById("h0").value == "vacio")
+        {
+			document.getElementById("bb0").innerHTML = y;
+		}
+		else
+		{
+			document.getElementById("bb0").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h0").value + "\'></img>" + y;
+		}
     }
     if (max == 1) {
         document.getElementById("tt0").innerHTML = document.getElementById("t0").value;
@@ -13,10 +20,24 @@ function ver() {
 		document.getElementById("title1").innerHTML = document.getElementById("t1").value;
         var z = nicEditors.findEditor("b0");
         var y = z.getContent();
-        document.getElementById("bb0").innerHTML = y;
         var p = nicEditors.findEditor("b1");
         var o = p.getContent();
-        document.getElementById("bb1").innerHTML = o;
+		if (document.getElementById("h0").value == "vacio")
+        {
+			document.getElementById("bb0").innerHTML = y;
+		}
+		else
+		{
+			document.getElementById("bb0").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h0").value + "\'></img>" + y;
+		}
+		if (document.getElementById("h1").value == "vacio")
+        {
+			document.getElementById("bb1").innerHTML = o;
+		}
+		else
+		{
+			document.getElementById("bb1").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h1").value + "\'></img>" + y;
+		}
     }
     if (max == 0) {
         document.getElementById("tt0").innerHTML = document.getElementById("t0").value;
@@ -27,12 +48,33 @@ function ver() {
 		document.getElementById("title2").innerHTML = document.getElementById("t2").value;
         var z = nicEditors.findEditor("b0");
         var y = z.getContent();
-        document.getElementById("bb0").innerHTML = y;
         var p = nicEditors.findEditor("b1");
         var o = p.getContent();
-        document.getElementById("bb1").innerHTML = o;
         var i = nicEditors.findEditor("b2");
         var u = i.getContent();
-        document.getElementById("bb2").innerHTML = u;
+		if (document.getElementById("h0").value == "vacio")
+        {
+			document.getElementById("bb0").innerHTML = y;
+		}
+		else
+		{
+			document.getElementById("bb0").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h0").value + "\'></img>" + y;
+		}
+		if (document.getElementById("h1").value == "vacio")
+        {
+			document.getElementById("bb1").innerHTML = y;
+		}
+		else
+		{
+			document.getElementById("bb1").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h1").value + "\'></img>" + y;
+		}
+		if (document.getElementById("h2").value == "vacio")
+        {
+			document.getElementById("bb2").innerHTML = y;
+		}
+		else
+		{
+			document.getElementById("bb2").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h2").value + "\'></img>" + y;
+		}
     }
 }
