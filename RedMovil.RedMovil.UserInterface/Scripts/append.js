@@ -187,7 +187,7 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
+			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
 			document.getElementById('preview_vista_contacto').style.display = 'block';
@@ -199,8 +199,8 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
-			document.getElementById('bb1').style.display = 'block';
+			document.getElementById('bb0').style.display = 'none';
+			document.getElementById('bb1').style.display = 'none';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('tt1').style.display = 'block';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
@@ -213,9 +213,9 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
-			document.getElementById('bb1').style.display = 'block';
-			document.getElementById('bb2').style.display = 'block';
+			document.getElementById('bb0').style.display = 'none';
+			document.getElementById('bb1').style.display = 'none';
+			document.getElementById('bb2').style.display = 'none';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('tt1').style.display = 'block';
 			document.getElementById('tt2').style.display = 'block';
@@ -299,8 +299,8 @@
 	function mostrar(id)
 	{
 		hideall();
-		var aux = "tt"+id.id[2]
-		document.getElementById(aux).style.display = 'block';
+		//var aux = "tt"+id.id[2]
+		//document.getElementById(aux).style.display = 'block';
 		id.style.display = 'block';
 	}
 
