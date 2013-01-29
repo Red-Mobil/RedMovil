@@ -3,7 +3,14 @@
 
 body {margin:0px;
 padding:opx;}
-
+#expandible {
+	height: 100%;
+	width: 100%;
+	background-image:
+	url(../imagenes/arab.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
 #home {
 	
 	width: 80%;
@@ -72,13 +79,7 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	width: 100%;
 	margin-top: 10px;
 }
-#expandible {
-	height: 100%;
-	width: 100%;
-	background-image: url(arab.png);
-	background-repeat: repeat;
-	background-attachment: scroll;
-}
+
 
 #tt0 {
 	width: 80%;
