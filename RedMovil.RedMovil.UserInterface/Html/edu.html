@@ -58,6 +58,10 @@
                     <input type="button" id="btn_rs" value="Redes Sociales" style='width: 150px;' />
                 </div>
 		</br>
+		<div class="divspoiler">
+                    <input type="button" id="btn_dise" value="Diseño" style='width: 150px;' />
+                </div>
+		</br>
                 <div class="divspoiler">
                     <input type="button" id="crear"class="spoiler" style='width: 150px;' value="Crear Pagina" />
                 </div>
@@ -126,6 +130,18 @@
 		     <button type="button" id="btn_rss" onclick="mostrarRS()">
                         Visualizar</button>
                   </div>
+		<div id="formulario_diseno" style="display: none">
+		  <form>
+		  Seleccione la plantilla: <select id="plantillas" name="plan">
+			<option value="../Plantillas/lana.css">Lana</option>
+			<option value="../Css/estilomovil.css">Default</option>
+			<option value="../Plantillas/diente.css">Diente</option>
+		  </select>
+		  </br>
+		  
+		  <button type="button" onclick="cambiarArchivoCss(plan.options[plan.selectedIndex].value)">Visualizar</button>
+		  </form>
+	   </div>
 		
             </div>
             <div id="preview"> 
