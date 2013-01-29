@@ -8,7 +8,7 @@
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
 		{
-			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="200" id="portada" /></br>-skip';
+			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";
@@ -65,27 +65,27 @@
 		mandar += '<div class="imageRow"><div class="set">-skip';
 		if (document.getElementById('f1').value != '')
 		{
-			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100"/></a></div>-skip';
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100%"/></a></div>-skip';
 			if (document.getElementById('f2').value != '')
 			{	
-				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100" /></a></div>-skip';
+				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100%" /></a></div>-skip';
 			}
 			if (document.getElementById('f3').value != '')
 			{
-				mandar += '<div class="single first" id=i3 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100" /></a></div>-skip';
+				mandar += '<div class="single first" id=i3 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 			}
 		}	
 		else if (document.getElementById('f2').value != '')
 		{
-			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100" /></a></div>-skip';
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100%" /></a></div>-skip';
 			if (document.getElementById('f3').value != '')
 			{
-				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100" /></a></div>-skip';
+				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 			}
 		}
 		else if (document.getElementById('f3').value != '')
 		{
-			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100" /></a></div>-skip';
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 		}
 		mandar += '</div></div>-skip';
 		}				
@@ -94,7 +94,8 @@
 		mandar += "<div id='llamanos'>-skip";
 		if (document.getElementById('tel').value != "")
 		{
-			mandar += '<center></br><center><input type="button" value="" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'+ document.getElementById('tel').value+ '\'">-skip';
+			mandar += '<center></br><center><input type="button" value="llamanos" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'
+			+ document.getElementById('tel').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='escribenos'>-skip";
@@ -102,33 +103,30 @@
 		{
 			if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value))
 			{	
-				mandar += '<center><input type="button" id="escribir" class="contacto" value="" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">-skip';
+				mandar += '<center><input type="button" id="escribir" class="contacto" value="escribenos" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">-skip';
 			}
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='ubicanos'>-skip";
 		if (document.getElementById('address').value != "")
 		{   
-			mandar += '<center></br><center><input type="button" id="ubicar" class="contacto" value="" onclick="mostrarMapa()"></center>-skip';
+			mandar += '<center></br><center><input type="button" id="ubicar" class="contacto" value="ubicanos" onclick="mostrarMP(\''+document.getElementById('address').value+'\')"></center>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
 		mandar += "<div id='mapa' style='display:none'>-skip";
-		
-		//debo ver como meter el mapa aca, lo dejo asi mientras.
-		
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_rs'>-skip";
 		mandar += "<div id='facebook'>-skip";
 		if (document.getElementById('face').value != "")
 		{
-                        mandar += '<center><input type="button" id="faceb" class="contacto"value="" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">-skip';
+                        mandar += '<center><input type="button" id="faceb" class="contacto"value="Facebook" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='twitter'>-skip";
 		if (document.getElementById('twit').value != "")
 		{
-                      mandar +=  '<center></br><center><input id="twitt" class="contacto" value="" type="button"  onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
+                      mandar +=  '<center></br><center><input id="twitt" class="contacto" value="Twitter" type="button"  onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
@@ -189,7 +187,7 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
+			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
 			document.getElementById('preview_vista_contacto').style.display = 'block';
@@ -201,8 +199,8 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
-			document.getElementById('bb1').style.display = 'block';
+			document.getElementById('bb0').style.display = 'none';
+			document.getElementById('bb1').style.display = 'none';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('tt1').style.display = 'block';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
@@ -215,9 +213,9 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
-			document.getElementById('bb0').style.display = 'block';
-			document.getElementById('bb1').style.display = 'block';
-			document.getElementById('bb2').style.display = 'block';
+			document.getElementById('bb0').style.display = 'none';
+			document.getElementById('bb1').style.display = 'none';
+			document.getElementById('bb2').style.display = 'none';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('tt1').style.display = 'block';
 			document.getElementById('tt2').style.display = 'block';
@@ -301,8 +299,8 @@
 	function mostrar(id)
 	{
 		hideall();
-		var aux = "tt"+id.id[2]
-		document.getElementById(aux).style.display = 'block';
+		//var aux = "tt"+id.id[2]
+		//document.getElementById(aux).style.display = 'block';
 		id.style.display = 'block';
 	}
 

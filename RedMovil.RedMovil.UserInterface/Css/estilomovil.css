@@ -1,21 +1,33 @@
 @charset "utf-8";
 /* CSS Document */
 
-#home {
-	
+#expandible{
+	background-image: url(../imagenes/bg-checker.png);
+	background-attachment: fixed;
+	background-repeat: repeat;
+	float: left;
+	width: 100%;
+	min-height: 120%;
 	}
+#home:before {
+	content:url(../imagenes/home.png);
+	float:left;
+	 	}
 
 .bb{
 	float: left;
-	width: 90%;
+	width: 72%;
+	padding:4%;
 	min-height: 40%;
 	background-color: #79bbff;
-	margin-left: 6%;
+	margin-left: 11%;
 	border-radius: 7px;
 	margin-top:2%;
 	color: #036;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: medium;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+	
 }
 #bb0 {
 	
@@ -33,13 +45,10 @@
 	width: 100%;
 	margin-top: 10px;
 }
-#expandible {
-	height: 100%;
-	width: 100%;
-}
+
 .tt{
 	width: 80%;
-	height: 8%;
+	height: 10%;
 	font-family: "Trebuchet MS", 	Arial, Helvetica, sans-serif;
 	font-weight: bolder;
 	text-transform: uppercase;
@@ -89,21 +98,45 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	
 }
 .contacto {
-		background: #65a9d7;
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: large;
+	margin-top: 3px;
 		float: left;
-		width: 80%;
-		height: 10%;
-		margin-left: 11%;
-		-webkit-border-radius: 8px;
-		-moz-border-radius: 8px;
-		border-radius: 8px;
-	
+	width: 80%;
+	height: 10%;
+	margin-left: 11%;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: large;
+	color: #FFF;
+	-moz-border-radius: 13px;
+	-webkit-border-radius: 13px;
+	border-radius: 7px;
+	border: 0px solid #84bbf3;
+	text-decoration: none;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(46%, #79bbff), color-stop(59%, #378de5) );
+	background: -moz-linear-gradient( center top, #79bbff 46%, #378de5 59% );
+	background: -ms-linear-gradient( top, #79bbff 46%, #378de5 59% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color: #79bbff;
+	color: #ffffff;
+	text-shadow: 1px 0px 22px #528ecc;
+	-webkit-box-shadow: inset 0px 0px 0px -50px #bbdaf7;
+	-moz-box-shadow: inset 0px 0px 0px -50px #bbdaf7;
+	box-shadow: inset 0px 0px 0px -50px #bbdaf7;		
 	 
 }
 .contacto:hover {
-	background: #3e779d;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378de5), color-stop(59%, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 46%, #79bbff 59% );
+	background:-ms-linear-gradient( top, #378de5 46%, #79bbff 59% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
 		 }
-#llamar {
+/*#llamar {
 	background-image: url(../imagenes/phone.png);
 
 	background-repeat: no-repeat;
@@ -150,4 +183,13 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 #twitt:hover {
 	background-image:url(../imagenes/twitter-copia.png);background-repeat: no-repeat;
 	background-position: center;	
+}
+*/
+.imagerow{
+margin-top: 2%;	
+}
+.single,single first,single last {
+	width: 80%;
+	margin-top: 2%;
+	margin-left:10%;
 }
