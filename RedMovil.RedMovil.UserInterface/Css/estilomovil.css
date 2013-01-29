@@ -1,13 +1,16 @@
 @charset "utf-8";
 /* CSS Document */
 
+body {margin:0px;
+padding:opx;}
+
 #expandible{
 	background-image: url(../imagenes/bg-checker.png);
 	background-attachment: fixed;
 	background-repeat: repeat;
 	float: left;
 	width: 100%;
-	min-height: 120%;
+	height: 120%;
 	}
 #home:before {
 	content:url(../imagenes/home.png);
