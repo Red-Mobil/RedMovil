@@ -3,12 +3,13 @@
 	function hacer()
 	{
 		var mandar;
-		mandar = "<script type='text/javascript'> max = "+max+"</script>-skip";
+		mandar = document.getElementById('nombrepagina').value+"</titulo>"
+		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
 		{
-			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
+			mandar += '<img src="../../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";
@@ -350,11 +351,15 @@ $(document).ready(function () {
 	document.getElementById('formulario_rs').style.display = 'none';
 
         if (max > 0) {
+			aux = ["j","k","l"];
             t = "t".concat(id);
             b = "b".concat(id);
+			h = "h".concat(id);
             tt = "tt".concat(id);
             bb = "bb".concat(id);
 			title = "title".concat(id);
+			$("#texto").append("<div><a href='javascript:showPopup(\""+aux[id]+"\")'>Seleccione Imagen</a><br>");
+			$("#texto").append("<input type='hidden' id ="+h+" value='vacio'>");
             $("#texto").append("<textarea id=" + t + " style='width:320px;' >Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
             //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
 			$("#preview_vista_botones").append("<button class='tt' id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+" </button><br>");
