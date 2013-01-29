@@ -1,6 +1,4 @@
-<?php
-
-		
+<?php		
 		$directorio = '../RedMovil.RedMovil.UserInterface/images/';
 		$tmpName  = $_FILES['userfile']['tmp_name'];
 		echo $tmpName;
