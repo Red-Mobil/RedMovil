@@ -1,11 +1,13 @@
 <?php
 // $cliente = // obtener cliente logeado
 $q=$_GET["q"];
+$pagina = explode("</titulo>",$q);
 $aux = "";
-$aux = str_replace("-skip","\n",$q);
+$aux = str_replace("-skip","\n",$pagina[1]);
+$titulo = $pagina[0];
 // ------------------------------- Pagina PopUp
 
-$fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/pagina.html","w");
+$fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/".$titulo.".html","w");
 fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n");
 fwrite($fp, "<html>\n");
 fwrite($fp, "<head>\n");
@@ -50,7 +52,7 @@ fclose($fp);
 
 // ---------------------- PaginaCel
 
-$fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/cel.html","w");
+$fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/m.".$titulo.".html","w");
 fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n");
 fwrite($fp, "<html>\n");
 fwrite($fp, "<head>\n");
@@ -99,7 +101,7 @@ fwrite($fp, "</html>\n");
 fclose($fp);
 // ---------------------- Fin Cel
 
-$response = "cel.html";
+$response = "paginas/m.".$titulo.".html";
 echo $response;
 
 ?>

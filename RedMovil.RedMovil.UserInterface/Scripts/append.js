@@ -3,12 +3,13 @@
 	function hacer()
 	{
 		var mandar;
-		mandar = "<script type='text/javascript'> max = "+max+"</script>-skip";
+		mandar = document.getElementById('nombrepagina').value+"</titulo>"
+		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
 		{
-			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
+			mandar += '<img src="../../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";

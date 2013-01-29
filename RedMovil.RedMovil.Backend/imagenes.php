@@ -13,23 +13,8 @@
 <?php
 
 	$url="http://".$_SERVER['HTTP_HOST'].":".$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'];	
-	if ($url[strlen($url)-1] == "a")
-	{
-		$url ="a";
-	}
-	else if ($url[strlen($url)-1] == "b")
-	{
-		$url ="b";
-	}	
-	else if ($url[strlen($url)-1] == "c")
-	{
-		$url ="c";
-	}		
-	else if ($url[strlen($url)-1] == "g")
-	{
-		$url ="g";
-	}		
-
+	$url = $url[strlen($url)-1];
+	
 	$imagenes =  glob("../RedMovil.RedMovil.UserInterface/images/*",GLOB_BRACE);
 
 	foreach ($imagenes as $ima)
