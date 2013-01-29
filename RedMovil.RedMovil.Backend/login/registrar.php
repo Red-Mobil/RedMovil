@@ -173,8 +173,7 @@ function cambiarpass()
 }
 
 function confirmar()
-{
-	pg_free_result($consulta);
+{	
 	if (isset($_GET['validar']))
 	{						
 		$consulta=pg_exec("SELECT * FROM usuarios WHERE confirmacion = '".$_GET["validar"]."'");
@@ -192,7 +191,63 @@ function confirmar()
 	}
 }
 
+function recuperar1()
+{
+	?> <form id="recuperar" action="registrar.php?rec" method="post" style="margin:0px;">								
+		Email <input type="text" name="emailr" size="6"/><br/>				
+		<input type="submit" value="Mandar Mail para Recuperar Clave" />
+		</form>
+	<?php
+	if (isset($_GET['rec']))
+	{
+		if($_POST['emailr'] == '')
+		{
+			echo 'Por Favor Complete el campo';
+		}
+		else if (verificaremail($_POST["emailr"]))
+		{
+			pg_free_result($consulta);
+			$consulta=pg_exec("SELECT * FROM usuarios WHERE email = '".$_POST["emailr"]."'");
+			$filas=pg_numrows($consulta);
+			if($filas == 1 )
+			{				
+				$fila = pg_fetch_assoc($consulta);																		
+				$clave = $fila['confirmacion'];
+				$mensaje = "Hola".PHP_EOL."Ha recibido este mail debido a que desea recuperar su contraseña. Use el siguiente link:".PHP_EOL."http://www.eddiseno.com/post/registrar.php?recuperar=".$clave.PHP_EOL."Gracias";
+				mail($_POST["emailr"],"No responder",$mensaje);																					
+			}
+			else
+			{
+				echo 'error';
+			}
+			pg_free_result($consulta);
+		}
+		else
+		{
+			echo 'mail invalido';
+		}	
+	}
+}
 
+function recuperar2()
+{
+	if (isset($_GET['recuperar']))
+	{
+		?> <form id="recuperar2" action="registrar.php?rec2" method="post" style="margin:0px;">										
+		Nuevo Password <input type="password" name="pasr2" size="6"/><br/>
+		<input type="submit" value="Cambiar Pass" />
+		<?php  echo '<input type="hidden" name="passr2" size="6" value="'.$_GET['recuperar'].'" style.display="none"  /><br/>'?>
+		</form>
+		<?php				
+	}	
+	if (isset($_GET['rec2']))
+	{
+		$pass = md5($_POST["pasr2"]);		
+		$confirmacion = $_POST["passr2"];		
+		pg_exec("UPDATE usuarios SET pass = '".$pass."' WHERE confirmacion = '".$confirmacion."'");		
+		header ("Location: registrar.php");
+	}
+}
 ?>
 
 
@@ -225,5 +280,17 @@ function confirmar()
 	confirmar();
 	?>
 	</td></tr>		
+	<tr><td>
+	Recuperar Ingresar Correo</br></br>
+	<?php
+	recuperar1();
+	?>
+	</td></tr>			
+	<tr><td>
+	Recuperar Paso 2</br></br>
+	<?php
+	recuperar2();
+	?>
+	</td></tr>			
 	</table>
 </center>
