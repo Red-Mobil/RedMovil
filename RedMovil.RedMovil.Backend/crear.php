@@ -4,6 +4,7 @@ $q=$_GET["q"];
 $pagina = explode("</titulo>",$q);
 $aux = "";
 $aux = str_replace("-skip","\n",$pagina[1]);
+$aux = str_replace("../","../../",$aux);
 $titulo = $pagina[0];
 // ------------------------------- Pagina PopUp
 
@@ -101,7 +102,7 @@ fwrite($fp, "</html>\n");
 fclose($fp);
 // ---------------------- Fin Cel
 
-$response = "paginas/m.".$titulo.".html";
+$response = "paginas/".$titulo.".html";
 echo $response;
 
 ?>
