@@ -3,9 +3,10 @@
 $q=$_GET["q"];
 $pagina = explode("</titulo>",$q);
 $aux = "";
-$aux = str_replace("-skip","\n",$pagina[1]);
+$aux = str_replace("-skip","\n",$pagina[2]);
 $aux = str_replace("../","../../",$aux);
 $titulo = $pagina[0];
+$css = $pagina[1];
 // ------------------------------- Pagina PopUp
 
 $fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/".$titulo.".html","w");
@@ -36,7 +37,7 @@ fwrite($fp, "	<script src='../../Scripts/ver.js' type='text/javascript'></script
 fwrite($fp, "	<script src='../../Scripts/rs.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/append.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<link href='../../Css/estilo3.css' rel='stylesheet' type='text/css' />\n");
-fwrite($fp, "	<link href='../../Css/estilomovil.css' rel='stylesheet' type='text/css'>\n");
+fwrite($fp, "	<link href='".$css."' rel='stylesheet' type='text/css'>\n");
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
 fwrite($fp, "<center>\n");
@@ -91,7 +92,7 @@ fwrite($fp, "	<script src='../../Scripts/valmail.js' type='text/javascript'></sc
 fwrite($fp, "	<script src='../../Scripts/ver.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/rs.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/append.js' type='text/javascript'></script>\n");
-fwrite($fp, "	<link href='../../Css/estilomovil.css' rel='stylesheet' type='text/css'>\n");
+fwrite($fp, "	<link href='".$css."' rel='stylesheet' type='text/css'>\n");
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
 fwrite($fp, "<center>\n");

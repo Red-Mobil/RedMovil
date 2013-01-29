@@ -4,6 +4,7 @@
 	{
 		var mandar;
 		mandar = document.getElementById('nombrepagina').value+"</titulo>"
+		mandar += document.getElementById('cssArchivo').href+"</titulo>"
 		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += "<div id='preview_vista_portada'>-skip";
