@@ -32,15 +32,21 @@
 		mandar += "<div id='preview_vista_texto'>-skip";
 		if (max == 2)
 		{
+			mandar += "<div id='title0' class = 'title' style='display: none;'>\n"+document.getElementById("title0").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='bb0' class = 'bb' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
 		}
 		else if (max == 1)
 		{
+			mandar += "<div id='title0' class = 'title' style='display: none;'>\n"+document.getElementById("title0").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='title1' class = 'title' style='display: none;'>\n"+document.getElementById("title1").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='bb0' class = 'bb' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='bb1' class = 'bb' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>-skip";
 		}
 		else if (max == 0)
 		{
+			mandar += "<div id='title0' class = 'title' style='display: none;'>\n"+document.getElementById("title0").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='title1' class = 'title' style='display: none;'>\n"+document.getElementById("title1").innerHTML+"\n"+"</div>-skip";
+			mandar += "<div id='title2' class = 'title' style='display: none;'>\n"+document.getElementById("title2").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='bb0' class = 'bb' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='bb1' class = 'bb' style='display: none;'>\n"+document.getElementById("bb1").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='bb2' class = 'bb' style='display: none;'>\n"+document.getElementById("bb2").innerHTML+"\n"+"</div>-skip";
@@ -166,15 +172,21 @@
 	{
 		if (max == 2)
 		{
+		document.getElementById('title0').style.display = 'none';
 		document.getElementById('bb0').style.display = 'none';
 		}
 		if (max == 1)
 		{
+		document.getElementById('title0').style.display = 'none';
+		document.getElementById('title1').style.display = 'none';
 		document.getElementById('bb0').style.display = 'none';
         document.getElementById('bb1').style.display = 'none';
 		}
 		if (max == 0)
 		{
+		document.getElementById('title0').style.display = 'none';
+		document.getElementById('title1').style.display = 'none';
+		document.getElementById('title2').style.display = 'none';
 		document.getElementById('bb0').style.display = 'none';
         document.getElementById('bb1').style.display = 'none';
         document.getElementById('bb2').style.display = 'none';	
@@ -187,6 +199,7 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
+			document.getElementById('title0').style.display = 'none';
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('tt0').style.display = 'block';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
@@ -199,6 +212,8 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
+			document.getElementById('title0').style.display = 'none';
+			document.getElementById('title1').style.display = 'none';
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('bb1').style.display = 'none';
 			document.getElementById('tt0').style.display = 'block';
@@ -213,6 +228,9 @@
 		{
 			document.getElementById('preview_vista_portada').style.display = 'block';
 			document.getElementById('home').style.display = 'none';
+			document.getElementById('title0').style.display = 'none';
+			document.getElementById('title1').style.display = 'none';
+			document.getElementById('title2').style.display = 'none';
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('bb1').style.display = 'none';
 			document.getElementById('bb2').style.display = 'none';
@@ -247,6 +265,7 @@
 			document.getElementById('home').style.display = 'block';
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('tt0').style.display = 'none';
+			document.getElementById('title0').style.display = 'none';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
 			document.getElementById('preview_vista_contacto').style.display = 'none';
 			document.getElementById('preview_vista_rs').style.display = 'none';
@@ -260,7 +279,9 @@
 			document.getElementById('bb0').style.display = 'none';
 			document.getElementById('bb1').style.display = 'none';
 			document.getElementById('tt0').style.display = 'none';
+			document.getElementById('title0').style.display = 'none';
 			document.getElementById('tt1').style.display = 'none';
+			document.getElementById('title1').style.display = 'none';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
 			document.getElementById('preview_vista_contacto').style.display = 'none';
 			document.getElementById('preview_vista_rs').style.display = 'none';
@@ -275,8 +296,11 @@
 			document.getElementById('bb1').style.display = 'none';
 			document.getElementById('bb2').style.display = 'none';
 			document.getElementById('tt0').style.display = 'none';
+			document.getElementById('title0').style.display = 'none';
 			document.getElementById('tt1').style.display = 'none';
+			document.getElementById('title1').style.display = 'none';
 			document.getElementById('tt2').style.display = 'none';
+			document.getElementById('title2').style.display = 'none';
 			document.getElementById('preview_vista_galeria').style.display = 'none';
 			document.getElementById('preview_vista_contacto').style.display = 'none';
 			document.getElementById('preview_vista_rs').style.display = 'none';
@@ -299,8 +323,8 @@
 	function mostrar(id)
 	{
 		hideall();
-		//var aux = "tt"+id.id[2]
-		//document.getElementById(aux).style.display = 'block';
+		var aux = "title"+id.id[2]
+		document.getElementById(aux).style.display = 'block';
 		id.style.display = 'block';
 	}
 
@@ -330,10 +354,12 @@ $(document).ready(function () {
             b = "b".concat(id);
             tt = "tt".concat(id);
             bb = "bb".concat(id);
+			title = "title".concat(id);
             $("#texto").append("<textarea id=" + t + " style='width:320px;' >Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
             //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
 			$("#preview_vista_botones").append("<button class='tt' id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+" </button><br>");
-            $("#preview_vista_texto").append("<div class='bb'id=" + bb + "></div>");
+            $("#preview_vista_texto").append("<div class='title' id=" + title + "></div>");
+            $("#preview_vista_texto").append("<div class='bb' id=" + bb + "></div>");
             asd = new nicEditor({ fullPanel: true }).panelInstance(b);
             id++;
             max -= 1;
