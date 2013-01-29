@@ -9,9 +9,10 @@
 	width: 100%;
 	min-height: 120%;
 	}
-#home {
-	
-	}
+#home:before {
+	content:url(../imagenes/home.png);
+	float:left;
+	 	}
 
 .bb{
 	float: left;
