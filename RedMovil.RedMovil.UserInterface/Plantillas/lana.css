@@ -12,6 +12,7 @@ padding:opx;}
 	url(../imagenes/arab.png);
 	background-repeat: repeat;
 	background-attachment: fixed;
+	padding-bottom:25%;
 }
 .title{
 width: 80%;
