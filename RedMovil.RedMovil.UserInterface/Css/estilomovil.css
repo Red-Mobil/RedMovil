@@ -5,12 +5,13 @@ body {margin:0px;
 padding:opx;}
 
 #expandible{
-	background-image: url(../imagenes/bg-checker.png);
+		background-image: url(../imagenes/bg-checker.png);
 	background-attachment: fixed;
 	background-repeat: repeat;
 	float: left;
 	width: 100%;
-	height: 120%;
+	min-height: 100%;
+	padding-bottom:25%;
 	}
 #home:before {
 	content:url(../imagenes/home.png);
@@ -22,7 +23,7 @@ padding:opx;}
 	margin-left: 11%;
 	padding-left:3%;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: x-large;
+	font-size: 150%;
 	font-weight: bolder;
 	text-transform: uppercase;
 	color: #09F;
@@ -39,7 +40,7 @@ padding:opx;}
 	margin-top:2%;
 	color: #036;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: medium;
+	font-size: 100%;
 	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
 	
 }
@@ -66,7 +67,7 @@ padding:opx;}
 	font-family: "Trebuchet MS", 	Arial, Helvetica, sans-serif;
 	font-weight: bolder;
 	text-transform: uppercase;
-	font-size: large;
+	font-size: 130%;
 	float: left;
 	margin-left: 11%;
 	margin-top: 3px;
@@ -130,7 +131,7 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size: large;
+	font-size: 130%;
 	color: #FFF;
 	-moz-border-radius: 13px;
 	-webkit-border-radius: 13px;
