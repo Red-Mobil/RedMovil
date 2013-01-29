@@ -337,6 +337,7 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
 	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'none';
     });
     // Levantar el editor de texto en el area de trabajo //
     $("#add").click(function () {
@@ -349,6 +350,7 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
 	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'none';
 
         if (max > 0) {
 			aux = ["j","k","l"];
@@ -384,6 +386,7 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'block';
         document.getElementById('formulario_contacto').style.display = 'none';
 	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'none';
 	
     });
 
@@ -394,6 +397,7 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'block';
 	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'none';
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "none");
         //        $("formulario_contacto").css("display", "block");
@@ -406,10 +410,20 @@ $(document).ready(function () {
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
 	document.getElementById('formulario_rs').style.display = 'block';
+	document.getElementById('formulario_diseno').style.display = 'none';
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "none");
         //        $("formulario_contacto").css("display", "block");
     });
+     
+     $("#btn_dise").click(function (){
+	document.getElementById('mipagina').style.display = 'none';
+        document.getElementById('texto').style.display = 'none';
+        document.getElementById('galeria').style.display = 'none';
+        document.getElementById('formulario_contacto').style.display = 'none';
+	document.getElementById('formulario_rs').style.display = 'none';
+	document.getElementById('formulario_diseno').style.display = 'block';
+	});
 	
     $("#home").click(function () {
 
