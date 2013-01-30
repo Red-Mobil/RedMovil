@@ -1,4 +1,9 @@
-	
+	function verpagina()
+	{
+		var titulo;
+		titulo = document.getElementById('nombrepagina').value;
+		return titulo;
+	}
 	
 	function hacer()
 	{
@@ -166,6 +171,28 @@
 		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php?q="+str,true);
 		xmlhttp.send();
 	}
+	
+	function confirmarpagina(str)
+	{
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		{// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function()
+		{
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				window.open(xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/buscarexistencia.php?q="+str,true);
+		xmlhttp.send();		
+	}
 
 
 
@@ -329,7 +356,8 @@
 		document.getElementById(aux).style.display = 'block';
 		id.style.display = 'block';
 	}
-
+	
+			
 $(document).ready(function () {
 	
     $("#mp").click(function() {
@@ -362,6 +390,7 @@ $(document).ready(function () {
             bb = "bb".concat(id);
 			title = "title".concat(id);
 			$("#texto").append("<div><a href='javascript:showPopup(\""+aux[id]+"\")'>Seleccione Imagen</a><br>");
+			$("#texto").append("<input type='text' id ="+h+" >");
 			$("#texto").append("<input type='hidden' id ="+h+" value='vacio'>");
             $("#texto").append("<textarea id=" + t + " style='width:320px;' >Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
             //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
@@ -435,6 +464,10 @@ $(document).ready(function () {
     $("#crear").click(function () {
 		var send = hacer();
 		crear(send);
-    });
-    
+	});
+		
+	$("#verificar").click(function () {
+		var send = verpagina();
+		confirmarpagina(send);    
+    });    
 });

@@ -27,14 +27,11 @@
     <script src="../Scripts/rs.js" type="text/javascript"></script>
     <script src="../Scripts/append.js" type="text/javascript"></script>
     <script src="../Scripts/cambiarplantilla.js" type="text/javascript"></script>
+    <script src="../Scripts/copy.js" type="text/javascript"></script>
     <link href="../Css/estilo.css" rel="stylesheet" type="text/css" />
     <link href="../Css/estilomovil.css" id="cssArchivo" rel="stylesheet" type="text/css">
 </head><center>
 <body>										
-
-	
-
-
 
      <div id="contenedor">
             <div id="menu">
@@ -73,13 +70,15 @@
 			<div class="spoiler" style="width: 150px;">          
                         Nombre de la Pagina:
                         <input type="text" name="pagina" size="20" maxlength="15" id="nombrepagina"/>
+						<input type="button" id="verificar"class="spoiler" style='width: 150px;' value="Verificar" />										
                     </div>
                 
                 
                 <form name='bForm' method='post'>
-	<input type="text" style="WIDTH: 160px;" name="gal" id="gal" ><a href='javascript:showPopup("g")'>Seleccione Imagen</a></br>	
-	<input type="button" value="mostrar" onclick="mostrarportada()" />										
-	</form>
+				<input type="text" style="WIDTH: 160px;" name="gal" id="gal" ><a href='javascript:showPopup("g")'>Seleccione Imagen</a></br>	
+				<input type="button" value="mostrar" onclick="mostrarportada()" />										
+				</form>
+				
                 </div>
 				<form name="cForm" method="post">
                 <div id="texto" style="display: none">
@@ -157,9 +156,10 @@
 		            	<button  class="tt"id="home" style="display: none">Home</button><br>
 						
                    		</div>																													
-						
+						<form name="cForm" method="post">
                     	<div id="preview_vista_texto">
                     	</div>
+						</form>
 						<div id="gale"></div>
                     	<div id="preview_vista_galeria">																																
                     	</div>
