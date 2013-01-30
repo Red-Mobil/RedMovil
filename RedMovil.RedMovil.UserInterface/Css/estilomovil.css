@@ -13,10 +13,15 @@ padding:opx;}
 	min-height: 100%;
 	padding-bottom:25%;
 	}
+	
 #home:before {
-	content:url(../imagenes/home.png);
+	content:url(../imagenes/home.svg);
 		float:left;
-			 	}
+		width:20%;
+		height:70%;
+		
+	
+					 	}
 
 .title{
 	width: 80%;
@@ -98,22 +103,33 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
       	
 
 #tt0:before {
-	content:url(../imagenes/llamar.png);
+	content:url(../imagenes/tt0.svg);
 	float:left;
+	width:20%;
+	height:70%;
 	
 	
 	
 }
 
 
-#tt1 {
+#tt1:before {
+	content:url(../imagenes/tt1.svg);
+	float:left;
+	width:20%;
+	height:70%;
 	}
 
-#tt2 {
+#tt2:before {
+	content:url(../imagenes/tt2.svg);
+	float:left;
+	width:20%;
+	height:70%;
 	
 }
 
 #botonimagen{
+	
 }
 #botonimagen:hover{
 	
@@ -213,5 +229,5 @@ margin-top: 2%;
 .single,single first,single last {
 	width: 80%;
 	margin-top: 2%;
-	margin-left:8%;
+	margin-left:10%;
 }
