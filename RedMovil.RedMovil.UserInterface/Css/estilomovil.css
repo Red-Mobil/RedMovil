@@ -14,7 +14,12 @@ padding:opx;}
 	padding-bottom:25%;
 		}
 	
-	
+#tt1:before {
+	content:url(../imagenes/home.svg);
+	float:left;
+	width:20%;
+	height:70%;
+	}	
 	
 					 	
 
