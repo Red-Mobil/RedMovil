@@ -27,7 +27,20 @@
     <script src="../Scripts/rs.js" type="text/javascript"></script>
     <script src="../Scripts/append.js" type="text/javascript"></script>
     <script src="../Scripts/cambiarplantilla.js" type="text/javascript"></script>
+    <script src="../Scripts/cambiarcss.js" type="text/javascript"></script>
+    <script src="../ExtLibs/mootools.js" type="text/javascript"></script>
+    <script src="../ExtLibs/mooRainbow.js" type="text/javascript">
+      window.addEvent('domready', function() {
+	var r = new MooRainbow('myRainbow', {
+		'startColor': [58, 142, 246],
+		'onChange': function(color) {
+			$('myInput').value = color.hex;
+		}
+	});
+      });
+    </script>
 	<script src="../Scripts/copy.js" type="text/javascript"></script>
+	<link href="../Css/mooRainbow.css" rel="stylesheet" type="text/css" />
     <link href="../Css/estilo.css" rel="stylesheet" type="text/css" />
     <link href="../Css/estilomovil.css " id="cssArchivo" rel="stylesheet" type="text/css">
 </head><center>
