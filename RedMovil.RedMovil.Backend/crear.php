@@ -7,8 +7,9 @@ $aux = str_replace("-skip","\n",$pagina[2]);
 $aux = str_replace("../","../../",$aux);
 $titulo = $pagina[0];
 $css = $pagina[1];
-// ------------------------------- Pagina PopUp
 
+
+// ------------------------------- Pagina PopUp
 $fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/".$titulo.".html","w");
 fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n");
 fwrite($fp, "<html>\n");
@@ -29,6 +30,7 @@ fwrite($fp, "	<script type='text/javascript'>        var max = 3;</script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var imagen = new Array();</script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var c_ima = 0; </script>\n");
 fwrite($fp, "	<script src='../../Scripts/fotos.js' type='text/javascript'></script>\n");
+fwrite($fp, "	<script src='../../Scripts/banner.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mapa.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mostrar.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/valfono.js' type='text/javascript'></script>\n");
@@ -62,6 +64,7 @@ fwrite($fp, "<meta name='viewport' content='width=device-width, height=device-he
 fwrite($fp, "	<script language='javascript' src='../../ExtLibs/jquery-1.3.1.min.js'></script>\n");
 fwrite($fp, "	<script language='javascript' src='../../ExtLibs/AjaxUpload.2.0.min.js'></script>\n");
 fwrite($fp, "	<script language='javascript' src='../../ExtLibs/imagen.js'></script>\n");
+fwrite($fp, "	<script src='../../Scripts/banner.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mostratimagen.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../ExtLibs/jquery-1.7.2.min.js'></script>\n");
 fwrite($fp, "	<script src='../../ExtLibs/lightbox.js'></script>\n");
