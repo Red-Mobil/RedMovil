@@ -9,12 +9,13 @@
 	{
 		var mandar;
 		mandar = document.getElementById('nombrepagina').value+"</titulo>"
+		mandar += document.getElementById('cssArchivo').href+"</titulo>"
 		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
 		{
-			mandar += '<img src="../../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
+			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";
@@ -77,27 +78,27 @@
 		mandar += '<div class="imageRow"><div class="set">-skip';
 		if (document.getElementById('f1').value != '')
 		{
-			mandar += '<div class="single first" id=i1 style="display: none"><a href="../../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../../images/' + document.getElementById('f1').value + '"width="100%"/></a></div>-skip';
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100%"/></a></div>-skip';
 			if (document.getElementById('f2').value != '')
 			{	
-				mandar += '<div class="single first" id=i2 style="display: none"><a href="../../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../../images/' + document.getElementById('f2').value + '"width="100%" /></a></div>-skip';
+				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100%" /></a></div>-skip';
 			}
 			if (document.getElementById('f3').value != '')
 			{
-				mandar += '<div class="single first" id=i3 style="display: none"><a href="../../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
+				mandar += '<div class="single first" id=i3 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 			}
 		}	
 		else if (document.getElementById('f2').value != '')
 		{
-			mandar += '<div class="single first" id=i1 style="display: none"><a href="../../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../../images/' + document.getElementById('f2').value + '"width="100%" /></a></div>-skip';
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100%" /></a></div>-skip';
 			if (document.getElementById('f3').value != '')
 			{
-				mandar += '<div class="single first" id=i2 style="display: none"><a href="../../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
+				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 			}
 		}
 		else if (document.getElementById('f3').value != '')
 		{
-			mandar += '<div class="single first" id=i1 style="display: none"><a href="../../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
+			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 		}
 		mandar += '</div></div>-skip';
 		}				
