@@ -14,7 +14,7 @@ var MooRainbow = new Class({
 	options: {
 		id: 'mooRainbow',
 		prefix: 'moor-',
-		imgPath: 'images/',
+		imgPath: '../imagenes/',
 		startColor: [255, 0, 0],
 		wheel: false,
 		onComplete: Class.empty,
