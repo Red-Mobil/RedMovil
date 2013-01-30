@@ -390,7 +390,6 @@ $(document).ready(function () {
             bb = "bb".concat(id);
 			title = "title".concat(id);
 			$("#texto").append("<div><a href='javascript:showPopup(\""+aux[id]+"\")'>Seleccione Imagen</a><br>");
-			$("#texto").append("<input type='text' id ="+h+" >");
 			$("#texto").append("<input type='hidden' id ="+h+" value='vacio'>");
             $("#texto").append("<textarea id=" + t + " style='width:320px;' >Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
             //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
