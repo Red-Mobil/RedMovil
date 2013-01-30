@@ -62,7 +62,7 @@ function ver() {
 		}
 		if (document.getElementById("h1").value == "vacio")
         {
-			document.getElementById("bb1").innerHTML = y;
+			document.getElementById("bb1").innerHTML = o;
 		}
 		else
 		{
@@ -70,7 +70,7 @@ function ver() {
 		}
 		if (document.getElementById("h2").value == "vacio")
         {
-			document.getElementById("bb2").innerHTML = y;
+			document.getElementById("bb2").innerHTML = u;
 		}
 		else
 		{
