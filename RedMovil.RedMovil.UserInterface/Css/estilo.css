@@ -33,9 +33,8 @@ body {
 }
 #preview {
 	float: left;
-	width: 250px;
+	width: 250px;	background-image:url(../imagenes/telefono2.png);
 	background-image: url(../imagenes/telefono2.svg);
-	background-image:url(../imagenes/telefono2.png);
 	height: 515px;
 	background-repeat: no-repeat;
 	margin-top: 30px;
