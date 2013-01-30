@@ -4,7 +4,7 @@
 
 $file=$_GET["file"];
 $file = "../RedMovil.RedMovil.UserInterface/Plantillas/".$file;
-$newfile = "nuevo.css";
+$newfile = "../RedMovil.RedMovil.UserInterface/Plantillas/new".$file;
 if (!copy($file, $newfile)) {
     echo "-1";
 }
