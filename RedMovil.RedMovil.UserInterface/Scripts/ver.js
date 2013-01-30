@@ -10,7 +10,7 @@ function ver() {
 		}
 		else
 		{
-			document.getElementById("bb0").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h0").value + "\'></img>" + y;
+			document.getElementById("bb0").innerHTML = "<img width='100%' src =\'../images/" + document.getElementById("h0").value + "\'></img>" + y;
 		}
     }
     if (max == 1) {
@@ -28,7 +28,7 @@ function ver() {
 		}
 		else
 		{
-			document.getElementById("bb0").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h0").value + "\'></img>" + y;
+			document.getElementById("bb0").innerHTML = "<img width='100%' src =\'../images/" + document.getElementById("h0").value + "\'></img>" + y;
 		}
 		if (document.getElementById("h1").value == "vacio")
         {
@@ -36,7 +36,7 @@ function ver() {
 		}
 		else
 		{
-			document.getElementById("bb1").innerHTML = "<img width='150px' src =\'../images/" + document.getElementById("h1").value + "\'></img>" + y;
+			document.getElementById("bb1").innerHTML = "<img width='100%' src =\'../images/" + document.getElementById("h1").value + "\'></img>" + y;
 		}
     }
     if (max == 0) {
