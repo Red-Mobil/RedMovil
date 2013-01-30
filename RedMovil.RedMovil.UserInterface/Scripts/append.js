@@ -12,6 +12,7 @@
 		mandar += document.getElementById('cssArchivo').href+"</titulo>"
 		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
+		mandar += '<a href="http://www.eddiseno.com/post/red/RedMovil.RedMovil.UserInterface/Html/edu.html" id="banner"><img src="../imagenes/fullBanner.png" width="100%"/></a>'
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
 		{
