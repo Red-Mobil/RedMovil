@@ -13,7 +13,10 @@
 		{
 			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
-				window.open(xmlhttp.responseText);
+				if (xmlhttp.responseText == "-1")
+				{
+					alert("Error, intente denuevo");
+				}
 			}
 		}
 		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/copy.php?file="+str,true);
