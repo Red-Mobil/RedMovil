@@ -473,6 +473,7 @@ $(document).ready(function () {
             asd = new nicEditor({ fullPanel: true }).panelInstance(b);
             id++;
             max -= 1;
+			ver();
 			showall();
 			hidetext();
         }
