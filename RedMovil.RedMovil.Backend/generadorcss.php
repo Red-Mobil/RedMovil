@@ -4,17 +4,17 @@
 	
 	header("Content-type: text/css");
 	
-	$imagenfondo = "url(../imagenes/arab.png)";
+	$imagenfondo = '"url(../../images/'.$pagina[8].')"';	
 	$colorfondo = $pagina[0];
-	$colorbotonesini = $pagina[2];
-	$colorbotonesfin = $pagina[3];
+	$colorbotones = $pagina[2];
 	$colortitulo = $pagina[1];
-	$letrasbotones = $pagina[4];
-	$letrasparrafo = $pagina[6];
-	$fondoparrafo = $pagina[5];
-	$bordebotones = $pagina[7];
+	$letrasbotones = $pagina[3];
+	$letrasparrafo = $pagina[5];
+	$fondoparrafo = $pagina[4];
+	$bordebotones = $pagina[6];
+	$titulo = $pagina[7];
 	
-	$fp = fopen("../RedMovil.RedMovil.UserInterface/PlantillasCustom/nuevaplantilla.css","w");
+	$fp = fopen("../RedMovil.RedMovil.UserInterface/PlantillasCustom/".$titulo.".css","w");
 	
 	fwrite($fp, "@charset 'utf-8';".PHP_EOL);
 	fwrite($fp, "body {margin:0px;".PHP_EOL."padding:opx;}".PHP_EOL);
@@ -61,8 +61,8 @@
 	fwrite($fp, 'box-shadow: 0px 2px 3px #666666;'.PHP_EOL);
 	fwrite($fp, 'text-shadow: 1px 1px 0px #ffffff;'.PHP_EOL);
 	fwrite($fp, 'border: solid #ffffff 0px;'.PHP_EOL);
-	fwrite($fp, 'background: -webkit-gradient(linear, 0 0, 0 100%, from('.$colorbotonesini.';), to('.$colorbotonesfin.';));'.PHP_EOL);
-	fwrite($fp, 'background: -moz-linear-gradient(top,'.$colorbotonesini.';,'.$colorbotonesfin.';);'.PHP_EOL);
+	fwrite($fp, 'background: -webkit-gradient(linear, 0 0, 0 100%, from('.$colorbotones.';), to('.$colorbotones.';));'.PHP_EOL);
+	fwrite($fp, 'background: -moz-linear-gradient(top,'.$colorbotones.';,'.$colorbotones.';);'.PHP_EOL);
 	fwrite($fp, 'color: '.$letrasbotones.';'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
