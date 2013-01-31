@@ -29,16 +29,13 @@ function mandardatoscss(str)
 	{
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
-			window.open(xmlhttp.responseText);
+			
 		}
 	}
 	xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/generadorcss.php?q="+str,true);
 	xmlhttp.send();
 }
 	
-	
-
-
 $(document).ready(function () 
 {
 	$("#csscambiar").click(function () 
