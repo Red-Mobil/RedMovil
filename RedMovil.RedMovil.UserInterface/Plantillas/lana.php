@@ -1,6 +1,6 @@
 <?php
 	header("Content-type: text/css");
-	$imagenfondo = "url(../../imagenes/arab.png)";
+	$imagenfondo = "url(../imagenes/arab.png)";
 	$colorfondo = "#000";
 	$colorbotonesini = "#ffe8ff";
 	$colorbotonesfin = "#d8c3e8";
