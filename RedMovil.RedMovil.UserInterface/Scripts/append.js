@@ -236,7 +236,7 @@
 		{
 			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
-				window.open(xmlhttp.responseText);
+				
 			}
 		}
 		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear2.php?q="+str,true);
