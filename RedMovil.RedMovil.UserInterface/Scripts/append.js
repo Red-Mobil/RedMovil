@@ -535,8 +535,7 @@ $(document).ready(function () {
     });	
 	
     $("#crear").click(function () {
-		var send = hacer();
-		
+		var send = hacer();		
 		var elem = send.split('</objeto>');
 		send = elem[0];
 		objeto = elem[1];				
@@ -544,6 +543,8 @@ $(document).ready(function () {
 		objeto += elem[2];
 		crear2(objeto);
 		crear(send);		
+		var send2 = tomardatoscss();
+		mandardatoscss(send2);    
 	});
 		
 	$("#verificar").click(function () {

@@ -4,7 +4,7 @@
 	
 	header("Content-type: text/css");
 	
-	$imagenfondo = '"url(../../images/'.$pagina[8].')"';	
+	$imagenfondo = 'url("../images/'.$pagina[8].'")';	
 	$colorfondo = $pagina[0];
 	$colorbotones = $pagina[2];
 	$colortitulo = $pagina[1];
