@@ -149,14 +149,16 @@
 		  <button type="button" onclick="botonescolor()">Aceptar</button>
 		  </form>
 		  <div id="btns_css" style="display: none">
-		  Color Background: <input id="c1" name="c1" type="text" class="color" /><button type="button" onclick="crear('lana','$colorfondo', c1.input[c1.selectedIndex].value)">Aceptar</button></br>
-		  Color Titulo Texto: <input id="c2" name="c2" type="text" class="color" /><button type="button" onclick="crear('lana','$colortitulo', c2.input[c2.selectedIndex].value)">Aceptar</button></br>
-		  Color botones inicio: <input id="c3" name="c3" type="text" class="color" /><button type="button" onclick="crear('lana','$colorbotonesini', c3.input[c3.selectedIndex].value)">Aceptar</button></br>
-		  Color botones fin: <input id="c4" name="c4" type="text" class="color" /><button type="button" onclick="crear('lana','$colorbotonesfin', c4.input[c4.selectedIndex].value)">Aceptar</button></br>
-		  Color letras botones: <input id="c5" name="c5" type="text" class="color" /><button type="button" onclick="crear('lana','$letrasbotones', c5.input[c5.selectedIndex].value)">Aceptar</button></br>
-		  Color Background Texto: <input id="c6" name="c6" type="text" class="color" /><button type="button" onclick="crear('lana','$fondoparrafo', c6.input[c6.selectedIndex].value)">Aceptar</button></br>
-		  Color letras Texto: <input id="c7" name="c7" type="text" class="color" /><button type="button" onclick="crear('lana','$letrasparrafo', c7.input[c7.selectedIndex].value)">Aceptar</button></br>
-		  Borde botones: <input id="c8" name="c8" type="text" class="color" /><button type="button" onclick="crear('lana','$bordebotones', c8.input[c8.selectedIndex].value)">Aceptar</button></br>
+		  <form name="dForm" method="post">
+		  <input type="text" id="c0" onchange="cssChange('c0')"><a href='javascript:showPopup("m")'>Imagen de fondo</a></br>
+		  </form>
+		  Color Background: <input id="c1" name="c1" type="text" class="color" onchange="cssChange('c1')" /></br>
+		  Color Titulo Texto: <input id="c2" name="c2" type="text" class="color" onchange="cssChange('c2')" /></br>
+		  Color botones: <input id="c3" name="c3" type="text" class="color" onchange="cssChange('c3')" /></br>
+		  Color letras botones: <input id="c4" name="c4" type="text" class="color" onchange="cssChange('c4')" /></br>
+		  Color Background Texto: <input id="c5" name="c5" type="text" class="color" onchange="cssChange('c5')" /></br>
+		  Color letras Texto: <input id="c6" name="c6" type="text" class="color" onchange="cssChange('c6')" /></br>
+		  Borde botones: <input id="c7" name="c7" type="text" class="color" onchange="cssChange('c7')" /></br>
 		  
 		  
 		  <input type="button" id="csscambiar"class="spoiler" style='width: 150px;' value="Cambiar Css" />

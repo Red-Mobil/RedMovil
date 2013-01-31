@@ -72,5 +72,9 @@ function setTheVal(valFromPopup,i)
 	else if (i=='l')
 	{
 		document.cForm.h2.value=valFromPopup;
-	}  
+	} 
+else if (i=='m')
+	{
+		document.dForm.c0.value=valFromPopup;
+	}  	
 }
