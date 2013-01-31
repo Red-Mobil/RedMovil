@@ -8,7 +8,6 @@ $aux = str_replace("../","../../",$aux);
 $titulo = $pagina[0];
 $css = $pagina[1];
 
-
 // ------------------------------- Pagina PopUp
 $fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/".$titulo.".html","w");
 fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n");
