@@ -8,8 +8,9 @@ function tomardatoscss()
 		mandar += document.getElementById('c4').value+"/";
 		mandar += document.getElementById('c5').value+"/";
 		mandar += document.getElementById('c6').value+"/";
-		mandar += document.getElementById('c7').value+"/";
-		mandar += document.getElementById('c8').value;
+		mandar += document.getElementById('c7').value+"/";		
+		mandar += document.getElementById('nombrepagina').value+"/";
+		mandar += document.getElementById('c0').value;
 						
 		return mandar;
 	}
