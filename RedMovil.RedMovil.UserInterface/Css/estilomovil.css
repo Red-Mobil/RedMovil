@@ -33,6 +33,7 @@ padding:opx;}
 	text-transform: uppercase;
 	color: #09F;
 	text-align: left;
+	float:left;
 }
 .bb{
 	float: left;
