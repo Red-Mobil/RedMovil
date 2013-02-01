@@ -51,5 +51,6 @@ function cssChange(id)
 	{
 		var aux = "#"+$("#c7").val();
 		$(".tt").css("border-color",aux);
+		$(".contacto").css("border-color",aux);
 	}
 }
