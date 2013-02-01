@@ -8,6 +8,7 @@ $aux = str_replace("../","../../",$aux);
 $titulo = $pagina[0];
 $css = $pagina[1];
 
+$css = $pagina[0].'.css';
 
 // ------------------------------- Pagina PopUp
 $fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/".$titulo.".html","w");
@@ -39,7 +40,8 @@ fwrite($fp, "	<script src='../../Scripts/ver.js' type='text/javascript'></script
 fwrite($fp, "	<script src='../../Scripts/rs.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/append.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<link href='../../Css/estilo3.css' rel='stylesheet' type='text/css' />\n");
-fwrite($fp, "	<link href='".$css."' rel='stylesheet' type='text/css'>\n");
+//fwrite($fp, "	<link href='".$css."' rel='stylesheet' type='text/css'>\n");
+fwrite($fp, "	<link href='../../PlantillasCustom/".$css."' rel='stylesheet' type='text/css'>\n");
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
 fwrite($fp, "<center>\n");

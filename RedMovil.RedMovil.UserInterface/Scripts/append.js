@@ -8,14 +8,21 @@
 	function hacer()
 	{
 		var mandar;
-		mandar = document.getElementById('nombrepagina').value+"</titulo>"
-		mandar += document.getElementById('cssArchivo').href+"</titulo>"
+		
+		var objeto= "</objeto>";
+		var respaldo = "</objeto>";
+		objeto += document.getElementById('nombrepagina').value+"</titulo>";
+		
+		mandar = document.getElementById('nombrepagina').value+"</titulo>";
+		mandar += document.getElementById('cssArchivo').href+"</titulo>";
 		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += '<a href="http://www.eddiseno.com/post/red/RedMovil.RedMovil.UserInterface/Html/edu.html" id="banner"><img src="../imagenes/fullBanner.png" width="100%"/></a>'
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
 		{
+			objeto += "p";
+			respaldo += '../images/'+document.getElementById('gal').value +'-skip';
 			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
 		}
 		mandar += "</div>-skip";
@@ -23,15 +30,18 @@
 		mandar += "<button id='home' class = 'tt' style='display: none'>Home</button><br>-skip";
 		if (max == 2)
 		{
+			objeto += "t";			
 			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
 		}
 		else if (max == 1)
 		{
+			objeto += "tt";			
 			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
 			mandar += "<button id='tt1' class= 'tt' onclick='mostrar(bb1)' >"+document.getElementById("tt1").innerHTML+"</button>-skip";
 		}
 		else if (max == 0)
 		{
+			objeto += "ttt";			
 			mandar += "<button id='tt0' class= 'tt' onclick='mostrar(bb0)' >"+document.getElementById("tt0").innerHTML+"</button>-skip";
 			mandar += "<button id='tt1' class= 'tt' onclick='mostrar(bb1)' >"+document.getElementById("tt1").innerHTML+"</button>-skip";
 			mandar += "<button id='tt2' class= 'tt' onclick='mostrar(bb2)' >"+document.getElementById("tt2").innerHTML+"</button>-skip";
@@ -40,11 +50,17 @@
 		mandar += "<div id='preview_vista_texto'>-skip";
 		if (max == 2)
 		{
+			respaldo += document.getElementById("title0").innerHTML+"-skip";
+			respaldo += document.getElementById("bb0").innerHTML+"-skip";
 			mandar += "<div id='title0' class = 'title' style='display: none;'>\n"+document.getElementById("title0").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='bb0' class = 'bb' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
 		}
 		else if (max == 1)
 		{
+			respaldo += document.getElementById("title0").innerHTML+"-skip";
+			respaldo += document.getElementById("bb0").innerHTML+"-skip";
+			respaldo += document.getElementById("title1").innerHTML+"-skip";
+			respaldo += document.getElementById("bb1").innerHTML+"-skip";
 			mandar += "<div id='title0' class = 'title' style='display: none;'>\n"+document.getElementById("title0").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='title1' class = 'title' style='display: none;'>\n"+document.getElementById("title1").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='bb0' class = 'bb' style='display: none;'>\n"+document.getElementById("bb0").innerHTML+"\n"+"</div>-skip";
@@ -52,6 +68,12 @@
 		}
 		else if (max == 0)
 		{
+			respaldo += document.getElementById("title0").innerHTML+"-skip";
+			respaldo += document.getElementById("bb0").innerHTML+"-skip";
+			respaldo += document.getElementById("title1").innerHTML+"-skip";
+			respaldo += document.getElementById("bb1").innerHTML+"-skip";
+			respaldo += document.getElementById("title2").innerHTML+"-skip";
+			respaldo += document.getElementById("bb2").innerHTML+"-skip";
 			mandar += "<div id='title0' class = 'title' style='display: none;'>\n"+document.getElementById("title0").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='title1' class = 'title' style='display: none;'>\n"+document.getElementById("title1").innerHTML+"\n"+"</div>-skip";
 			mandar += "<div id='title2' class = 'title' style='display: none;'>\n"+document.getElementById("title2").innerHTML+"\n"+"</div>-skip";
@@ -79,26 +101,38 @@
 		mandar += '<div class="imageRow"><div class="set">-skip';
 		if (document.getElementById('f1').value != '')
 		{
+			objeto += "i";			
+			respaldo += '../images/'+document.getElementById('f1').value +'-skip';
 			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100%"/></a></div>-skip';
 			if (document.getElementById('f2').value != '')
 			{	
+				objeto += "i";			
+				respaldo += '../images/'+document.getElementById('f2').value +'-skip';
 				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100%" /></a></div>-skip';
 			}
 			if (document.getElementById('f3').value != '')
 			{
+				objeto += "i";			
+				respaldo += '../images/'+document.getElementById('f3').value +'-skip';
 				mandar += '<div class="single first" id=i3 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 			}
 		}	
 		else if (document.getElementById('f2').value != '')
 		{
+			objeto += "i";			
+			respaldo += '../images/'+document.getElementById('f2').value +'-skip';
 			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100%" /></a></div>-skip';
 			if (document.getElementById('f3').value != '')
 			{
+				objeto += "i";			
+				respaldo += '../images/'+document.getElementById('f3').value +'-skip';
 				mandar += '<div class="single first" id=i2 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 			}
 		}
 		else if (document.getElementById('f3').value != '')
 		{
+			objeto += "i";			
+			respaldo += '../images/'+document.getElementById('f3').value +'-skip';
 			mandar += '<div class="single first" id=i1 style="display: none"><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" /></a></div>-skip';
 		}
 		mandar += '</div></div>-skip';
@@ -108,6 +142,8 @@
 		mandar += "<div id='llamanos'>-skip";
 		if (document.getElementById('tel').value != "")
 		{
+			objeto += "f";			
+			respaldo += 'tel+56'+document.getElementById('tel').value +'-skip';
 			mandar += '<center></br><center><input type="button" value="llamanos" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'
 			+ document.getElementById('tel').value+ '\'">-skip';
 		}
@@ -117,6 +153,8 @@
 		{
 			if (camposValidos(document.getElementById('mail').value, document.getElementById('tel').value))
 			{	
+				objeto += "m";			
+				respaldo += 'mailto:' + document.getElementById('mail').value +'-skip';
 				mandar += '<center><input type="button" id="escribir" class="contacto" value="escribenos" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">-skip';
 			}
 		}
@@ -124,6 +162,8 @@
 		mandar += "<div id='ubicanos'>-skip";
 		if (document.getElementById('address').value != "")
 		{   
+			objeto += "u";	
+			respaldo +=	document.getElementById('address').value + '-skip';	
 			mandar += '<center></br><center><input type="button" id="ubicar" class="contacto" value="ubicanos" onclick="mostrarMP(\''+document.getElementById('address').value+'\')"></center>-skip';
 		}
 		mandar += "</div>-skip";
@@ -134,17 +174,25 @@
 		mandar += "<div id='facebook'>-skip";
 		if (document.getElementById('face').value != "")
 		{
+						objeto += "b";	
+						respaldo +=	'http://www.facebook.com/'+ document.getElementById('face').value+'-skip';
                         mandar += '<center><input type="button" id="faceb" class="contacto"value="Facebook" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='twitter'>-skip";
 		if (document.getElementById('twit').value != "")
 		{
-                      mandar +=  '<center></br><center><input id="twitt" class="contacto" value="Twitter" type="button"  onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
+					objeto += "w";	
+					respaldo +=	'http://www.twitter.com/'+ document.getElementById('twit').value+'-skip';
+                    mandar +=  '<center></br><center><input id="twitt" class="contacto" value="Twitter" type="button"  onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
+		
+		mandar += objeto;
+		mandar += respaldo;
+				
 		return mandar;
 	}
 	
@@ -172,6 +220,31 @@
 		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php?q="+str,true);
 		xmlhttp.send();
 	}
+	
+	function crear2(str)
+	{
+		var xmlhttp;
+		if (window.XMLHttpRequest)
+		{// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function()
+		{
+			if (xmlhttp.readyState==4 && xmlhttp.status==200)
+			{
+				
+			}
+		}
+		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear2.php?q="+str,true);
+		xmlhttp.send();
+	}	
+	
+	
+	
 	
 	function confirmarpagina(str)
 	{
@@ -400,6 +473,7 @@ $(document).ready(function () {
             asd = new nicEditor({ fullPanel: true }).panelInstance(b);
             id++;
             max -= 1;
+			ver();
 			showall();
 			hidetext();
         }
@@ -462,8 +536,16 @@ $(document).ready(function () {
     });	
 	
     $("#crear").click(function () {
-		var send = hacer();
-		crear(send);
+		var send = hacer();		
+		var elem = send.split('</objeto>');
+		send = elem[0];
+		objeto = elem[1];				
+		objeto += "-skip";
+		objeto += elem[2];
+		crear2(objeto);
+		crear(send);		
+		var send2 = tomardatoscss();
+		mandardatoscss(send2);    
 	});
 		
 	$("#verificar").click(function () {

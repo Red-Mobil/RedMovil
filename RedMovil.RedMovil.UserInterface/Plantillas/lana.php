@@ -59,8 +59,7 @@ width: 80%;
 	box-shadow: 0px 2px 3px #666666;
 	text-shadow: 1px 1px 0px #ffffff;
 	border: solid #ffffff 0px;
-	background: -webkit-gradient(linear, 0 0, 0 100%, from(<?php echo $colorbotonesini; ?>;), to(<?php echo $colorbotonesfin; ?>;));
-	background: -moz-linear-gradient(top, <?php echo $colorbotonesini; ?>;, <?php echo $colorbotonesfin; ?>;);
+	background: <?php echo $colorbotones; ?>;        
 	color: <?php echo $letrasbotones; ?>;
 	
 }
