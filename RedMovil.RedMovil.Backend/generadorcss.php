@@ -65,7 +65,7 @@
 	fwrite($fp, '-moz-box-shadow: 0px 2px 3px #666666;'.PHP_EOL);
 	fwrite($fp, 'box-shadow: 0px 2px 3px #666666;'.PHP_EOL);
 	fwrite($fp, 'text-shadow: 1px 1px 0px #ffffff;'.PHP_EOL);
-	fwrite($fp, 'border: solid #ffffff 0px;'.PHP_EOL);
+	fwrite($fp, 'border: solid '.$bordebotones.' 0px;'.PHP_EOL);
 	fwrite($fp, 'background: '.$colorbotones.';'.PHP_EOL);
 	fwrite($fp, 'color: '.$letrasbotones.';'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
@@ -269,7 +269,7 @@
 	fwrite($fp, '-moz-box-shadow: 0px 2px 3px #666666;'.PHP_EOL);
 	fwrite($fp, 'box-shadow: 0px 2px 3px #666666;'.PHP_EOL);
 	fwrite($fp, 'text-shadow: 1px 1px 0px #ffffff;'.PHP_EOL);
-	fwrite($fp, 'border: solid #ffffff 2px;'.PHP_EOL);
+	fwrite($fp, 'border: solid '.$bordebotones.' 2px;'.PHP_EOL);
 	fwrite($fp, 'background: '.$colorbotones.';'.PHP_EOL);
 	fwrite($fp, 'color: '.$letrasbotones.';'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
@@ -482,14 +482,14 @@
 	fwrite($fp, '-moz-border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, '-webkit-border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, 'border-radius: 7px;'.PHP_EOL);
-	fwrite($fp, 'border: 4px solid;'.PHP_EOL);
+	fwrite($fp, 'border: 4px '.$bordebotones.' solid;'.PHP_EOL);
 	fwrite($fp, 'background-color: #79bbff;'.PHP_EOL);
 	fwrite($fp, 'background: '.$colorbotones.';'.PHP_EOL);
 	fwrite($fp, 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#666", endColorstr="#333");'.PHP_EOL);
-	fwrite($fp, 'border-top-color:	 #888;'.PHP_EOL);
-	fwrite($fp, 'border-left-color:	 #CCC;'.PHP_EOL);
-	fwrite($fp, 'border-bottom-color: #999;'.PHP_EOL);
-	fwrite($fp, 'border-right-color:#777;'.PHP_EOL);
+	fwrite($fp, 'border-top-color:	 '.$bordebotones.''.PHP_EOL);
+	fwrite($fp, 'border-left-color:	'.$bordebotones.''.PHP_EOL);
+	fwrite($fp, 'border-bottom-color: '.$bordebotones.''.PHP_EOL);
+	fwrite($fp, 'border-right-color:'.$bordebotones.''.PHP_EOL);
 	fwrite($fp, 'color: '.$letrasbotones.';'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
