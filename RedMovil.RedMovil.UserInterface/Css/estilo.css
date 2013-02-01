@@ -100,3 +100,10 @@ body {
 a {
 	text-decoration: none;
 }
+.color{
+	height:40px;
+	width:300px;
+	float:right;
+	margin-bottom:10px;
+
+}
