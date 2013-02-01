@@ -1,15 +1,9 @@
 var nombrecss;
 
 function cambiarArchivoCss(archivo) {
-    
+    mostrarbotones();  
     document.getElementById('cssArchivo').href=archivo;
     
     var algo = archivo.split("/");
-    nombrecss = algo[2];
-}
-
-function botonescolor(){
-    
-    copy(nombrecss);
-    mostrarbotones();
+    nombrecss = algo[2];   
 }
