@@ -25,12 +25,15 @@ function cssChange(id)
 	{
 		var aux = "#"+$("#c3").val();
 		$(".tt").css("background",aux);
+		$(".contacto").css("background",aux);
 		$(".tt").css("background-image","url(../imagenes/glosy.png)");
+		$(".contacto").css("background-image","url(../imagenes/glosy.png)");
 	}
 	else if (id == "c4")
 	{
 		var aux = "#"+$("#c4").val();
 		$(".tt").css("color",aux);
+		$(".contacto").css("color",aux);
 	}
 	else if (id == "c5")
 	{
