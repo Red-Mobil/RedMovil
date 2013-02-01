@@ -139,8 +139,8 @@
 		<div id="formulario_diseno" style="display: none">
 		  <form>
 		  Seleccione la plantilla: <select id="plantillas" name="plan">
-			<option value="../Plantillas/lana.php">Lana</option>
 			<option value="../Css/estilomovil.css">Default</option>
+			<option value="../Plantillas/lana.php">Lana</option>
 			<option value="../Plantillas/diente.css">Diente</option>
             <option value="../Plantillas/black.css">black</option>
             <option value="../Plantillas/glossy.css">glossy</option>
@@ -148,7 +148,6 @@
 		  </br>
 		  
 		  <button type="button" onclick="cambiarArchivoCss(plan.options[plan.selectedIndex].value)">Visualizar</button>
-		  <button type="button" onclick="botonescolor()">Aceptar</button>
 		  </form>
 		  <div id="btns_css" style="display: none">
 		  <form name="dForm" method="post">
@@ -161,9 +160,6 @@
 		  Color Background Texto: <input id="c5" name="c5" type="text" class="color" onchange="cssChange('c5')" /></br>
 		  Color letras Texto: <input id="c6" name="c6" type="text" class="color" onchange="cssChange('c6')" /></br>
 		  Borde botones: <input id="c7" name="c7" type="text" class="color" onchange="cssChange('c7')" /></br>
-		  
-		  
-		  <input type="button" id="csscambiar"class="spoiler" style='width: 150px;' value="Cambiar Css" />
 		  
 		  </div>
 	   </div>
