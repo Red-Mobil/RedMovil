@@ -160,8 +160,7 @@
 	fwrite($fp, 'box-shadow: 0px 2px 3px #666666;'.PHP_EOL);
 	fwrite($fp, 'text-shadow: 1px 1px 0px #ffffff;'.PHP_EOL);
 	fwrite($fp, 'border: solid #ffffff 0px;'.PHP_EOL);
-	fwrite($fp, 'background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffe8ff), to(#d8c3e8));'.PHP_EOL);
-	fwrite($fp, 'background: -moz-linear-gradient(top, #ffe8ff, #d8c3e8);'.PHP_EOL);
+	fwrite($fp, 'background: '.$colorbotones.';'.PHP_EOL);
 	fwrite($fp, 'color: #333;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
