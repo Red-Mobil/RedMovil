@@ -11,10 +11,7 @@ function tomardatoscss()
 		mandar += document.getElementById('c7').value+"/";		
 		mandar += document.getElementById('nombrepagina').value+"/";
 		mandar += nombrecss+"/";
-		if (document.getElementById('c0').value != '')
 		mandar += document.getElementById('c0').value;
-		else
-		mandar += "arab.png";
 		return mandar;
 	}
 
