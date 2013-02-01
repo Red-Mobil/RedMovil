@@ -9,11 +9,13 @@ function cssChange(id)
 	{
 		var aux = "url(../images/"+$("#c0").val()+")";
 		$("#expandible").css("background-image",aux);
+		$("#c1").val("");
 	}
 	if (id == "c1")
 	{
 		var aux = "#"+$("#c1").val();
 		$("#expandible").css("background-image","url()");
+		$("#c0").val("");
 		$("#expandible").css("background-color",aux);
 	}
 	else if (id == "c2")
