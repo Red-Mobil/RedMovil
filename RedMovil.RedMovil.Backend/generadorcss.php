@@ -593,7 +593,7 @@
 	fwrite($fp, 'background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #666), color-stop(80%, #333) );'.PHP_EOL);
 	fwrite($fp, 'background: -moz-linear-gradient( center top, #666 46%, #333 80% );'.PHP_EOL);
 	fwrite($fp, 'background: -ms-linear-gradient( top, #666 46%, #333 80% );'.PHP_EOL);
-	fwrite($fp, 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#666', endColorstr='#333');color:#0CF;'.PHP_EOL);
+	fwrite($fp, 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#666", endColorstr="#333");'.PHP_EOL);
 	fwrite($fp, 'text-shadow: 0px 0px 3px #1DA2DB;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
