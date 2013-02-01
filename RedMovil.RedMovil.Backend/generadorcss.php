@@ -4,7 +4,7 @@
 	
 	header("Content-type: text/css");
 	
-	$imagenfondo = 'url("../images/'.$pagina[8].'")';	
+	$imagenfondo = 'url("../images/'.$pagina[9].'")';	
 	$colorfondo = $pagina[0];
 	$colorbotones = $pagina[2];
 	$colortitulo = $pagina[1];
@@ -13,11 +13,11 @@
 	$fondoparrafo = $pagina[4];
 	$bordebotones = $pagina[6];
 	$titulo = $pagina[7];
-	$namecss = $pagina[9];
+	$namecss = $pagina[8];
 	
 	// --- Codigo Lana --- //
 	
-	if($pagina[9] == "lana.css"){
+	if($namecss == "lana.css"){
 	
 	$fp = fopen("../RedMovil.RedMovil.UserInterface/PlantillasCustom/".$titulo.".css","w");
 	
@@ -222,7 +222,7 @@
 	
 	
 	// --Codigo Diente-- //
-	if($pagina[9] == "diente.css"){
+	if($namecss == "diente.css"){
 	$fp = fopen("../RedMovil.RedMovil.UserInterface/PlantillasCustom/".$titulo.".css","w");
 	
 	fwrite($fp, "@charset 'utf-8';".PHP_EOL);
@@ -433,7 +433,7 @@
 	
 	//--Codigo Black--//
 	
-	if($pagina[9] == "black.css"){
+	if($namecss == "black.css"){
 		
 	$fp = fopen("../RedMovil.RedMovil.UserInterface/PlantillasCustom/".$titulo.".css","w");
 	
@@ -639,4 +639,5 @@
 	
 	fclose($fp);
 	}
+	
 ?>
