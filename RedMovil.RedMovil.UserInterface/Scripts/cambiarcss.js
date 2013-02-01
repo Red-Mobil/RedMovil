@@ -45,6 +45,6 @@ function cssChange(id)
 	else if (id == "c7")
 	{
 		var aux = "#"+$("#c7").val();
-		$(".tt").css("border",aux);
+		$(".tt").css("border-color",aux);
 	}
 }
