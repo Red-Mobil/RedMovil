@@ -17,7 +17,7 @@
 	
 	// --- Codigo Lana --- //
 	
-	if($pagina == "lana.css"){
+	if($pagina[8] == "lana.css"){
 	
 	$fp = fopen("../RedMovil.RedMovil.UserInterface/PlantillasCustom/".$titulo.".css","w");
 	
@@ -222,7 +222,7 @@
 	
 	
 	// --Codigo Diente-- //
-	if($pagina == "diente.css"){
+	if($pagina[8] == "diente.css"){
 	$fp = fopen("../RedMovil.RedMovil.UserInterface/PlantillasCustom/".$titulo.".css","w");
 	
 	fwrite($fp, "@charset 'utf-8';".PHP_EOL);
@@ -433,7 +433,7 @@
 	
 	//--Codigo Black--//
 	
-	if($pagina == "black.css"){
+	if($pagina[8] == "black.css"){
 		
 	$fp = fopen("../RedMovil.RedMovil.UserInterface/PlantillasCustom/".$titulo.".css","w");
 	
