@@ -25,6 +25,7 @@ function cssChange(id)
 	{
 		var aux = "#"+$("#c3").val();
 		$(".tt").css("background",aux);
+		$(".tt").css("background-image","url(../imagenes/glosy.png)");
 	}
 	else if (id == "c4")
 	{

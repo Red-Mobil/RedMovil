@@ -47,6 +47,17 @@ function cambiarArchivoCss(archivo) {
 		$("#c6").val("fff");
 		$("#c7").val("777");
 	}
+	else if (algo[2] == "glossy.css")
+	{
+		$("#c0").val("glossss.png");
+		$("#c1").val("000");
+		$("#c2").val("FFF");
+		$("#c3").val("069");
+		$("#c4").val("FFF");
+		$("#c5").val("069");
+		$("#c6").val("fff");
+		$("#c7").val("069");
+	}
 	cssChange("c0");
 	cssChange("c2");
 	cssChange("c3");
