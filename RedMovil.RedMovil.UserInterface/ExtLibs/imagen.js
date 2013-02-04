@@ -9,12 +9,13 @@ $(document).ready(function(){
 			// cancela upload
 			return false;
 		} else {
-			button.text('Subiendo');
+			document.getElementById('up').value = 'Subiendo';
 			this.disable();
 		}
 		},
 		onComplete: function(file, response){
-			button.text('Subir Imagen');
+			document.getElementById('up').value = 'Subir Imagen';
+//			button.text('Subir Imagen');
 			// enable upload button
 			this.enable();			
 			// Agrega archivo a la lista						

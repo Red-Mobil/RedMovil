@@ -82,7 +82,7 @@
                 
                 
                 <form name='bForm' method='post'>
-	<input type="text" style="WIDTH: 160px;" name="gal" id="gal" ><a href='javascript:showPopup("g")'>Seleccione Imagen</a></br>	
+	<input type="text" style="WIDTH: 160px;" name="gal" id="gal" disabled ><a href='javascript:showPopup("g")'><input type="button" value="Agregar Portada"/></a></br>	
 	<input type="button" value="mostrar" onclick="mostrarportada()" />										
 				</form>
                 </div>
@@ -97,13 +97,13 @@
                 <div id="galeria" style="display: none">
 				<!--   Galeria Empieza aca -->
 										
-					<div id="upload_button">Subir Imagen</div>
+					<div id="upload_button"><input type="button" value="Subir Imagen" id="up"/></div>
 					<form name='aForm' method='post'>
-					<input type="text" style="WIDTH: 160px;" name="f1" id="f1"><a href='javascript:showPopup("a")'>Seleccione Imagen</a></br>
+					<input type="text" name="f1" id="f1" style='display:none' onchange="mostrarimagen()"><a href='javascript:showPopup("a")'><input type="button" value="Seleccione Imagen"/></a></br>
 					<input type="text" style="WIDTH: 320px;" name="f11" id="f11" placeholder="Ingrese Comentario Foto 1"/></br></br>
-					<input type="text" style="WIDTH: 160px;" name="f2" id="f2"><a href='javascript:showPopup("b")'>Seleccione Imagen</a></br>
+					<input type="text" name="f2" id="f2" style='display:none' onchange="mostrarimagen()"><a href='javascript:showPopup("b")'><input type="button" value="Seleccione Imagen"/></a></br>
 					<input type="text" style="WIDTH: 320px;" name="f22" id="f22" placeholder="Ingrese Comentario Foto 2"/></br></br>
-					<input type="text" style="WIDTH: 160px;" name="f3" id="f3"><a href='javascript:showPopup("c")'>Seleccione Imagen</a></br>
+					<input type="text" name="f3" id="f3" style='display:none' onchange="mostrarimagen()"><a href='javascript:showPopup("c")'><input type="button" value="Seleccione Imagen"/></a></br>
 					<input type="text" style="WIDTH: 320px;" name="f33" id="f33" placeholder="Ingrese Comentario Foto 3"/></br></br>
 					</form>																																			
 					<div id="lista">					
