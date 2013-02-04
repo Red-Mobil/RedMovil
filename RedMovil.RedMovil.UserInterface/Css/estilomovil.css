@@ -73,7 +73,7 @@ padding:opx;}
 	height: 40px;
 	font-family: "Trebuchet MS", 	Arial, Helvetica, sans-serif;
 	font-weight: bolder;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-size: 130%;
 	float: left;
 	margin-left: 11%;
