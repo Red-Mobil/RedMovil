@@ -97,7 +97,7 @@ fwrite($fp, "	<script src='../../Scripts/valmail.js' type='text/javascript'></sc
 fwrite($fp, "	<script src='../../Scripts/ver.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/rs.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/append.js' type='text/javascript'></script>\n");
-fwrite($fp, "	<link href='".$css."' rel='stylesheet' type='text/css'>\n");
+fwrite($fp, "	<link href='../../PlantillasCustom/".$css."' rel='stylesheet' type='text/css'>\n");
 fwrite($fp, "</head>\n");
 fwrite($fp, "<body>\n");
 fwrite($fp, "<center>\n");
