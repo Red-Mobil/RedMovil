@@ -5,14 +5,15 @@ body {margin:0px;
 padding:opx;}
 
 #expandible {
-	min-height: 100%;
-	width: 100%;
 	background-color:#000;
 	background-image:
 	url(../imagenes/arab.png);
-	background-repeat: repeat;
 	background-attachment: fixed;
-	padding-bottom:30%;
+	background-repeat: repeat;
+	float: left;
+	width: 100%;
+	min-height: 100%;
+	padding-bottom:25%;	
 }
 .title{
 width: 80%;
