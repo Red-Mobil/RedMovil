@@ -144,7 +144,7 @@
 		{
 			objeto += "f";			
 			respaldo += 'tel+56'+document.getElementById('tel').value +'-skip';
-			mandar += '<center></br><center><input type="button" value="llamanos" id="llamar" class="contacto" onclick="parent.location=\'tel:+56'
+			mandar += '<center></br><center><input type="button" value="llamanos" id="llamar" class="tt" onclick="parent.location=\'tel:+56'
 			+ document.getElementById('tel').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
@@ -155,7 +155,7 @@
 			{	
 				objeto += "m";			
 				respaldo += 'mailto:' + document.getElementById('mail').value +'-skip';
-				mandar += '<center><input type="button" id="escribir" class="contacto" value="escribenos" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">-skip';
+				mandar += '<center><input type="button" id="escribir" class="tt" value="escribenos" onclick="parent.location=\'mailto:'+ document.getElementById('mail').value+ '\'">-skip';
 			}
 		}
 		mandar += "</div>-skip";
@@ -164,7 +164,7 @@
 		{   
 			objeto += "u";	
 			respaldo +=	document.getElementById('address').value + '-skip';	
-			mandar += '<center></br><center><input type="button" id="ubicar" class="contacto" value="ubicanos" onclick="mostrarMP(\''+document.getElementById('address').value+'\')"></center>-skip';
+			mandar += '<center></br><center><input type="button" id="ubicar" class="tt" value="ubicanos" onclick="mostrarMP(\''+document.getElementById('address').value+'\')"></center>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
@@ -176,7 +176,7 @@
 		{
 						objeto += "b";	
 						respaldo +=	'http://www.facebook.com/'+ document.getElementById('face').value+'-skip';
-                        mandar += '<center><input type="button" id="faceb" class="contacto"value="Facebook" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">-skip';
+                        mandar += '<center><input type="button" id="faceb" class="tt"value="Facebook" onclick="parent.location=\'http://www.facebook.com/'+ document.getElementById('face').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='twitter'>-skip";
@@ -184,7 +184,7 @@
 		{
 					objeto += "w";	
 					respaldo +=	'http://www.twitter.com/'+ document.getElementById('twit').value+'-skip';
-                    mandar +=  '<center></br><center><input id="twitt" class="contacto" value="Twitter" type="button"  onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
+                    mandar +=  '<center></br><center><input id="twitt" class="tt" value="Twitter" type="button"  onclick="parent.location=\'http://www.twitter.com/'+ document.getElementById('twit').value+ '\'">-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "</div>-skip";
