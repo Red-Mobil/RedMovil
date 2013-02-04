@@ -161,7 +161,7 @@
 	fwrite($fp, 'text-shadow: 1px 1px 0px #ffffff;'.PHP_EOL);
 	fwrite($fp, 'border: solid '.$bordebotones.' 0px;'.PHP_EOL);
 	fwrite($fp, 'background: '.$colorbotones.';'.PHP_EOL);
-	fwrite($fp, 'color: #333;'.PHP_EOL);
+	fwrite($fp, 'color: '.$letrasbotones.';'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.contacto:hover {'.PHP_EOL);
