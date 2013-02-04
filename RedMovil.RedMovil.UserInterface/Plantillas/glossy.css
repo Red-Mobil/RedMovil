@@ -68,7 +68,7 @@ padding:opx;}
 
 .tt{
 	font-weight: bolder;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	margin-top: 4%;
 	float: left;
 	width: 105px;
