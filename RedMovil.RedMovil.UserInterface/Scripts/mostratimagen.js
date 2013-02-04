@@ -70,14 +70,17 @@ function setTheVal(valFromPopup,i)
 	else if (i=='j')
 	{
 		document.cForm.h0.value=valFromPopup;
+		ver();
 	}  
 	else if (i=='k')
 	{
 		document.cForm.h1.value=valFromPopup;
+		ver();
 	}  
 	else if (i=='l')
 	{
 		document.cForm.h2.value=valFromPopup;
+		ver();
 	} 
 else if (i=='m')
 	{

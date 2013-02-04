@@ -1,0 +1,180 @@
+ 
+@charset "utf-8";
+/* CSS Document */
+body {margin:0px;
+padding:opx;}
+
+#expandible{
+	background-image: url(../imagenes/washi.png);
+	background-attachment: fixed;
+	background-repeat: repeat;
+	float: left;
+	width: 100%;
+	min-height: 100%;
+	padding-bottom: 25%;
+		}
+	
+#home:before {
+	}	
+	
+
+
+.title{
+	width: 80%;
+	margin-top:3%;
+	margin-left:9%;
+	padding-left:2%;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 150%;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: #ffF;
+	text-align: left;
+	float:left;
+}
+.bb{
+	float: left;
+	width: 72%;
+	padding:4%;
+	min-height: 40%;
+	background-color: #555;
+	margin-left: 9%;
+	border-radius: 7px;
+	margin-top:2%;
+	color: #fff;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 100%;
+	filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+
+	
+	
+}
+#bb0 {
+	
+}
+#bb1 {
+	
+}
+#bb2 {
+	
+}
+
+
+#mapa {
+	height: 100%;
+	width: 100%;
+	margin-top: 10px;
+}
+
+.tt{
+	width: 115px;
+	height: 115px;
+	border-radius: 500px;
+	-webkit-border-radius: 500px;
+	-moz-border-radius: 500px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	float: left;
+	margin-bottom: 60px;
+	margin-left: 30px;
+	color: #FFF;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(46%, #666), color-stop(80%, #333) );
+	background: -moz-linear-gradient( center top, #666 46%, #333 80% );
+	color: #FFF;
+	border: 2px solid #C3C8CB;
+	font-size: 18px;
+	font-style: italic;
+}
+
+	.tt:hover{
+	
+}
+      	
+
+#tt0:before {
+}
+
+
+#tt1:before {
+	
+	}
+
+#tt2:before {
+		
+}
+
+#botonimagen{
+	float: left;
+	font-size: 15px;
+	font-style: italic;
+}
+#botonimagen:hover{
+	
+}
+.contacto {
+	width: 115px;
+	height: 115px;
+	border-radius: 140px;
+	-webkit-border-radius: 140px;
+	-moz-border-radius: 100px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(46%, #666), color-stop(80%, #333) );
+	background: -moz-linear-gradient( center top, #666 46%, #333 80% );
+	float: left;
+	margin-left: 30px;
+	margin-bottom: 60px;
+	border: 2px solid #C3C8CB;
+	font-size: 15px;
+	font-style: italic;
+	color: #FFF;
+}
+
+
+.contacto:hover {
+	
+}
+	
+	
+		 		
+#llamar {
+	float: left;
+}
+#llamar:hover {
+}
+#escribir {
+	float: left;
+}
+#escribir:hover {
+
+}
+#ubicar {
+	float: left;		
+}
+#ubicar:hover {
+
+}
+#faceb {
+	float: left;	
+}
+#faceb:hover {
+	
+	
+}
+#twitt {
+	float: left;	
+}
+#twitt:hover {
+	
+}
+
+.imagerow{
+margin-top: 2%;	
+}
+.single,single first,single last {
+	width: 80%;
+	margin-top: 2%;
+	margin-left:10%;
+}

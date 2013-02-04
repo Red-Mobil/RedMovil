@@ -435,25 +435,31 @@
 $(document).ready(function () {
 	
     $("#mp").click(function() {
-	document.getElementById('mipagina').style.display = 'block';
+		document.getElementById('mipagina').style.display = 'block';
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
-	document.getElementById('formulario_rs').style.display = 'none';
-	document.getElementById('formulario_diseno').style.display = 'none';
+		document.getElementById('formulario_rs').style.display = 'none';
+		document.getElementById('formulario_diseno').style.display = 'none';
     });
-    // Levantar el editor de texto en el area de trabajo //
-    $("#add").click(function () {
-
-        //        $("texto").css("display", "block");
-        //        $("galeria").css("display", "none");
-        //        $("formulario_contacto").css("display", "none");
-	document.getElementById('mipagina').style.display = 'none';
+	
+	$("#txt").click(function() {
+		document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'block';
         document.getElementById('galeria').style.display = 'none';
         document.getElementById('formulario_contacto').style.display = 'none';
-	document.getElementById('formulario_rs').style.display = 'none';
-	document.getElementById('formulario_diseno').style.display = 'none';
+		document.getElementById('formulario_rs').style.display = 'none';
+		document.getElementById('formulario_diseno').style.display = 'none';
+    });
+
+    $("#add").click(function () {
+
+		document.getElementById('mipagina').style.display = 'none';
+        document.getElementById('texto').style.display = 'block';
+        document.getElementById('galeria').style.display = 'none';
+        document.getElementById('formulario_contacto').style.display = 'none';
+		document.getElementById('formulario_rs').style.display = 'none';
+		document.getElementById('formulario_diseno').style.display = 'none';
 
         if (max > 0) {
 			aux = ["j","k","l"];
@@ -463,7 +469,7 @@ $(document).ready(function () {
             tt = "tt".concat(id);
             bb = "bb".concat(id);
 			title = "title".concat(id);
-			$("#texto").append("<div><a href='javascript:showPopup(\""+aux[id]+"\")'>Seleccione Imagen</a><br>");
+			$("#texto").append("<div><a href='javascript:showPopup(\""+aux[id]+"\")'><input type='button' value='Seleccione Imagen'/</a><br>");
 			$("#texto").append("<input type='hidden' id ="+h+" value='vacio'>");
             $("#texto").append("<textarea id=" + t + " style='width:320px;' >Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
             //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
