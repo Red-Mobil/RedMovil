@@ -445,7 +445,6 @@
 	fwrite($fp, "background-image:".$imagenfondo.";".PHP_EOL);
 	fwrite($fp, "background-repeat: repeat;".PHP_EOL);
 	fwrite($fp, "background-attachment: fixed;".PHP_EOL);
-	fwrite($fp, "padding-bottom:30%;".PHP_EOL);
 	fwrite($fp, "float: left;".PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
@@ -475,7 +474,7 @@
 	fwrite($fp, '-moz-border-radius: 8px;'.PHP_EOL);
 	fwrite($fp, 'border-radius: 8px;'.PHP_EOL);
 	fwrite($fp, 'font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;'.PHP_EOL);
-	fwrite($fp, 'font-size:100%;'.PHP_EOL);
+	fwrite($fp, 'font-size: 100%;'.PHP_EOL);
 	fwrite($fp, '-moz-border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, '-webkit-border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, 'border-radius: 7px;'.PHP_EOL);
@@ -484,6 +483,7 @@
 	fwrite($fp, 'background: '.$colorbotones.';'.PHP_EOL);
 	fwrite($fp, 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#666", endColorstr="#333");'.PHP_EOL);
 	fwrite($fp, 'border-top-color:	 '.$bordebotones.';'.PHP_EOL);
+	fwrite($fp, 'background-image:url(../imagenes/glosy.png);'.PHP_EOL);
 	fwrite($fp, 'border-left-color:	'.$bordebotones.';'.PHP_EOL);
 	fwrite($fp, 'border-bottom-color: '.$bordebotones.';'.PHP_EOL);
 	fwrite($fp, 'border-right-color:'.$bordebotones.';'.PHP_EOL);
@@ -564,6 +564,7 @@
 	fwrite($fp, 'margin-top: 4%;'.PHP_EOL);
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'width: 105px;'.PHP_EOL);
+	fwrite($fp, "text-transform: uppercase;".PHP_EOL);
 	fwrite($fp, 'height: 105px;'.PHP_EOL);
 	fwrite($fp, 'margin-left: 9%;'.PHP_EOL);
 	fwrite($fp, '-webkit-border-radius: 8px;'.PHP_EOL);
@@ -574,9 +575,10 @@
 	fwrite($fp, '-moz-border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, '-webkit-border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, 'border-radius: 7px;'.PHP_EOL);
-	fwrite($fp, 'border: 4px solid;'.PHP_EOL);
-	fwrite($fp, 'background-color: '.$bordebotones.''.PHP_EOL);
+	fwrite($fp, 'border: 4px '.$bordebotones.' solid;'.PHP_EOL);
+	fwrite($fp, 'background-color: #79bbff;'.PHP_EOL);
 	fwrite($fp, 'background: '.$colorbotones.';'.PHP_EOL);
+	fwrite($fp, 'background-image:url(../imagenes/glosy.png);'.PHP_EOL);
 	fwrite($fp, 'filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#666", endColorstr="#333");'.PHP_EOL);
 	fwrite($fp, 'border-top-color:	 '.$bordebotones.';'.PHP_EOL);
 	fwrite($fp, 'border-left-color:	 '.$bordebotones.';'.PHP_EOL);
@@ -908,10 +910,7 @@
 	fwrite($fp, 'border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, 'border: 4px #'.$bordebotones.' solid;'.PHP_EOL);
 	fwrite($fp, 'background: #'.$colorbotones.' ;'.PHP_EOL);
-	fwrite($fp, 'border-top-color:	 #'.$bordebotones.' ;'.PHP_EOL);
-	fwrite($fp, 'border-left-color:	#'.$bordebotones.' ;'.PHP_EOL);
-	fwrite($fp, 'border-bottom-color: #'.$bordebotones.' ;'.PHP_EOL);
-	fwrite($fp, 'border-right-color:#'.$bordebotones.' ;'.PHP_EOL);
+	fwrite($fp, 'background-image:url(../imagenes/glosy.png);'.PHP_EOL);
 	fwrite($fp, 'color: #'.$letrasbotones.';'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
@@ -993,11 +992,10 @@
 	fwrite($fp, '-webkit-border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, 'border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, 'border: 4px solid;'.PHP_EOL);
-	fwrite($fp, 'background-color: '.$colorbotones.';'.PHP_EOL);
-	fwrite($fp, 'border-top-color:	 '.$bordebotones.';'.PHP_EOL);
-	fwrite($fp, 'border-left-color:	 '.$bordebotones.';'.PHP_EOL);
-	fwrite($fp, 'border-bottom-color: '.$bordebotones.';'.PHP_EOL);
-	fwrite($fp, 'border-right-color:'.$bordebotones.';'.PHP_EOL);
+	fwrite($fp, 'background-color: #069;'.PHP_EOL);
+	fwrite($fp, 'background: '.$colorbotones.';'.PHP_EOL);
+	fwrite($fp, 'border: 4px #'.$bordebotones.' solid;'.PHP_EOL);
+	fwrite($fp, 'background-image:url(../imagenes/glosy.png);'.PHP_EOL);
 	fwrite($fp, 'color: '.$letrasbotones.';'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
