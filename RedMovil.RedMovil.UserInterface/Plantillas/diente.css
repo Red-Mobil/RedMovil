@@ -27,7 +27,7 @@ padding:opx;}
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 150%;
 	font-weight: bolder;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	color: #999;
 	text-align: left;}
 

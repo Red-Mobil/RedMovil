@@ -28,7 +28,7 @@ padding:opx;}
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 150%;
 	font-weight: bolder;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	color: #ffF;
 	text-align: left;
 	float:left;
@@ -94,7 +94,8 @@ padding:opx;}
 	border-top-color:	 #888;
 	 border-left-color:	 #CCC;
 	 border-bottom-color: #999;
-	 border-right-color:#777;	
+	 border-right-color:#777;
+	 background-image:url(../imagenes/glosy.png);
 
 	
 }
