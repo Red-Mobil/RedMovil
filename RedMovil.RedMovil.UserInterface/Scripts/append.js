@@ -1,3 +1,4 @@
+	
 	function verpagina()
 	{
 		var titulo;
@@ -433,6 +434,16 @@
 	
 			
 $(document).ready(function () {
+
+	tinyMCE.init({
+	mode : "none",
+	theme_advanced_buttons1 : "bold,underline,italic,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,undo,redo,|,removeformat",
+	setup : function(ed) {
+		ed.onKeyUp.add(function() {
+			ver();
+			});
+		}
+	});
 	
     $("#mp").click(function() {
 		document.getElementById('mipagina').style.display = 'block';
@@ -471,15 +482,13 @@ $(document).ready(function () {
 			title = "title".concat(id);
 			$("#texto").append("<div class='divspoiler'><a href='javascript:showPopup(\""+aux[id]+"\")'><input type='button' value='Seleccione Imagen'/</a><br>");
 			$("#texto").append("<input type='hidden' id ="+h+" value='vacio'>");
-            $("#texto").append("<textarea id=" + t + " maxlength='10' style='width:320px;' >Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
-            //$("#preview_vista_botones").append("<a href=#" + bb + "><button id=" + tt + " >Titulo"+(id+1)+"</button></a><br>");
+            $("#texto").append("<textarea id=" + t + " maxlength='10' style='width:320px;' onkeyup='ver()'>Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
 			$("#preview_vista_botones").append("<button class='tt' id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+" </button><br>");
             $("#preview_vista_texto").append("<div class='title' id=" + title + "></div>");
             $("#preview_vista_texto").append("<div class='bb' id=" + bb + "></div>");
-            asd = new nicEditor({ fullPanel: true }).panelInstance(b);
+			tinyMCE.execCommand('mceAddControl',true,b);
             id++;
             max -= 1;
-			ver();
 			showall();
 			hidetext();
         }
