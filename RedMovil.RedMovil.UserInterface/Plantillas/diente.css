@@ -99,8 +99,7 @@ width: 80%;
 }
 .tt:hover{
 width: 80%;
-	height: 8%;
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-weight: bolder;
 	text-transform: capitalize;
 	font-size: 105%;
