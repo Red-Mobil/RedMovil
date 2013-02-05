@@ -16,8 +16,8 @@ padding:opx;}
 	padding-bottom:25%;	
 }
 .title{
-width: 80%;
-	margin-left: 11%;
+	width: 80%;
+	margin-left: 6%;
 	margin-top:3%;
 	padding-left:3%;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -74,11 +74,11 @@ width: 80%;
 }
 .bb{
 	float: left;
-	width: 72%;
+	width: 85%;
 	padding:4%;
 	min-height: 40%;
 	background-color: #f6edfa;
-	margin-left: 11%;
+	margin-left: 5%;
 	border-radius: 7px;
 	margin-top:2%;
 	color:	#906;

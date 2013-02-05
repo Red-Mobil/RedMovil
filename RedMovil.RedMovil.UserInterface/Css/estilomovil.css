@@ -26,7 +26,8 @@ padding:opx;
 
 .title{
 	width: 80%;
-	margin-left: 11%;
+	margin-left: 6%;
+	margin-top:3%;
 	padding-left:3%;
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size: 150%;
@@ -38,11 +39,11 @@ padding:opx;
 }
 .bb{
 	float: left;
-	width: 72%;
+	width: 85%;
 	padding:4%;
 	min-height: 40%;
 	background-color: #79bbff;
-	margin-left: 11%;
+	margin-left: 5%;
 	border-radius: 7px;
 	margin-top:2%;
 	color: #036;
@@ -75,7 +76,7 @@ padding:opx;
 	font-family: "Trebuchet MS", 	Arial, Helvetica, sans-serif;
 	font-weight: bolder;
 	text-transform: capitalize;
-	font-size: 130%;
+	font-size: 100%;
 	float: left;
 	margin-left: 11%;
 	margin-top: 3px;
@@ -108,28 +109,17 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
       	
 
 #tt0:before {
-	content:url(../imagenes/tt0.svg);
-	float:left;
-	width:20%;
-	height:70%;
-	
 	
 	
 }
 
 
 #tt1:before {
-	content:url(../imagenes/tt1.svg);
-	float:left;
-	width:20%;
-	height:70%;
+	
 	}
 
 #tt2:before {
-	content:url(../imagenes/tt2.svg);
-	float:left;
-	width:20%;
-	height:70%;
+	
 	
 }
 
@@ -142,52 +132,35 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 
 		
 /*#llamar {
-	background-image: url(../imagenes/phone.png);
-
-	background-repeat: no-repeat;
-	background-position: center;	
+	
 			 	   
 }
 #llamar:hover {
-	background-image:url(../imagenes/phone-copia.png);background-repeat: no-repeat;
-	background-position: center;	
-}
-#escribir {
-	background-image:url(../imagenes/mail-back.png);background-repeat: no-repeat;
-	background-position: center;	
-}
-#escribir:hover {
-	background-image:url(../imagenes/mail-back-copia.png);background-repeat: no-repeat;
-	background-position: center;	
-}
-#ubicar {
-	background-image:url(../imagenes/location.png);background-repeat: no-repeat;
-	background-position: center;	
-}
-#ubicar:hover {
-	background-image:url(../imagenes/location-copia.png);background-repeat: no-repeat;
-	background-position: center;	
-}
-#faceb {
-	background-image:url(../imagenes/facebook.png);
-	background-repeat: no-repeat;
-	background-position: center;	
-		
-}
-#faceb:hover {
-	background-image:url(../imagenes/facebook.png);
-	background-repeat: no-repeat;
-	background-position: center;	
 	
 }
+#escribir {
+
+}
+#escribir:hover {
+
+}
+#ubicar {
+
+}
+#ubicar:hover {
+	
+}
+#faceb {
+
+}
+#faceb:hover {
+
+}
 #twitt {
-	background-image:url(../imagenes/twitter.png);
-	background-repeat: no-repeat;
-	background-position: center;	
+
 }
 #twitt:hover {
-	background-image:url(../imagenes/twitter-copia.png);background-repeat: no-repeat;
-	background-position: center;	
+	
 }
 */
 .imagerow{

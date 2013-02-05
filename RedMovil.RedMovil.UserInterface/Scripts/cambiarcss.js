@@ -31,14 +31,14 @@ function cssChange(id)
 		if(nombrecss == "black.css" || nombrecss == "glossy.css")
 		{
 			$(".tt").css("background-image","url(../imagenes/glosy.png)");
-			$(".contacto").css("background-image","url(../imagenes/glosy.png)");
+			
 		}
 	}
 	else if (id == "c4")
 	{
 		var aux = "#"+$("#c4").val();
 		$(".tt").css("color",aux);
-		$(".contacto").css("color",aux);
+		
 	}
 	else if (id == "c5")
 	{
@@ -54,6 +54,6 @@ function cssChange(id)
 	{
 		var aux = "#"+$("#c7").val();
 		$(".tt").css("border-color",aux);
-		$(".contacto").css("border-color",aux);
+		
 	}
 }
