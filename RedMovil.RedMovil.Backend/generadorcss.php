@@ -49,7 +49,7 @@
 	
 	fwrite($fp, ".tt{".PHP_EOL);
 	fwrite($fp, "width: 80%;".PHP_EOL);
-	fwrite($fp, "height: 8%;".PHP_EOL);
+	fwrite($fp, "height: 45px;".PHP_EOL);
 	fwrite($fp, 'font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;'.PHP_EOL);
 	fwrite($fp, 'font-weight: normal;'.PHP_EOL);
 	fwrite($fp, 'text-transform: capitalize;'.PHP_EOL);
@@ -71,7 +71,6 @@
 	
 	fwrite($fp, '.tt:hover{'.PHP_EOL);
 	fwrite($fp, 'width: 80%;'.PHP_EOL);
-	fwrite($fp, 'height: 8%;'.PHP_EOL);
 	fwrite($fp, 'font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;'.PHP_EOL);
 	fwrite($fp, 'font-weight: bolder;'.PHP_EOL);
 	fwrite($fp, 'text-transform: capitalize;'.PHP_EOL);
@@ -217,7 +216,7 @@
 	
 	fwrite($fp, ".tt{".PHP_EOL);
 	fwrite($fp, "width: 80%;".PHP_EOL);
-	fwrite($fp, "height: 8%;".PHP_EOL);
+	fwrite($fp, "height: 45px;".PHP_EOL);
 	fwrite($fp, 'font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;'.PHP_EOL);
 	fwrite($fp, 'font-weight: normal;'.PHP_EOL);
 	fwrite($fp, 'text-transform: capitalize;'.PHP_EOL);
@@ -239,7 +238,6 @@
 	
 	fwrite($fp, '.tt:hover{'.PHP_EOL);
 	fwrite($fp, 'width: 80%;'.PHP_EOL);
-	fwrite($fp, 'height: 8%;'.PHP_EOL);
 	fwrite($fp, 'font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;'.PHP_EOL);
 	fwrite($fp, 'font-weight: bolder;'.PHP_EOL);
 	fwrite($fp, 'text-transform: capitalize;'.PHP_EOL);
