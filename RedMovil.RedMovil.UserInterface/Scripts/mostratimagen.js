@@ -2,7 +2,6 @@ function mostrarportada()
 {
 	texto = '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" />';	
 	$("#preview_vista_portada").html(texto);
-
 }
 
 function mostrarimagen() 
@@ -95,6 +94,5 @@ function setTheVal(valFromPopup,i)
 else if (i=='m')
 	{
 		document.dForm.c0.value=valFromPopup;
-		cssChange('c0');
 	}  	
 }
