@@ -11,8 +11,9 @@ padding:opx;}
 	background-attachment: fixed;
 	background-repeat: repeat;
 	width: 100%;
-	min-height: 100%;
-	padding-bottom:25%;	
+	min-height: 120%;
+	padding-bottom:25%;
+	float:left;
 }
 .title{
 	width: 80%;
