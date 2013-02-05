@@ -25,13 +25,14 @@
 	fwrite($fp, "body {margin:0px;".PHP_EOL."padding:opx;}".PHP_EOL);
 	
 	fwrite($fp, "#expandible {".PHP_EOL);
-	fwrite($fp, "min-height: 100%;".PHP_EOL);
+	fwrite($fp, "min-height: 120%;".PHP_EOL);
 	fwrite($fp, "width: 100%;".PHP_EOL);
 	fwrite($fp, "background-color:".$colorfondo.';'.PHP_EOL);
 	fwrite($fp, "background-image:".$imagenfondo.";".PHP_EOL);
 	fwrite($fp, "background-repeat: repeat;".PHP_EOL);
 	fwrite($fp, "background-attachment: fixed;".PHP_EOL);
 	fwrite($fp, "padding-bottom:30%;".PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);	
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, ".title{".PHP_EOL);
@@ -192,13 +193,14 @@
 	fwrite($fp, "body {margin:0px;".PHP_EOL."padding:opx;}".PHP_EOL);
 	
 	fwrite($fp, "#expandible {".PHP_EOL);
-	fwrite($fp, "min-height: 100%;".PHP_EOL);
+	fwrite($fp, "min-height: 120%;".PHP_EOL);
 	fwrite($fp, "width: 100%;".PHP_EOL);
 	fwrite($fp, "background-color:".$colorfondo.';'.PHP_EOL);
 	fwrite($fp, "background-image:".$imagenfondo.";".PHP_EOL);
 	fwrite($fp, "background-repeat: repeat;".PHP_EOL);
 	fwrite($fp, "background-attachment: fixed;".PHP_EOL);
 	fwrite($fp, "padding-bottom:30%;".PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, ".title{".PHP_EOL);
@@ -363,7 +365,7 @@
 	fwrite($fp, "body {margin:0px;".PHP_EOL."padding:opx;}".PHP_EOL);
 	
 	fwrite($fp, "#expandible {".PHP_EOL);
-	fwrite($fp, "min-height: 100%;".PHP_EOL);
+	fwrite($fp, "min-height: 120%;".PHP_EOL);
 	fwrite($fp, "padding-bottom:25%;".PHP_EOL);
 	fwrite($fp, "width: 100%;".PHP_EOL);
 	fwrite($fp, "background-color:".$colorfondo.';'.PHP_EOL);
@@ -534,7 +536,7 @@
 	fwrite($fp, "body {margin:0px;".PHP_EOL."padding:opx;}".PHP_EOL);
 	
 	fwrite($fp, "#expandible {".PHP_EOL);
-	fwrite($fp, "min-height: 100%;".PHP_EOL);
+	fwrite($fp, "min-height: 120%;".PHP_EOL);
 	fwrite($fp, "padding-bottom:25%;".PHP_EOL);
 	fwrite($fp, "width: 100%;".PHP_EOL);
 	fwrite($fp, "background-color:".$colorfondo.';'.PHP_EOL);
@@ -706,7 +708,7 @@
 	fwrite($fp, "body {margin:0px;".PHP_EOL."padding:opx;}".PHP_EOL);
 	
 	fwrite($fp, "#expandible {".PHP_EOL);
-	fwrite($fp, "min-height: 100%;".PHP_EOL);
+	fwrite($fp, "min-height: 120%;".PHP_EOL);
 	fwrite($fp, "padding-bottom:25%;".PHP_EOL);
 	fwrite($fp, "width: 100%;".PHP_EOL);
 	fwrite($fp, "background-color:".$colorfondo.';'.PHP_EOL);
