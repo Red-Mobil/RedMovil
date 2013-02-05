@@ -438,6 +438,10 @@ $(document).ready(function () {
 	tinyMCE.init({
 	mode : "none",
 	theme_advanced_buttons1 : "bold,underline,italic,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,undo,redo,|,removeformat",
+			plugins : "paste",
+		paste_preprocess : function(pl, o) {
+		o.content = o.content.replace(/<\S[^><]*>/g, "");
+		},
 	setup : function(ed) {
 		ed.onKeyUp.add(function() {
 			ver();
