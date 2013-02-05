@@ -21,8 +21,11 @@ function mostrarimagen()
 		texto = texto +'</div></div>';
 							
 		$("#preview_vista_galeria").html(texto);
+		if (document.getElementById('f1').value != '')
 		document.getElementById('i1').style.display = 'none';
+		if (document.getElementById('f2').value != '')
 		document.getElementById('i2').style.display = 'none';
+		if (document.getElementById('f3').value != '')
 		document.getElementById('i3').style.display = 'none';
 	}
 }
@@ -33,8 +36,11 @@ function mostrarimagenes()
 	document.getElementById('preview_vista_galeria').style.display = 'block';
 	document.getElementById('home').style.display = 'block';
 	document.getElementById('gale').style.display = 'none';
+	if (document.getElementById('i1').value != '')
 	document.getElementById('i1').style.display = 'block';
+	if (document.getElementById('i2').value != '')
 	document.getElementById('i2').style.display = 'block';
+	if (document.getElementById('i3').value != '')
 	document.getElementById('i3').style.display = 'block';
 	
 	vaim();
@@ -54,18 +60,22 @@ function setTheVal(valFromPopup,i)
 	if (i=='a')
 	{				
 		document.aForm.f1.value=valFromPopup;
+		mostrarimagen();
 	}
 	else if (i=='b')
 	{
 		document.aForm.f2.value=valFromPopup;
+		mostrarimagen();
 	}
 	else if (i=='c')
 	{
 		document.aForm.f3.value=valFromPopup;
+		mostrarimagen();
 	}  
 	else if (i=='g')
 	{
 		document.bForm.gal.value=valFromPopup;
+		mostrarportada();
 	} 
 	else if (i=='j')
 	{
