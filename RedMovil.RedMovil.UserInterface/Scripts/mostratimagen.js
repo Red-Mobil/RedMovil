@@ -95,5 +95,6 @@ function setTheVal(valFromPopup,i)
 else if (i=='m')
 	{
 		document.dForm.c0.value=valFromPopup;
+		cssChange('c0');
 	}  	
 }
