@@ -17,7 +17,7 @@ default width = 800/5 = 160px;
 */
 
 .accordian {
-	width: 250px; height: 220px;
+	width: 250px; height: 200px;
 	overflow: hidden;
 	
 	/*Time for some styling*/
@@ -65,5 +65,5 @@ default width = 800/5 = 160px;
 
 img{
 	width:110px;
-	height:220px;
+	height:200px;
 }
