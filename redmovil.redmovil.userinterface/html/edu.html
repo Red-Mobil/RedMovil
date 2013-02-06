@@ -89,10 +89,7 @@
 				<form name="cForm" method="post">
                 <div id="texto" style="display: none">
 				</form>
-                <div class="divspoiler">
-                    <input type="button" value="ver" onclick="ver()" />
-                    <input type="button" value="Limpiar" onclick="Limpiar()" />
-                	</div>
+                
                 </div>
                 <div id="galeria" style="display: none">
 				<!--   Galeria Empieza aca -->
@@ -136,49 +133,34 @@
         <div class="accordian">
 	<ul>
 		<li>
-			<a href="#">
-				<img 
-                src="../imagenes/prev_black.png"/>
+			<a onclick="cambiarArchivoCss('../Plantillas/black.css')">
+				<img src="../imagenes/prev_black.png"/>
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a onclick="cambiarArchivoCss('../Plantillas/lana.css')">
 				<img src="../imagenes/prev_lana.png"/>
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a onclick="cambiarArchivoCss('../Css/estilomovil.css')">
 				<img src="../imagenes/prev_default.png"/>
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a onclick="cambiarArchivoCss('../Plantillas/glossy.css')">
 				<img src="../imagenes/prev_glossy.png"/>
 			</a>
 		</li>
 		<li>
-			<a href="#">
+			<a onclick="cambiarArchivoCss('../Plantillas/diente.css')">
 				<img src="../imagenes/prev_diente.png"/>
 			</a>
 		</li>
 	</ul>
 </div>
         
-		  <form>
-		  Seleccione la plantilla: <select id="plantillas" name="plan">
-			<option value="../Css/estilomovil.css">Default</option>
-			<option value="../Plantillas/lana.css">Lana</option>
-			<option value="../Plantillas/diente.css">Diente</option>
-            <option value="../Plantillas/black.css">black</option>
-            <option value="../Plantillas/glossy.css">glossy</option>
-            <option value="../Plantillas/madera.css">madera</option>
-            <option value="../Plantillas/tom.css">tom</option>
-            <option value="../Plantillas/netvibes.css">netvibes</option>
-		  </select>
 		  </br>
-		  
-		  <button type="button" onclick="cambiarArchivoCss(plan.options[plan.selectedIndex].value)">Visualizar</button>
-		  </form>
 		  <div id="btns_css" style="display: none">
 		  <form name="dForm" method="post">
 		  <input type="hidden" id="c0"><a href='javascript:showPopup("m")'><input type="button" value="Imagen de fondo"/></a>

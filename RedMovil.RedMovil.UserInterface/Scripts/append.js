@@ -440,10 +440,9 @@ $(document).ready(function () {
 	theme_advanced_path : false,
 	plugins: "wordcount,paste",
 	paste_preprocess : function(pl, o) 
-			{				
-				o.content = o.content.replace(/<\S[^><]*>/g, "");
-			},
-					
+		{				
+			o.content = o.content.replace(/<\S[^><]*>/g, "");
+		},			
 	theme_advanced_buttons1 : "bold,underline,italic,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,undo,redo,|,removeformat",
 	setup : function(ed) 
 	{
@@ -452,13 +451,19 @@ $(document).ready(function () {
 			ver();
 			ed.undoManager.add();
 			
-			});
-			
+		});
 		ed.onChange.add(function(ed, evt) 
 		{						
 			var strip = (tinyMCE.activeEditor.getContent()).replace(/(<([^>]+)>)/ig,"");
 			var strip2 = 300 - strip.length;
-			var text = strip2 + "Caracteres sobrantes";
+			if (strip2 < 0)
+			{
+				var text = "0 Caracteres sobrantes";
+			}
+			else
+			{
+				var text = strip2 + " Caracteres sobrantes";
+			}
 			tinymce.DOM.setHTML(tinymce.DOM.get(tinyMCE.activeEditor.id + '_path_row'), text); 
 			if (strip.length > 301)
 			{	
@@ -467,10 +472,7 @@ $(document).ready(function () {
                 //evt.stopPropagation();
 			}
 		});
-
-        
 	}
-	
 	});
 	
     $("#mp").click(function() {
