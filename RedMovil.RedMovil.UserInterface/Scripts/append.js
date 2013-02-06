@@ -443,18 +443,7 @@ $(document).ready(function () {
 			{				
 				o.content = o.content.replace(/<\S[^><]*>/g, "");
 			},
-			
-	paste_postprocess : function(pl, o) 
-			{
-				var strip = (tinyMCE.activeEditor.getContent()).replace(/(<([^>]+)>)/ig,"");
-				var text = strip.length + "/300 Characters";
-				tinymce.DOM.setHTML(tinymce.DOM.get(tinyMCE.activeEditor.id + '_path_row'), text); 
-				if (strip.length > 301)
-				{
-					tinyMCE.activeEditor.undoManager.undo();
-				}
-			},
-	
+					
 	theme_advanced_buttons1 : "bold,underline,italic,|,justifyleft,justifycenter,justifyright,justifyfull,|,bullist,numlist,|,undo,redo,|,removeformat",
 	setup : function(ed) 
 	{
@@ -465,15 +454,16 @@ $(document).ready(function () {
 			
 			});
 			
-		ed.onKeyDown.add(function(ed, evt) 
+		ed.onChange.add(function(ed, evt) 
 		{						
 			var strip = (tinyMCE.activeEditor.getContent()).replace(/(<([^>]+)>)/ig,"");
-			var text = strip.length + "/300 Characters";
+			var strip2 = 300 - strip.length;
+			var text = strip2 + "Caracteres sobrantes";
 			tinymce.DOM.setHTML(tinymce.DOM.get(tinyMCE.activeEditor.id + '_path_row'), text); 
 			if (strip.length > 301)
 			{	
-				//tinyMCE.activeEditor.undoManager.undo();				
-				evt.preventDefault();
+				tinyMCE.activeEditor.undoManager.undo();				
+				//evt.preventDefault();
                 //evt.stopPropagation();
 			}
 		});
