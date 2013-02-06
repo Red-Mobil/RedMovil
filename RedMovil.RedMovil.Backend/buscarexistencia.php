@@ -6,9 +6,9 @@
 	
 	if (file_exists($nombre_archivo)) 
 	{			
-		echo '../../RedMovil.RedMovil.Backend/verificar.php?si';
+		echo 'si';
 	} else 
 	{
-		echo '../../RedMovil.RedMovil.Backend/verificar.php?no';
+		echo 'no';
 	}
 ?>

@@ -262,7 +262,19 @@
 		{
 			if (xmlhttp.readyState==4 && xmlhttp.status==200)
 			{
-				window.open(xmlhttp.responseText);
+				var r = xmlhttp.responseText;
+				if (r == "si")
+				{
+					//texto = 'La pagina Existe actualmente';	
+					texto = 'Error, la pagina Existe actualmente <img src="../imagenes/not_ok.png "width=20px" />';	
+
+				}
+				else if (r == "no")
+				{
+					//texto = 'La pagina no existe actualmente';	
+					texto = 'La pagina no existe actualmente <img src="../imagenes/ok.png "width=20px" />';	
+				}
+				$("#recibir_respuesta").html(texto);				
 			}
 		}
 		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/buscarexistencia.php?q="+str,true);
