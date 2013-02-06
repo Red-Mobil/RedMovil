@@ -9,7 +9,7 @@ function ver() {
 		}
 		else
 		{
-			document.getElementById("bb0").innerHTML = "<img width='100%' src =\'../images/" + document.getElementById("h0").value + "/'></img>" + tinyMCE.activeEditor.getContent({format : 'raw'});
+			document.getElementById("bb0").innerHTML = "<img width='100%' src =\'../images/" + document.getElementById("h0").value + "\'></img>" + tinyMCE.activeEditor.getContent({format : 'raw'});
 		}
     }
     if (max == 1) {
