@@ -17,7 +17,7 @@ default width = 800/5 = 160px;
 */
 
 .accordian {
-	width: 250px; height: 200px;
+	width: 250px; height: 250px;
 	overflow: hidden;
 	
 	/*Time for some styling*/
@@ -52,10 +52,10 @@ default width = 800/5 = 160px;
 }
 
 /*Reduce with of un-hovered elements*/
-.accordian ul:hover li {width: 35px;}
+.accordian ul:hover li {width: 25px;}
 /*Lets apply hover effects now*/
 /*The LI hover style should override the UL hover style*/
-.accordian ul li:hover {width: 110px;}
+.accordian ul li:hover {width: 150px;}
 
 
 .accordian li img {
@@ -63,7 +63,4 @@ default width = 800/5 = 160px;
 }
 
 
-img{
-	width:110px;
-	height:200px;
-}
+
