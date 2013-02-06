@@ -450,7 +450,9 @@ $(document).ready(function () {
 	tinyMCE.init({
 	mode : "none",
 	theme_advanced_path : false,
-	plugins: "wordcount,paste",
+	plugins: "wordcount,paste,maxchars",
+	max_chars : 300,
+	max_chars_indicator : "characterCounter",
 	paste_preprocess : function(pl, o) 
 		{				
 			o.content = o.content.replace(/<\S[^><]*>/g, "");
@@ -464,7 +466,8 @@ $(document).ready(function () {
 			ed.undoManager.add();
 			
 		});
-		ed.onChange.add(function(ed, evt) 
+		
+		/*ed.onChange.add(function(ed, evt) 
 		{						
 			var strip = (tinyMCE.activeEditor.getContent()).replace(/(<([^>]+)>)/ig,"");
 			var strip2 = 300 - strip.length;
@@ -479,11 +482,11 @@ $(document).ready(function () {
 			tinymce.DOM.setHTML(tinymce.DOM.get(tinyMCE.activeEditor.id + '_path_row'), text); 
 			if (strip.length > 301)
 			{	
-				tinyMCE.activeEditor.undoManager.undo();				
+				//tinyMCE.activeEditor.undoManager.undo();				
 				//evt.preventDefault();
                 //evt.stopPropagation();
 			}
-		});
+		});*/
 	}
 	});
 	
