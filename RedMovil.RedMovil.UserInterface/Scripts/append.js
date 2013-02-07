@@ -459,6 +459,7 @@ $(document).ready(function () {
 	plugins: "paste,maxchars",
 	max_chars : 300,
 	max_chars_indicator : "count",
+	max_chars_maxText : "Se paso del limite",
 	paste_preprocess : function(pl, o) 
 		{				
 			o.content = o.content.replace(/<\S[^><]*>/g, "");
