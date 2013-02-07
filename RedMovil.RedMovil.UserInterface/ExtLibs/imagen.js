@@ -3,7 +3,7 @@ $(document).ready(function(){
 	new AjaxUpload('#upload_button', {
         action: '../../RedMovil.RedMovil.Backend/upload.php',
 		onSubmit : function(file , ext){
-		if (! (ext && /^(jpg|png|jpeg|gif)$/.test(ext))){
+		if (! (ext && /^(jpg|png|jpeg|gif|swf)$/.test(ext))){
 			// extensiones permitidas
 			alert('Error: Solo se permiten imagenes');
 			// cancela upload
