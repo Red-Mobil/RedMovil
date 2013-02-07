@@ -456,14 +456,9 @@ $(document).ready(function () {
 	tinyMCE.init({
 	mode : "none",
 	theme_advanced_path : false,
-<<<<<<< HEAD
-	plugins: "wordcount,paste",
-
-=======
-	plugins: "wordcount,paste,maxchars",
+	plugins: "paste,maxchars",
 	max_chars : 300,
-	max_chars_indicator : "characterCounter",
->>>>>>> e428ab449f09d10de57e2b8391b8cd6c5d0d30f8
+	max_chars_indicator : "count",
 	paste_preprocess : function(pl, o) 
 		{				
 			o.content = o.content.replace(/<\S[^><]*>/g, "");
@@ -540,6 +535,7 @@ $(document).ready(function () {
 			title = "title".concat(id);
 			$("#texto").append("<div class='divspoiler'><a href='javascript:showPopup(\""+aux[id]+"\")'><input type='button' value='Seleccione Imagen'/</a><br>");
 			$("#texto").append("<input type='hidden' id ="+h+" value='vacio'>");
+			$("#texto").append("<div id='count'><div>");
             $("#texto").append("<textarea id=" + t + " maxlength='10' style='width:320px;' onkeyup='ver()'>Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
 			$("#preview_vista_botones").append("<button class='tt' id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+" </button><br>");
             $("#preview_vista_texto").append("<div class='title' id=" + title + "></div>");
