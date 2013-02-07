@@ -10,6 +10,8 @@
 </head>
 <body>
 
+<table border="1">
+<tr>
 <?php
 
 	$url="http://".$_SERVER['HTTP_HOST'].":".$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'];	
@@ -22,12 +24,17 @@
 	$i = 0;
 	while ($i < sizeof($nombres))
 	{
-		echo '<img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".' width="100px" height="100px"></br>';								
+		if ($i % 5 == 0)
+		{
+			echo '</tr><tr>';
+		}
+		echo '<td><img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".' width="100px" height="100px"></br></td>';								
 		$i = $i+1;		
 	}	
 
 ?>
-
+</tr>
+</table>
 </body>
 
 </html>
