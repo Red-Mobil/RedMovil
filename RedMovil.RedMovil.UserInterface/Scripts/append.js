@@ -456,9 +456,6 @@ $(document).ready(function () {
 	tinyMCE.init({
 	mode : "none",
 	theme_advanced_path : false,
-	plugins: "wordcount,paste,maxchars",
-	max_chars : 300,
-	max_chars_indicator : "characterCounter",
 	plugins: "paste,maxchars",
 	max_chars : 300,
 	max_chars_indicator : "count",
