@@ -87,7 +87,7 @@
 					if(lb.tagName.toLowerCase()=='input'){
 						if (mc - cnt.length < 0) {
 							if(mm!="") 
-					    		lb.value = mm;
+					    		lb.value = mm + " por " (mc - cnt.length)*-1 + " caracteres";
 								lb.style.color = "red";
 						}else{ 
 							lb.value = mn + " " + (mc - cnt.length) + "/" + mc;
@@ -98,7 +98,7 @@
 						if (mc - cnt.length < 0) {
 							//alert(cnt.length);
 							if(mm!="") 
-								lb.innerHTML =  mm;
+								lb.innerHTML =  mm + " por " + (mc - cnt.length)*-1 + " caracteres";
 								lb.style.color = "red";
 							//tinyMCE.execCommand(tinyMCE.execCommand(ed.id,'mceFocus', false));
 						}
