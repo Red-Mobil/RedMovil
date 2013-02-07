@@ -173,12 +173,28 @@
 	
 	fwrite($fp, '.imagerow{'.PHP_EOL);
 	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
+	fwrite($fp, 'width: 90%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
-	fwrite($fp, 'width: 80%;'.PHP_EOL);
-	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
-	fwrite($fp, 'margin-left:10%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'width: 50%;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
+	fwrite($fp, 'float:left;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, 'img{'.PHP_EOL);
+	fwrite($fp, 'margin-left:0px;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, 'img{'.PHP_EOL);
+	fwrite($fp, 'margin-left:0px;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fclose($fp);
@@ -343,12 +359,24 @@
 	
 	fwrite($fp, '.imagerow{'.PHP_EOL);
 	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
+	fwrite($fp, 'width: 90%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
-	fwrite($fp, 'width: 80%;'.PHP_EOL);
-	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
-	fwrite($fp, 'margin-left:10%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'width: 50%;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
+	fwrite($fp, 'float:left;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, 'img{'.PHP_EOL);
+	fwrite($fp, 'margin-left:0px;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fclose($fp);
@@ -515,12 +543,24 @@
 	
 	fwrite($fp, '.imagerow{'.PHP_EOL);
 	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
+	fwrite($fp, 'width: 90%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
-	fwrite($fp, 'width: 80%;'.PHP_EOL);
-	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
-	fwrite($fp, 'margin-left:10%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'width: 50%;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
+	fwrite($fp, 'float:left;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, 'img{'.PHP_EOL);
+	fwrite($fp, 'margin-left:0px;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fclose($fp);
@@ -687,16 +727,27 @@
 	
 	fwrite($fp, '.imagerow{'.PHP_EOL);
 	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
+	fwrite($fp, 'width: 90%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
-	fwrite($fp, 'width: 80%;'.PHP_EOL);
-	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
-	fwrite($fp, 'margin-left:10%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'width: 50%;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
 	fwrite($fp, '}');
 	
-	fclose($fp);
-	}
+	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
+	fwrite($fp, 'float:left;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, 'img{'.PHP_EOL);
+	fwrite($fp, 'margin-left:0px;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fclose($fp);}
 	
 		//--Codigo glossy--//
 	
@@ -858,12 +909,24 @@
 	
 	fwrite($fp, '.imagerow{'.PHP_EOL);
 	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
+	fwrite($fp, 'width: 90%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
-	fwrite($fp, 'width: 80%;'.PHP_EOL);
-	fwrite($fp, 'margin-top: 2%;'.PHP_EOL);
-	fwrite($fp, 'margin-left:10%;'.PHP_EOL);
+	fwrite($fp, 'float: left;'.PHP_EOL);
+	fwrite($fp, 'width: 50%;'.PHP_EOL);
+	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
+	fwrite($fp, 'float:left;'.PHP_EOL);
+	fwrite($fp, '}');
+	
+	fwrite($fp, 'img{'.PHP_EOL);
+	fwrite($fp, 'margin-left:0px;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fclose($fp);

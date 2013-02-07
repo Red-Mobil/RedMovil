@@ -155,11 +155,23 @@ padding:opx;}
 }
 
 .imagerow{
-margin-top: 2%;	
+margin-top: 2%;
+float:left;	
+width: 90%;
+margin-top: 2%;
+margin-left:4%;
+padding:0px;
 }
 .single,single first,single last {
-	width: 80%;
-	margin-top: 2%;
-	margin-left:10%;
+	float:left;
+	width:50%;
+	padding:0px;
+	
 }
-
+#i1,i2,i3{
+	float:left;
+	
+}
+img{
+	margin-left:opx;
+}

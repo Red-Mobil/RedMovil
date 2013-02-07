@@ -8,16 +8,16 @@ function mostrarimagen()
 {			
 	if (document.getElementById('f1').value != '' || document.getElementById('f2').value != '' || document.getElementById('f3').value != '')
 	{
-		$("#gale").html('<center></br><center><input type="button" class="tt" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \>');
+		$("#gale").html('<input type="button" class="tt" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \>');
 		
 		texto = '<div class="imageRow"><div class="set">';	
 		if (document.getElementById('f1').value != '')
-		texto = texto + '<div class="single first" id=i1><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="60px" height="60px"/></a></div>';
+		texto = texto + '<div class="single first" id=i1><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100%" float="left" /></a></div>';
 		if (document.getElementById('f2').value != '')
-		texto = texto + '<div class="single" id=i2><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="60px" height="60px"/></a></div>';
+		texto = texto + '<div class="single" id=i2><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100%" float="left" /></a></div>';
 		if (document.getElementById('f3').value != '')
-		texto = texto + '<div class="single last" id=i3><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="60px" height="60px"/></a></div>';
-		texto = texto +'</div></div></tr></table>';
+		texto = texto + '<div class="single last" id=i3><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" float="left" /></a></div>';
+		texto = texto +'</div></div>';
 							
 		$("#preview_vista_galeria").html(texto);
 		if (document.getElementById('f1').value != '')
