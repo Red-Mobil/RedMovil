@@ -186,8 +186,11 @@ padding:0px;
 }
 .single,single first,single last {
 	float:left;
-	width:50%;
+	width:30%;
 	padding:0px;
+	margin-top:2%;
+	margin-left:2%;
+	margin-bottom:2%;
 	
 }
 #i1,i2,i3{

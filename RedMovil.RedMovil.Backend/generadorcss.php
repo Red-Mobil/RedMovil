@@ -183,6 +183,9 @@
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'width: 50%;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'margin-top:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-bottom:2%;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
@@ -369,6 +372,9 @@
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'width: 50%;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'margin-top:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-bottom:2%;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
@@ -553,6 +559,9 @@
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'width: 50%;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'margin-top:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-bottom:2%;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
@@ -737,6 +746,9 @@
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'width: 50%;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'margin-top:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-bottom:2%;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
@@ -919,6 +931,9 @@
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'width: 50%;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'margin-top:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-left:2%;'.PHP_EOL);
+	fwrite($fp, 'margin-bottom:2%;'.PHP_EOL);
 	fwrite($fp, '}');
 	
 	fwrite($fp, '#i1,i2,i3{'.PHP_EOL);
