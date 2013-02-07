@@ -456,15 +456,12 @@ $(document).ready(function () {
 	tinyMCE.init({
 	mode : "none",
 	theme_advanced_path : false,
-<<<<<<< HEAD
 	plugins: "wordcount,paste,maxchars",
 	max_chars : 300,
 	max_chars_indicator : "characterCounter",
-=======
 	plugins: "paste,maxchars",
 	max_chars : 300,
 	max_chars_indicator : "count",
->>>>>>> ad6d8aefb07b1fe9020811c0eae4796101933e57
 	paste_preprocess : function(pl, o) 
 		{				
 			o.content = o.content.replace(/<\S[^><]*>/g, "");
