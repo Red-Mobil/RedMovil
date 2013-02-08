@@ -16,11 +16,9 @@ fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n")
 fwrite($fp, "<html>\n");
 fwrite($fp, "<head>\n");
 fwrite($fp, "	<script language='javascript' src='../../ExtLibs/jquery-1.3.1.min.js'></script>\n");
-fwrite($fp, "	<script language='javascript' src='../../ExtLibs/AjaxUpload.2.0.min.js'></script>\n");
-fwrite($fp, "	<script language='javascript' src='../../ExtLibs/imagen.js'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mostratimagen.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../ExtLibs/jquery-1.7.2.min.js'></script>\n");
-fwrite($fp, "	<script src='../../ExtLibs/lightbox.js'></script>\n");
+fwrite($fp, "	<script src='../../ExtLibs/lightboxcel.js'></script>\n");
 fwrite($fp, "	<script src='../../ExtLibs/dragdivscroll.js'></script>\n");
 fwrite($fp, "	<link href='../../Css/lightbox.css' rel='stylesheet' />\n");
 fwrite($fp, "	<script src='../../ExtLibs/jquery-1.8.3.min.js' type='text/javascript'></script>\n");
@@ -66,12 +64,10 @@ fwrite($fp, "<html>\n");
 fwrite($fp, "<head>\n");
 fwrite($fp, "<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no' />\n");
 fwrite($fp, "	<script language='javascript' src='../../ExtLibs/jquery-1.3.1.min.js'></script>\n");
-fwrite($fp, "	<script language='javascript' src='../../ExtLibs/AjaxUpload.2.0.min.js'></script>\n");
-fwrite($fp, "	<script language='javascript' src='../../ExtLibs/imagen.js'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/banner.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mostratimagen.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../ExtLibs/jquery-1.7.2.min.js'></script>\n");
-fwrite($fp, "	<script src='../../ExtLibs/lightbox.js'></script>\n");
+fwrite($fp, "	<script src='../../ExtLibs/lightboxcel.js'></script>\n");
 fwrite($fp, "	<script src='../../ExtLibs/dragdivscroll.js'></script>\n");
 fwrite($fp, "	<link href='../../Css/lightbox.css' rel='stylesheet' />\n");
 fwrite($fp, "	<script src='../../ExtLibs/jquery-1.8.3.min.js' type='text/javascript'></script>\n");
@@ -81,9 +77,7 @@ fwrite($fp, "	<script language='javascript' src='../ExtLibs/AjaxUpload.2.0.min.j
 fwrite($fp, "	<script language='javascript' src='../ExtLibs/imagen.js'></script>\n");
 fwrite($fp, "	<script src='../Scripts/mostratimagen.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../ExtLibs/jquery-1.7.2.min.js'></script>\n");
-fwrite($fp, "	<script src='../ExtLibs/lightbox.js'></script>\n");
 fwrite($fp, "	<script src='../ExtLibs/dragdivscroll.js'></script>\n");
-fwrite($fp, "	<link href='../Css/lightbox.css' rel='stylesheet' />\n");
 fwrite($fp, "	<script src='../ExtLibs/jquery-1.8.3.min.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../ExtLibs/nicEdit.js' type='text/javascript'></script>\n");
 
