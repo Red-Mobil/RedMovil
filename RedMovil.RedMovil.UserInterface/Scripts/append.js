@@ -29,8 +29,24 @@
 		if (document.getElementById('gal').value != "")
 		{
 			objeto += "p";
-			respaldo += '../images/'+document.getElementById('gal').value +'-skip';
-			mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
+			var archivo=document.getElementById('gal').value; 
+			var extension = (archivo.substring(archivo.lastIndexOf("."))).toLowerCase();
+			if (extension==".swf")
+			{
+				respaldo += '../images/'+document.getElementById('gal').value +'-skip';
+				mandar += '<object type="application/x-shockwave-flash" data="../images/'+ document.getElementById('gal').value +'" width="100%" height="40%">';		 
+				mandar += '<param name="movie" value="../images/' + document.getElementById('gal').value +'" />';
+				mandar += '<param name="quality" value="high" />';
+				mandar += '<param name="wmode" value="opaque" />';
+				mandar += '<param name="swfversion" value="9.0.45.0" />';
+				mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></object>';													
+			}
+			else
+			{				
+				respaldo += '../images/'+document.getElementById('gal').value +'-skip';
+				mandar += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></br>-skip';
+			}
+			
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_botones'>-skip";

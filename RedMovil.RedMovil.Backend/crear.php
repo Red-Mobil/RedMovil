@@ -30,7 +30,9 @@ fwrite($fp, "	<script type='text/javascript'>        var id = 0; </script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var max = 3;</script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var imagen = new Array();</script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var c_ima = 0; </script>\n");
-fwrite($fp, "	<script src='../../Scripts/fotos.js' type='text/javascript'></script>\n");
+
+fwrite($fp, "	<script src='../../Scripts/swfobject_modified.js' type='text/javascript'></script>\n");
+
 fwrite($fp, "	<script src='../../Scripts/banner.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mapa.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mostrar.js' type='text/javascript'></script>\n");
@@ -84,12 +86,14 @@ fwrite($fp, "	<script src='../ExtLibs/dragdivscroll.js'></script>\n");
 fwrite($fp, "	<link href='../Css/lightbox.css' rel='stylesheet' />\n");
 fwrite($fp, "	<script src='../ExtLibs/jquery-1.8.3.min.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../ExtLibs/nicEdit.js' type='text/javascript'></script>\n");
+
+fwrite($fp, "	<script src='../../Scripts/swfobject_modified.js' type='text/javascript'></script>\n");
+
 fwrite($fp, "	<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDJh5o52Jocg2sFYFF6RI3O_sv9axSmbVw&sensor=false'></script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var id = 0; </script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var max = 3;</script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var imagen = new Array();</script>\n");
 fwrite($fp, "	<script type='text/javascript'>        var c_ima = 0; </script>\n");
-fwrite($fp, "	<script src='../../Scripts/fotos.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mapa.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mostrar.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/valfono.js' type='text/javascript'></script>\n");
