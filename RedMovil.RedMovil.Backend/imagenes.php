@@ -33,7 +33,7 @@
 		$extension = end($trozos); 
 		if ($extension != 'swf')
 		{
-			echo '<td><img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" width="100px" height="100px"></br></td>';								
+			echo '<td><img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".' width="100px" height="100px"></br></td>';								
 		}
 		else
 		{
@@ -43,10 +43,7 @@
 			echo '<param name="wmode" value="opaque" />';
 			echo '<param name="swfversion" value="9.0.45.0" />';
 			echo '<img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" width="100px" height="100px"></br></object></br>';											
-			echo '<input type="button" value="Elegir" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".'  style="width: 100px;" /></td>';			
-
-			
-			
+			echo '<input type="button" value="Elegir" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".'  style="width: 100px;" /></td>';							
 		}
 		$i = $i+1;		
 	}	
