@@ -1,7 +1,8 @@
 <html>
 <head>
 <script type="text/javascript">
- function submitVal(val,i){
+ function submitVal(val,i)
+{
      var myObj=window.dialogArguments;
       myObj.setTheVal(val,i); //calls the js method in the main page.
       window.close();
@@ -28,7 +29,22 @@
 		{
 			echo '</tr><tr>';
 		}
-		echo '<td><img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".' width="100px" height="100px"></br></td>';								
+		$trozos = explode(".", $nombres[$i]); 
+		$extension = end($trozos); 
+		if ($extension != 'swf')
+		{
+			echo '<td><img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".' width="100px" height="100px"></br></td>';								
+		}
+		else
+		{
+			echo '<td><object type="application/x-shockwave-flash" data="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" width="100px" height="100px">';
+			echo '<param name="movie" value="../images/'.$nombres[$i].'" />';
+			echo '<param name="quality" value="high" />';
+			echo '<param name="wmode" value="opaque" />';
+			echo '<param name="swfversion" value="9.0.45.0" />';
+			echo '<img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" width="100px" height="100px"></br></object></br>';											
+			echo '<input type="button" value="Elegir" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".'  style="width: 100px;" /></td>';							
+		}
 		$i = $i+1;		
 	}	
 
