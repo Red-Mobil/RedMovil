@@ -1,0 +1,395 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:	
+	"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#logo{
+	float:left;
+	padding-left:10px;
+	}
+#menu{
+	float:right;
+	width:900px;
+	height:50px;
+}
+
+#menu-bar {
+  margin: 0px 0px 0px 0px;
+  padding: 2px 6px 2px 6px;
+  height: 32px;
+  line-height: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  box-shadow: 0px 1px 3px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  background: #23233B;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#C9C9C9, endColorstr=#FFFFFF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#C9C9C9), to(#FFFFFF));
+  background: -moz-linear-gradient(top,  #C9C9C9,  #FFFFFF);
+  border: solid 0px #FFFFFF;
+}
+#menu-bar li {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 15px;
+  float: left;
+  position: relative;
+  list-style: none;
+}
+#menu-bar a {
+  font-weight: normal;
+  font-family: helvetica;
+  font-style: normal;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-decoration: none;
+  display: block;
+  padding: 8px 20px 8px 20px;
+  margin: 0;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  text-shadow: 1px 1px 0px #000000;
+}
+#menu-bar .current a, #menu-bar li:hover > a {
+  background: #0399D4;
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#E8E8E8, endColorstr=#FFFFFF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#E8E8E8), to(#FFFFFF));
+  background: -moz-linear-gradient(top,  #E8E8E8,  #FFFFFF);
+  color: #000000;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+  text-shadow: 0px 2px 0px #FFFFFF;
+}
+#menu-bar ul li:hover a, #menu-bar li:hover li a {
+  background: none;
+  border: none;
+  color: #666;
+  -box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+#menu-bar ul a:hover {
+  background: #0399D4 !important;
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#04ACEC, endColorstr=#0186BA);
+  background: -webkit-gradient(linear, left top, left bottom, from(#04ACEC), to(#0186BA)) !important;
+  background: -moz-linear-gradient(top,  #04ACEC,  #0186BA) !important;
+  color: #FFFFFF !important;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-bar ul {
+  background: #FFFFFF;
+  filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr=#FFFFFF, endColorstr=#CFCFCF);
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#CFCFCF));
+  background: -moz-linear-gradient(top,  #FFFFFF,  #CFCFCF);
+  display: none;
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  border: solid 1px #B4B4B4;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 3px #222222;
+  -moz-box-shadow: 2px 2px 3px #222222;
+  box-shadow: 2px 2px 3px #222222;
+}
+#menu-bar li:hover > ul {
+  display: block;
+}
+#menu-bar ul li {
+  float: none;
+  margin: 0;
+  padding: 0;
+}
+#menu-bar ul a {
+  padding:10px 0px 10px 15px;
+  color:#363636 !important;
+  font-size:12px;
+  font-style:normal;
+  font-family:helvetica;
+  font-weight: normal;
+  text-shadow: 2px 2px 3px #FFFFFF;
+}
+#menu-bar ul li:first-child > a {
+  border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+}
+#menu-bar ul li:last-child > a {
+  border-bottom-left-radius: 10px;
+  -webkit-border-bottom-left-radius: 10px;
+  -moz-border-radius-bottomleft: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-border-bottom-right-radius: 10px;
+  -moz-border-radius-bottomright: 10px;
+}
+#menu-bar:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+#menu-bar {
+  display: inline-block;
+}
+  html[xmlns] #menu-bar {
+  display: block;
+}
+* html #menu-bar {
+  height: 1%;
+}
+#login{
+	float:right;
+	width:200px;
+}
+
+#contenedor{
+	width:900px;
+	height:1200px;
+	
+}
+h1{
+	font-size:250%;
+	text-transform:
+	uppercase;
+}
+h2{
+	font-size: 140%;
+	font-weight: lighter;	
+}
+h6{
+	font-size:9px;
+	color:#999;
+}
+li{
+	font-size:130%;
+}
+#cabecera{
+	float:left;
+	width:290px;
+	text-align:center;
+	margin-top:100px;
+}
+#banner{
+	float:left;
+	width:600px;
+	height:300px;
+	margin-top:110px;
+}
+#caract{
+	float:left;
+	width:290px;
+	text-align:left;
+}
+
+#como{
+	margin-top:110px;
+	float:left;
+	width:900px;
+	height:550px;
+	
+}
+#accion{
+	float:left;
+	margin-left:150px;
+	
+}
+#pie{
+	float: left;
+	width: 900px;
+	height: 100px;
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	
+}
+.btn {
+	color:#FFF;
+	font-size:200%;		
+  display: inline-block;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow:
+    0 8px 0 #1a74a1,
+    0 15px 20px rgba(0,0,0,.35);
+  -moz-box-shadow:
+    0 8px 0 #1a74a1,
+    0 15px 20px rgba(0,0,0,.35);
+  box-shadow:
+    0 8px 0 #1a74a1,
+    0 15px 20px rgba(0,0,0,.35);
+  -webkit-transition: -webkit-box-shadow .2s ease-in-out;
+  -moz-transition: -moz-box-shadow .2s ease-in-out;
+  -o-transition: -o-box-shadow .2s ease-in-out;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.btn span {
+	width:300px;
+	height:35px;	
+  display: inline-block;
+  padding: 10px  10px;
+  font-family:
+  "Arial Black", Gadget, sans-serif;
+  line-height: 1;
+  text-shadow: 0 -1px 1px rgba(19,65,88,.8);
+  background: #3194c6;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3194c6), to(#5bacd6));
+  background: -moz-linear-gradient(#3194c6, #5bacd6);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255,255,255,.15);
+  -moz-box-shadow: inset 0 -1px 1px rgba(255,255,255,.15);
+  box-shadow: inset 0 -1px 1px rgba(255,255,255,.15);
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  -moz-transition: -moz-transform .2s ease-in-out;
+  -o-transition: -o-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+.btn:active {	
+  -webkit-box-shadow: 
+    0 8px 0 #1a74a1,
+    0 12px 10px rgba(0,0,0,.3);
+  -moz-box-shadow: 
+    0 8px 0 #1a74a1,
+    0 12px 10px rgba(0,0,0,.3);
+  box-shadow: 
+    0 8px 0 #1a74a1,
+    0 12px 10px rgba(0,0,0,.3);
+}
+
+.btn:active span {	
+  -webkit-transform: translate(0, 4px);
+  -moz-transform: translate(0, 4px);
+  -o-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}
+/*
+	Slideshow
+*/
+
+#slides {
+	position:absolute;
+	top:15px;
+	left:4px;
+	z-index:100;
+}
+
+/*
+	Slides container
+	Important:
+	Set the width of your slides container
+	Set to display none, prevents content flash
+*/
+
+.slides_container {
+	width:570px;
+	overflow:hidden;
+	position:relative;
+	display:none;
+}
+
+/*
+	Each slide
+	Important:
+	Set the width of your slides
+	If height not specified height will be set by the slide content
+	Set to display block
+*/
+
+.slides_container div.slide {
+	width:570px;
+	height:270px;
+	display:block;
+}
+
+
+/*
+	Next/prev buttons
+*/
+
+#slides .next,#slides .prev {
+	position:relative;
+	top:107px;
+	left:-39px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+
+#slides .next {
+	left:585px;
+}
+
+/*
+	Pagination
+*/
+
+.pagination {
+	margin:26px auto 0;
+	width:100px;
+}
+
+.pagination li {
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+
+.pagination li a {
+	display:block;
+	width:12px;
+	height:0;
+	padding-top:12px;
+	background-image: url(../imagenes/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+
+.pagination li.current a {
+	background-position:0 -12px;
+}
+
+
+#plantillas {
+	margin-top:100px;
+	width:600px;
+	height:350px;
+	position:relative;
+}
+
+#ribbon {
+	position:absolute;
+	top:-3px;
+	left:-15px;
+	z-index:500;
+}
+
+#frame {
+	position: absolute;
+	z-index: 0;
+	width: 739px;
+	height: 340px;
+	top: -3px;
+	left: -81px;
+}
