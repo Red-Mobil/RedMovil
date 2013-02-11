@@ -3,7 +3,7 @@
 
 $buffer = [];
 $ix = 0;
-$plantilla = "../RedMovil.RedMovil.UserInterface/Html/como-crear-una-pagina-web-movil2.html";
+$plantilla = "../RedMovil.RedMovil.UserInterface/Html/plantilla.html";
 if (file_exists($plantilla))
 {
 	$fp = fopen($plantilla,"r");
@@ -16,7 +16,7 @@ if (file_exists($plantilla))
 		{
 			$buffer[$ix] = fgets($kw);
 			$newplantilla = str_replace("-keyword-",$buffer[$ix],$auxplantilla);
-			$new = fopen("../RedMovil.RedMovil.UserInterface/landingpages/".$buffer[$ix].".html","w");
+			$new = fopen("../RedMovil.RedMovil.UserInterface/landingpages/landing_page_".$ix.".html","w");
 			fwrite($new,$newplantilla);
 			fclose($new);
 			$ix++;
