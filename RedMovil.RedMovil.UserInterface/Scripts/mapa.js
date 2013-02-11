@@ -9,4 +9,5 @@ function inicializarGoogleMaps() {
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
     map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+	document.getElementById("mapa").style.display = 'block';
 }
