@@ -15,6 +15,7 @@ $fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/".$titulo.".html","
 fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n");
 fwrite($fp, "<html>\n");
 fwrite($fp, "<head>\n");
+fwrite($fp, "	<meta http-equiv='last-modified' content='0'>\n");
 fwrite($fp, "	<script language='javascript' src='../../ExtLibs/jquery-1.3.1.min.js'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/mostratimagen.js' type='text/javascript'></script>\n");
 fwrite($fp, "	<script src='../../ExtLibs/jquery-1.7.2.min.js'></script>\n");
@@ -62,6 +63,7 @@ $fp = fopen("../RedMovil.RedMovil.UserInterface/Html/paginas/m.".$titulo.".html"
 fwrite($fp, "<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>\n");
 fwrite($fp, "<html>\n");
 fwrite($fp, "<head>\n");
+fwrite($fp, "	<meta http-equiv='last-modified' content='0'>\n");
 fwrite($fp, "<meta name='viewport' content='width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no' />\n");
 fwrite($fp, "	<script language='javascript' src='../../ExtLibs/jquery-1.3.1.min.js'></script>\n");
 fwrite($fp, "	<script src='../../Scripts/banner.js' type='text/javascript'></script>\n");
