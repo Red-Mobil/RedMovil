@@ -631,4 +631,8 @@ $(document).ready(function () {
 		var send2 = tomardatoscss();
 		mandardatoscss(send2);    
 	});			
+    $("#lp").click(function () {
+
+		lpCreate();
+    });	
 });
