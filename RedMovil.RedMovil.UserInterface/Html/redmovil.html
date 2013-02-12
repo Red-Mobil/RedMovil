@@ -151,29 +151,20 @@ function hideLightbox() {
   </div>
   <div id="over" class="overbox">
   <div id="content">
-<<<<<<< HEAD
-<!--aqui php del login - registrar-->
-	<a href="#">Registrarse</a></br>
-	Email <input type="text" name="mail" id="mail" size="6" onkeyup="javascript:ValidateEmail()"/><div id="mailrespuesta"></div></br>
-	Password <input type="password" name="lpas" id="pass" size="6"/></br>
-	<input type="button" id="log"  value="Log-In" disabled onclick="javascript:mandardatoslogin()" /></br>
-	<input type="button" id="reg"  value="Registrar" disabled onclick="javascript:mandardatosregistro()" /></br>
-	<div id="respuesta"></div>	
-	<a href="javascript:hideLightbox();"><img src="../imagenes/close.png" width="15" height="15"></a>
-	
-	</div>
-=======
 <!--aqui php del login - registrar--><div id="cerrar"><a href="javascript:hideLightbox();"><img src="../imagenes/close.png" width="15" height="15"></a></div>
 	<a href="#">Registrarse</a><div id="datos"><table id="datos" width="100%" border="0">
   <tr>
     <td>Email</td>
   </tr>
   <tr>
-    <td><input type="text" name="mail" id="mail" size="20"/></td>
+    <td><input type="text" name="mail" id="mail" onkeyup="javascript:ValidateEmail()" size="20"/></td>
   </tr>
   <tr>
     <td>Password</td>
   </tr>
+  <tr><td><div id="mailrespuesta"></div>
+<div id="respuesta"></div>	
+  </td></tr>
   <tr>
     <td><input type="password" name="lpas" id="pass" size="20"/></td>
   </tr>
@@ -183,13 +174,14 @@ function hideLightbox() {
   <tr>
     <td>&nbsp;</td>
   </tr>
+  <div id="mailrespuesta"></div>
+<div id="respuesta"></div>	
 </table>
- 
+
 	 </div>
 	</br>
 	
 	  </div>
->>>>>>> 874c1dc3218c323a49bb400b55bf3db8bd350b9d
 </div>
 <div id="fade" class="fadebox">&nbsp;</div>
   <div id="pie"> 

@@ -4,8 +4,6 @@ function ValidateEmail()
 	if(document.getElementById('mail').value.match(mailformat))
 	{
 		texto = '<img src="../imagenes/ok.png "width=20px" />';	
-		
-<input type="button" id="reg"  value="Registrar" disabled onclick="javascript:mandardatosregistro()" /></br>		
 	}
 	else
 	{
