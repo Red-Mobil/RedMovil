@@ -1,3 +1,19 @@
+function ValidateEmail()
+{
+	var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if(document.getElementById('mail').value.match(mailformat))
+	{
+		texto = '<img src="../imagenes/ok.png "width=20px" />';	
+		
+<input type="button" id="reg"  value="Registrar" disabled onclick="javascript:mandardatosregistro()" /></br>		
+	}
+	else
+	{
+		texto = '<img src="../imagenes/not_ok.png "width=20px" />';			
+	}
+	$("#mailrespuesta").html(texto);
+}
+
 function mandardatoslogin()
 {
 	var send = ver();
@@ -37,18 +53,20 @@ function login(str)
 	{
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
-			var r = xmlhttp.responseText;
-			alert (r);
+			var r = xmlhttp.responseText;			
 			if (r == "si")
-			{
-				//texto = 'La pagina Existe actualmente';	
+			{				
 				location.href="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/edu.html";
 			}
-			else if (r == "no")
+			else if (r == "existe")
 			{
-				//texto = 'La pagina no existe actualmente';	
-				texto = 'La pagina no existe actualmente <img src="../imagenes/ok.png "width=20px" />';	
+				texto = 'Error. Usuario y contrasenia no coinciden <img src="../imagenes/not_ok.png "width=20px" />';
 			}			
+			else if (r == "validar")
+			{
+				texto = 'Error. Debe validar su cuenta antes de continuar. <img src="../imagenes/not_ok.png "width=20px" />';
+			}
+			$("#respuesta").html(texto);
 		}
 	}
 	xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/login/log.php"+str,true);
@@ -70,18 +88,17 @@ function registro(str)
 	{
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
-			var r = xmlhttp.responseText;
-			alert (r);
+			var r = xmlhttp.responseText;			
 			if (r == "si")
 			{
 				//texto = 'La pagina Existe actualmente';	
 				location.href="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/edu.html";
 			}
 			else if (r == "no")
-			{
-				//texto = 'La pagina no existe actualmente';	
-				texto = 'La pagina no existe actualmente <img src="../imagenes/ok.png "width=20px" />';	
-			}			
+			{				
+				texto = 'Error. El mail ingresado ya existe en la base de datos <img src="../imagenes/not_ok.png "width=20px" />';
+			}		
+			$("#respuesta").html(texto);
 		}
 	}
 	xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/login/reg.php"+str,true);

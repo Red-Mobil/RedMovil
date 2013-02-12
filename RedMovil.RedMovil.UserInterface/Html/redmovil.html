@@ -153,11 +153,13 @@ function hideLightbox() {
   <div id="content">
 <!--aqui php del login - registrar-->
 	<a href="#">Registrarse</a></br>
-	Email <input type="text" name="mail" id="mail" size="6"/></br>
+	Email <input type="text" name="mail" id="mail" size="6" onkeyup="javascript:ValidateEmail()"/><div id="mailrespuesta"></div></br>
 	Password <input type="password" name="lpas" id="pass" size="6"/></br>
-	<input type="button" id="log"  value="Log-In" onclick="javascript:mandardatoslogin()" /></br>
-	<input type="button" id="reg"  value="Registrar" onclick="javascript:mandardatosregistro()" /></br>
+	<input type="button" id="log"  value="Log-In" disabled onclick="javascript:mandardatoslogin()" /></br>
+	<input type="button" id="reg"  value="Registrar" disabled onclick="javascript:mandardatosregistro()" /></br>
+	<div id="respuesta"></div>	
 	<a href="javascript:hideLightbox();"><img src="../imagenes/close.png" width="15" height="15"></a>
+	
 	</div>
 </div>
 <div id="fade" class="fadebox">&nbsp;</div>

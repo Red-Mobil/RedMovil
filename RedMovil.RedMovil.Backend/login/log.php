@@ -14,7 +14,7 @@ $pass = $pagina[1];
 		$fila = pg_fetch_assoc($consulta);																		
 		if ($fila['id_tipo_usuario'] == '0')
 		{
-			echo 'Debe validar su direccion de correo electronico antes de continuar, Gracias.';
+			echo 'validar';
 		}
 		else
 		{
@@ -25,7 +25,7 @@ $pass = $pagina[1];
 	}
 	else
 	{								
-		echo "no";				
+		echo "existe";				
 	}							
 	pg_free_result($consulta);
 ?>
