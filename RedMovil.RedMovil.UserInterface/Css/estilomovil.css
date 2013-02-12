@@ -188,3 +188,37 @@ padding:0px;
 img{
 	margin-left:opx;
 }
+/*estilo galeria*/
+#margen{
+	z-index:1000;
+	width:100%;
+	height:100%;
+	background-color:#fff;
+	opacity:0.80;
+	filter: alpha(opacity=80);
+	overflow:hidden;
+	}
+#cerrar{
+	float:right;
+	position:absolute;
+	z-index:1002;
+
+}
+#der{
+	margin-top:100px;
+	float:rigth;
+	position:absolute;
+	z-index:1004;
+}
+#isq{
+	margin-top:100px;
+	float:left;
+	position:absolute;
+	z-index:1003;
+}
+#fotos{
+	z-index:1001;
+	width:20%;
+	height:auto;
+	float:left;
+}

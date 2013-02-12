@@ -21,30 +21,70 @@ function mostrarportada()
 }
 
 function mostrarimagen() 
-{			
-	if (document.getElementById('f1').value != '' || document.getElementById('f2').value != '' || document.getElementById('f3').value != '')
-	{
-		$("#gale").html('<input type="button" class="tt" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \>');
-		
-		texto = '<div class="imageRow"><div class="set">';	
-		if (document.getElementById('f1').value != '')
-		texto = texto + '<div class="single first" id=i1><a href="../images/' + document.getElementById('f1').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f11').value +'"><img src="../images/' + document.getElementById('f1').value + '"width="100%" float="left" /></a></div>';
-		if (document.getElementById('f2').value != '')
-		texto = texto + '<div class="single" id=i2><a href="../images/' + document.getElementById('f2').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f22').value +'"><img src="../images/' + document.getElementById('f2').value + '"width="100%" float="left" /></a></div>';
-		if (document.getElementById('f3').value != '')
-		texto = texto + '<div class="single last" id=i3><a href="../images/' + document.getElementById('f3').value + '"rel="lightbox[plants]" title="'+ document.getElementById('f33').value +'"><img src="../images/' + document.getElementById('f3').value + '"width="100%" float="left" /></a></div>';
-		texto = texto +'</div></div>';
-							
-		$("#preview_vista_galeria").html(texto);
-		if (document.getElementById('f1').value != '')
-		document.getElementById('i1').style.display = 'none';
-		if (document.getElementById('f2').value != '')
-		document.getElementById('i2').style.display = 'none';
-		if (document.getElementById('f3').value != '')
-		document.getElementById('i3').style.display = 'none';
-	}
+{   
+ if (document.getElementById('f1').value != '' || document.getElementById('f2').value != '' || document.getElementById('f3').value != '')
+ {
+  $("#gale").html('<input type="button" class="tt" value="Galeria" onclick="mostrarimagenes()" id="botonimagen" \>');
+  
+  texto = '<div class="imageRow"><div class="set">'; 
+  if (document.getElementById('f1').value != '')
+  texto = texto + '<div class="single first" id=i1><img src="../images/' + document.getElementById('f1').value + '"width="100%" float="left" onclick="insertarimagen(\'f1\')" \></div>';
+  if (document.getElementById('f2').value != '')
+  texto = texto + '<div class="single" id=i2><img src="../images/' + document.getElementById('f2').value + '"width="100%" float="left" onclick="insertarimagen(\'f2\')" \></div>';
+  if (document.getElementById('f3').value != '')
+  texto = texto + '<div class="single last" id=i3><img src="../images/' + document.getElementById('f3').value + '"width="100%" float="left" onclick="insertarimagen(\'f3\')" \></div>';
+  texto = texto +'</div></div>';
+       
+  $("#preview_vista_galeria").html(texto);
+  if (document.getElementById('f1').value != '')
+  document.getElementById('i1').style.display = 'none';
+  if (document.getElementById('f2').value != '')
+  document.getElementById('i2').style.display = 'none';
+  if (document.getElementById('f3').value != '')
+  document.getElementById('i3').style.display = 'none';
+ }
+}
+function insertarimagen(valor)
+{
+ $("#fotos").html('<img src="../images/' + document.getElementById(valor).value + '"/>');
+ hideall();
+ document.getElementById('cerrar').style.display = 'block';
+ document.getElementById('der').style.display = 'block';
+ document.getElementById('izq').style.display = 'block';
+ document.getElementById('margen').style.display = 'block';
+ document.getElementById('fotos').style.display = 'block';
+ document.getElementById('home').style.display = 'none';
+ asd = valor.split('f');
+ valorimg = asd[1];
 }
 
+function cerrarimagen()
+{
+ document.getElementById('margen').style.display = 'none';
+ document.getElementById('home').style.display = 'block';
+ document.getElementById('preview_vista_galeria').style.display = 'block';
+  
+}
+function moverderecha(valoor)
+{
+ if(valoor == "3"){
+  valoor ="1";
+ }else{
+ valoor = parseInt(valoor)+parseInt(1);
+ }
+ insertarimagen('f'+valoor);
+ 
+}
+
+function moverizquierda(valoor)
+{
+ if(valoor =="1"){
+  valoor ="3";
+ }else{
+ valoor = valoor-"1";
+ }
+ insertarimagen('f'+valoor);
+}
 function mostrarimagenes()
 {
 	hideall();
