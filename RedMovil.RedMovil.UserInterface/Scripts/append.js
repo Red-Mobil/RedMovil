@@ -514,6 +514,7 @@ $(document).ready(function () {
 	});
 	
     $("#mp").click(function() {
+		document.getElementById('landing_page').style.display = 'none';
 		document.getElementById('mipagina').style.display = 'block';
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'none';
@@ -523,6 +524,7 @@ $(document).ready(function () {
     });
 	
 	$("#txt").click(function() {
+		document.getElementById('landing_page').style.display = 'none';
 		document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'block';
         document.getElementById('galeria').style.display = 'none';
@@ -533,6 +535,7 @@ $(document).ready(function () {
 
     $("#add").click(function () {
 
+		document.getElementById('landing_page').style.display = 'none';
 		document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'block';
         document.getElementById('galeria').style.display = 'none';
@@ -569,6 +572,7 @@ $(document).ready(function () {
         //        $("texto").css("display", "none");
         //        $("galeria").css("display", "block");
         //        $("formulario_contacto").css("display", "none");
+		document.getElementById('landing_page').style.display = 'none';
 	document.getElementById('mipagina').style.display = 'none';	
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'block';
@@ -580,6 +584,7 @@ $(document).ready(function () {
 
     // Levantar el formulario de contacto en el area de trabajo //
     $("#btn_contacto").click(function () {
+	document.getElementById('landing_page').style.display = 'none';
 	document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'none';
@@ -593,6 +598,7 @@ $(document).ready(function () {
     
     //Levantar el formulario de Redes Sociales en el area de trabajo //
      $("#btn_rs").click(function () {
+	 document.getElementById('landing_page').style.display = 'none';
 	document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'none';
@@ -605,6 +611,7 @@ $(document).ready(function () {
     });
      
      $("#btn_dise").click(function (){
+	 document.getElementById('landing_page').style.display = 'none';
 	document.getElementById('mipagina').style.display = 'none';
         document.getElementById('texto').style.display = 'none';
         document.getElementById('galeria').style.display = 'none';
@@ -632,6 +639,17 @@ $(document).ready(function () {
 		mandardatoscss(send2);    
 	});			
     $("#lp").click(function () {
+
+		document.getElementById('landing_page').style.display = 'block';
+		document.getElementById('mipagina').style.display = 'none';
+        document.getElementById('texto').style.display = 'none';
+        document.getElementById('galeria').style.display = 'none';
+        document.getElementById('formulario_contacto').style.display = 'none';
+		document.getElementById('formulario_rs').style.display = 'none';
+		document.getElementById('formulario_diseno').style.display = 'none';	
+    });	
+	
+    $("#crear_lp").click(function () {
 
 		lpCreate();
     });	
