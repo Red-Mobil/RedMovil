@@ -151,14 +151,32 @@ function hideLightbox() {
   </div>
   <div id="over" class="overbox">
   <div id="content">
-<!--aqui php del login - registrar-->
-	<a href="#">Registrarse</a></br>
-	Email <input type="text" name="mail" id="mail" size="6"/></br>
-	Password <input type="password" name="lpas" id="pass" size="6"/></br>
-	<input type="button" id="log"  value="Log-In" onclick="javascript:mandardatoslogin()" /></br>
-	<input type="button" id="reg"  value="Registrar" onclick="javascript:mandardatosregistro()" /></br>
-	<a href="javascript:hideLightbox();"><img src="../imagenes/close.png" width="15" height="15"></a>
-	</div>
+<!--aqui php del login - registrar--><div id="cerrar"><a href="javascript:hideLightbox();"><img src="../imagenes/close.png" width="15" height="15"></a></div>
+	<a href="#">Registrarse</a><div id="datos"><table id="datos" width="100%" border="0">
+  <tr>
+    <td>Email</td>
+  </tr>
+  <tr>
+    <td><input type="text" name="mail" id="mail" size="20"/></td>
+  </tr>
+  <tr>
+    <td>Password</td>
+  </tr>
+  <tr>
+    <td><input type="password" name="lpas" id="pass" size="20"/></td>
+  </tr>
+  <tr>
+    <td><input type="button" id="log"  value="Log-In" onclick="javascript:mandardatoslogin()" /><input type="button" id="reg"  value="Registrar" onclick="javascript:mandardatosregistro()" /></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+ 
+	 </div>
+	</br>
+	
+	  </div>
 </div>
 <div id="fade" class="fadebox">&nbsp;</div>
   <div id="pie"> 
