@@ -9,12 +9,12 @@ $(document).ready(function(){
 			// cancela upload
 			return false;
 		} else {
-			document.getElementById('up').value = 'Subiendo';
+			document.getElementById('upload_txt').value = 'Subiendo';
 			this.disable();
 		}
 		},
 		onComplete: function(file, response){
-			document.getElementById('up').value = 'Subir Palabras clave';
+			document.getElementById('upload_txt').value = 'Subir Palabras clave';
 //			button.text('Subir txt');
 			// enable upload button
 			this.enable();			
