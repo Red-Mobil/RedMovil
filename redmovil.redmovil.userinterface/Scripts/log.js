@@ -4,9 +4,13 @@ function ValidateEmail()
 	if(document.getElementById('mail').value.match(mailformat))
 	{
 		texto = '<img src="../imagenes/ok.png "width=20px" />';	
+		document.getElementById("log").disabled=false;
+		document.getElementById("reg").disabled=false;
 	}
 	else
 	{
+		document.getElementById("log").disabled=true;
+		document.getElementById("reg").disabled=true;
 		texto = '<img src="../imagenes/not_ok.png "width=20px" />';			
 	}
 	$("#mailrespuesta").html(texto);
