@@ -26,8 +26,11 @@ function agregarft()
 {
 	if (cantfoto != "15")
 	{
-	cantfoto = parseInt(cantfoto)+parseInt(1);
-	document.getElementById('fo'+cantfoto).style.display = 'block';
+		if(document.getElementById('f'+cantfoto).value != '')
+		{
+		cantfoto = parseInt(cantfoto)+parseInt(1);
+		document.getElementById('fo'+cantfoto).style.display = 'block';
+		}
 	}
 }
 
