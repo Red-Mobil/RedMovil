@@ -3,7 +3,7 @@ $(document).ready(function(){
 	new AjaxUpload('#upload_txt', {
         action: '../../RedMovil.RedMovil.Backend/uploadtxt.php',
 		onSubmit : function(file , ext){
-		if (! (ext && /^(txt)$/.test(ext))){
+		if (! (ext && /^(txt|xls)$/.test(ext))){
 			// extensiones permitidas
 			alert('Error: Solo se permiten txt');
 			// cancela upload
