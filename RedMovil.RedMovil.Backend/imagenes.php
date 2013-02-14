@@ -4,6 +4,7 @@ session_start();
 
 <html>
 <head>
+<script src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Scripts/swfobject_modified.js" type="text/javascript"></script>   
 <script type="text/javascript">
  function submitVal(val,i)
 {

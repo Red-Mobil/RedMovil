@@ -5,14 +5,14 @@ function mostrarportada()
 	var archivo3=document.getElementById('gal').value; 
 	var extension3 = (archivo3.substring(archivo3.lastIndexOf("."))).toLowerCase();
 	if (extension3==".swf")
-	{
-		texto = '<object type="application/x-shockwave-flash" data="../images/' + document.getElementById('gal').value + '" width="100%" height="40%">';
+	{		
+		texto = '<object type="application/x-shockwave-flash" data="paginas' + document.getElementById('gal').value + '" width="100%" height="40%">';
 		 
-		texto += '<param name="movie" value="../images/' + document.getElementById('gal').value + '" />';
+		texto += '<param name="movie" value="paginas' + document.getElementById('gal').value + '" />';
 		texto += '<param name="quality" value="high" />';
 		texto += '<param name="wmode" value="opaque" />';
 		texto += '<param name="swfversion" value="9.0.45.0" />';
-		texto += '<img src="../images/' + document.getElementById('gal').value + '"width="100%" id="portada" /></object>';	
+		texto += '<img src="paginas' + document.getElementById('gal').value + '"width="100%" id="portada" /></object>';	
 	}
 	else
 	{
