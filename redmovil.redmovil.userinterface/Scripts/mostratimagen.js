@@ -121,6 +121,78 @@ function insertarimagen(valor)
  valorimg = asd[1];
 }
 
+function insertarimagen2(valor)
+{
+	if(valor == "f1"){
+		 $("#fotos").html('<img src="' + document.getElementById('as1').src + ' "width="100%"/>');
+		 valorimg = "1";
+	}
+	if(valor == "f2"){
+		 $("#fotos").html('<img src="' + document.getElementById('as2').src + ' "width="100%"/>');
+		 valorimg = "2";
+	}
+	if(valor == "f3"){
+		 $("#fotos").html('<img src="' + document.getElementById('as3').src + ' "width="100%"/>');
+		 valorimg = "3";
+	}
+	if(valor == "f4"){
+		 $("#fotos").html('<img src="' + document.getElementById('as4').src + ' "width="100%"/>');
+		 valorimg = "4";
+	}
+	if(valor == "f5"){
+		 $("#fotos").html('<img src="' + document.getElementById('as5').src + ' "width="100%"/>');
+		 valorimg = "5";
+	}
+	if(valor == "f6"){
+		 $("#fotos").html('<img src="' + document.getElementById('as6').src + ' "width="100%"/>');
+		 valorimg = "6";
+	}
+	if(valor == "f7"){
+		 $("#fotos").html('<img src="' + document.getElementById('as7').src + ' "width="100%"/>');
+		 valorimg = "7";
+	}
+	if(valor == "f8"){
+		 $("#fotos").html('<img src="' + document.getElementById('as8').src + ' "width="100%"/>');
+		 valorimg = "8";
+	}
+	if(valor == "f9"){
+		 $("#fotos").html('<img src="' + document.getElementById('as9').src + ' "width="100%"/>');
+		 valorimg = "9";
+	}
+	if(valor == "f10"){
+		 $("#fotos").html('<img src="' + document.getElementById('as10').src + ' "width="100%"/>');
+		 valorimg = "10";
+	}
+	if(valor == "f11"){
+		 $("#fotos").html('<img src="' + document.getElementById('as11').src + ' "width="100%"/>');
+		 valorimg = "11";
+	}
+	if(valor == "f12"){
+		 $("#fotos").html('<img src="' + document.getElementById('as12').src + ' "width="100%"/>');
+		 valorimg = "12";
+	}
+	if(valor == "f13"){
+		 $("#fotos").html('<img src="' + document.getElementById('as13').src + ' "width="100%"/>');
+		 valorimg = "13";
+	}
+	if(valor == "f14"){
+		 $("#fotos").html('<img src="' + document.getElementById('as14').src + ' "width="100%"/>');
+		 valorimg = "14";
+	}
+	if(valor == "f15"){
+		 $("#fotos").html('<img src="' + document.getElementById('as15').src + ' "width="100%"/>');
+		 valorimg = "15";
+	}
+ hideall();
+ document.getElementById('cerrar').style.display = 'block';
+ document.getElementById('der').style.display = 'block';
+ document.getElementById('izq').style.display = 'block';
+ document.getElementById('margen').style.display = 'block';
+ document.getElementById('fotos').style.display = 'block';
+ document.getElementById('home').style.display = 'none';
+	
+}
+
 function cerrarimagen()
 {
  document.getElementById('margen').style.display = 'none';
@@ -163,6 +235,43 @@ function moverizquierda(valoor)
 	}
  }
  insertarimagen('f'+valoor);
+}
+
+function moverderecha2(valoor)
+{
+ if(valoor == "15"){
+  valoor ="1";
+ }else{
+	valoor = parseInt(valoor)+parseInt(1);
+	while (document.getElementById('f'+valoor).value == '')
+	{
+		valoor = parseInt(valoor)+parseInt(1);
+		if(valoor == "15")
+		{
+			valoor ="1";
+		}
+	}
+ }
+ insertarimagen2('f'+valoor);
+ 
+}
+
+function moverizquierda2(valoor)
+{
+ if(valoor =="1"){
+  valoor ="15";
+  while (document.getElementById('f'+valoor).value == '')
+	{
+		valoor = valoor-"1";
+	}
+ }else{
+ valoor = valoor-"1";
+ while (document.getElementById('f'+valoor).value == '')
+	{
+		valoor = valoor-"1";
+	}
+ }
+ insertarimagen2('f'+valoor);
 }
 
 function mostrarimagenes()

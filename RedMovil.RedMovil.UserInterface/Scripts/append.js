@@ -23,6 +23,7 @@
 		mandar = document.getElementById('nombrepagina').value+"</titulo>";
 		mandar += document.getElementById('cssArchivo').href+"</titulo>";
 		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
+		mandar += "<script type='text/javascript'> valorimg = "+valorimg+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
 		mandar += '<a href="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/redmovil.html" id="banner"><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/imagenes/fullBanner.png" width="100%"/></a>'
 		mandar += "<div id='preview_vista_portada'>-skip";
@@ -115,7 +116,7 @@
 		mandar += '<input type="button" value="Galeria" class = "tt" onclick="mostrarimagenes()" id="botonimagen" \>-skip';		
 		}
 		mandar += "</div>-skip";
-		mandar += "<div id='preview_vista_galeria'>-skip";
+		mandar += "<div id='preview_vista_galeria' style='display: none'>-skip";
 		if (document.getElementById('f1').value == '' && document.getElementById('f2').value == '' && document.getElementById('f3').value == '')
 		{
 		}
@@ -125,743 +126,101 @@
 		if (document.getElementById('f1').value != '')
 		{
 			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f1').value +'-skip';
-			mandar += '<div class="single first" id=i1><img src="../images/' + document.getElementById('f1').value + '"width="100%" float="left" onclick="insertarimagen(\'f1\')" \></div>-skip';
+			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f1').value +'-skip';
+			mandar += '<div class="single first" id=i1><img id="as1" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f1').value + '"width="100%" float="left" onclick="insertarimagen2(\'f1\')" \></div>-skip';
 			if (document.getElementById('f2').value != '')
 			{	
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f2').value +'-skip';
-				mandar += '<div class="single" id=i2><img src="../images/' + document.getElementById('f2').value + '"width="100%" float="left" onclick="insertarimagen(\'f2\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f2').value +'-skip';
+				mandar += '<div class="single" id=i2><img id="as2" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f2').value + '"width="100%" float="left" onclick="insertarimagen2(\'f2\')" \></div>-skip';
 			}
 			if (document.getElementById('f3').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f3').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f3').value + '"width="100%" float="left" onclick="insertarimagen(\'f3\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f3').value +'-skip';
+				mandar += '<div class="single last" id=i3><img id="as3" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f3').value + '"width="100%" float="left" onclick="insertarimagen2(\'f3\')" \></div>-skip';
 			}
 			if (document.getElementById('f4').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f4').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f4').value +'-skip';
+				mandar += '<div class="single last" id=i4><img id="as4" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen2(\'f4\')" \></div>-skip';
 			}
 			if (document.getElementById('f5').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f5').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f5').value +'-skip';
+				mandar += '<div class="single last" id=i5><img id="as5" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen2(\'f5\')" \></div>-skip';
 			}
 			if (document.getElementById('f6').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f6').value +'-skip';
+				mandar += '<div class="single last" id=i6><img id="as6" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen2(\'f6\')" \></div>-skip';
 			}
 			if (document.getElementById('f7').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f7').value +'-skip';
+				mandar += '<div class="single last" id=i7><img id="as7" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen2(\'f7\')" \></div>-skip';
 			}
 			if (document.getElementById('f8').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
+				mandar += '<div class="single last" id=i8><img id="as8" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen2(\'f8\')" \></div>-skip';
 			}
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
+				mandar += '<div class="single last" id=i9><img id="as9" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen2(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
+				mandar += '<div class="single last" id=i10><img id="as10" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen2(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
+				mandar += '<div class="single last" id=i11><img id="as11" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen2(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
+				mandar += '<div class="single last" id=i12><img id="as12" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen2(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
+				mandar += '<div class="single last" id=i13><img id="as13" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen2(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
+				mandar += '<div class="single last" id=i14><img id="as14" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen2(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
+				mandar += '<div class="single last" id=i15><img id="as15" src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen2(\'f15\')" \></div>-skip';
 			}
 		}	
-		else if (document.getElementById('f2').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f2').value +'-skip';
-			mandar += '<div class="single" id=i2><img src="../images/' + document.getElementById('f2').value + '"width="100%" float="left" onclick="insertarimagen(\'f2\')" \></div>-skip';
-			if (document.getElementById('f3').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f3').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f3').value + '"width="100%" float="left" onclick="insertarimagen(\'f3\')" \></div>-skip';
-			}
-			if (document.getElementById('f4').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f4').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
-			}
-			if (document.getElementById('f5').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f5').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
-			}
-			if (document.getElementById('f6').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
-			}
-			if (document.getElementById('f7').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
-			}
-			if (document.getElementById('f8').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
-			}
-			if (document.getElementById('f9').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
-			}
-			if (document.getElementById('f10').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			}
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f3').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f3').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f3').value + '"width="100%" float="left" onclick="insertarimagen(\'f3\')" \></div>-skip';
-			if (document.getElementById('f4').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f4').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
-			}
-			if (document.getElementById('f5').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f5').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
-			}
-			if (document.getElementById('f6').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
-			}
-			if (document.getElementById('f7').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
-			}
-			if (document.getElementById('f8').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
-			}
-			if (document.getElementById('f9').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
-			}
-			if (document.getElementById('f10').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			}
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f4').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f4').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
-			
-			if (document.getElementById('f5').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f5').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
-			}
-			if (document.getElementById('f6').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
-			}
-			if (document.getElementById('f7').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
-			}
-			if (document.getElementById('f8').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
-			}
-			if (document.getElementById('f9').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
-			}
-			if (document.getElementById('f10').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			}
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f5').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f5').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
-			
-			if (document.getElementById('f6').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
-			}
-			if (document.getElementById('f7').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
-			}
-			if (document.getElementById('f8').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
-			}
-			if (document.getElementById('f9').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
-			}
-			if (document.getElementById('f10').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			}
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f6').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f6').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
-
-			if (document.getElementById('f7').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
-			}
-			if (document.getElementById('f8').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
-			}
-			if (document.getElementById('f9').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
-			}
-			if (document.getElementById('f10').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			}
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f7').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f7').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
-			
-			if (document.getElementById('f8').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
-			}
-			if (document.getElementById('f9').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
-			}
-			if (document.getElementById('f10').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			}
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f8').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f8').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
-			
-			if (document.getElementById('f9').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
-			}
-			if (document.getElementById('f10').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			}
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f9').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f9').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
-			
-			if (document.getElementById('f10').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			}
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f10').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f10').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
-			
-			if (document.getElementById('f11').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			}
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f11').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f11').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
-			
-			if (document.getElementById('f12').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			}
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f12').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f12').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
-			
-			if (document.getElementById('f13').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			}
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f13').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f13').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
-			
-			if (document.getElementById('f14').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			}
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f14').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f14').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
-			
-			if (document.getElementById('f15').value != '')
-			{
-				objeto += "i";			
-				respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			}
-		}
-		else if (document.getElementById('f15').value != '')
-		{
-			objeto += "i";			
-			respaldo += '../images/'+document.getElementById('f15').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="../images/' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
-			
-		}
 		mandar += '</div></div>-skip';
 		}
 		mandar += "</div>-skip";
 		mandar += "<div id='margen' style='display: none'>-skip";
-		mandar += "<div class='ac' id='cerrar' style='display: none'><a href='javascript:cerrarimagen();'><img src='../../imagenes/close.png' width='15' height='15'></a></div>-skip";
+		mandar += "<div class='ac' id='cerrar' style='display: none'><a href='javascript:cerrarimagen();'><img src='http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/imagenes/close.png' width='15' height='15'></a></div>-skip";
 		mandar += "<div id='fotos'></div>-skip";
-		mandar += "<div class='ac' id='der' style='display: none'><a href='javascript:moverderecha(valorimg);'><img src='../../imagenes/next.png' width='15' height='15'></a></div>-skip";
-		mandar += "<div class='ac' id='izq' style='display: none'><a href='javascript:moverizquierda(valorimg);'><img src='../../imagenes/prev.png' width='15' height='15'></a></div>-skip";
+		mandar += "<div class='ac' id='der' style='display: none'><a href='javascript:moverderecha2(\'valorimg\');'><img src='http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/imagenes/next.png' width='15' height='15'></a></div>-skip";
+		mandar += "<div class='ac' id='izq' style='display: none'><a href='javascript:moverizquierda2(\'valorimg\');'><img src='http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/imagenes/prev.png' width='15' height='15'></a></div>-skip";
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_contacto'>-skip";
 		mandar += "<div id='llamanos'>-skip";
