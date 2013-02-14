@@ -1,7 +1,9 @@
 <?php		
+session_start();
+
 require("class.image-resize.php"); //incluir la clase en el archivo
 
-		$directorio = '../RedMovil.RedMovil.UserInterface/images/';
+		$directorio = '../RedMovil.RedMovil.UserInterface/Html/paginas/'.$_SESSION['email'].'/images/';
 		$tmpName  = $_FILES['userfile']['tmp_name'];
 		echo $tmpName;
 		$name = $_FILES['userfile']['name'];		

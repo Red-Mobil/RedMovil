@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <html>
 <head>
 <script type="text/javascript">
@@ -18,7 +22,7 @@
 	$url="http://".$_SERVER['HTTP_HOST'].":".$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'];	
 	$url = $url[strlen($url)-1];
 	
-	$imagenes =  glob("../RedMovil.RedMovil.UserInterface/images/*",GLOB_BRACE);
+	$imagenes =  glob("../RedMovil.RedMovil.UserInterface/Html/paginas/".$_SESSION['email']."/images/*",GLOB_BRACE);
 
 	foreach ($imagenes as $ima)
     $nombres[]=array_pop(split("/",$ima));
@@ -33,17 +37,17 @@
 		$extension = end($trozos); 
 		if ($extension != 'swf')
 		{
-			echo '<td><img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".' width="100px" height="100px"></br></td>';								
+			echo '<td><img src="../RedMovil.RedMovil.UserInterface/Html/paginas/'.$_SESSION['email'].'/images/'.$nombres[$i].'" '."onclick='submitVal(".'"/'.$_SESSION['email'].'/images/'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".' width="100px" height="100px"></br></td>';								
 		}
 		else
 		{
-			echo '<td><object type="application/x-shockwave-flash" data="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" width="100px" height="100px">';
-			echo '<param name="movie" value="../images/'.$nombres[$i].'" />';
+			echo '<td><object type="application/x-shockwave-flash" data="../RedMovil.RedMovil.UserInterface/Html/paginas/'.$_SESSION['email'].'/images/'.$nombres[$i].'" width="100px" height="100px">';
+			echo '<param name="movie" value="../RedMovil.RedMovil.UserInterface/Html/paginas/'.$_SESSION['email'].'/images/'.$nombres[$i].'" />';
 			echo '<param name="quality" value="high" />';
 			echo '<param name="wmode" value="opaque" />';
 			echo '<param name="swfversion" value="9.0.45.0" />';
-			echo '<img src="../RedMovil.RedMovil.UserInterface/images/'.$nombres[$i].'" width="100px" height="100px"></br></object></br>';											
-			echo '<input type="button" value="Elegir" '."onclick='submitVal(".'"'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".'  style="width: 100px;" /></td>';							
+			echo '<img src="../RedMovil.RedMovil.UserInterface/Html/paginas/'.$_SESSION['email'].'/images/'.$nombres[$i].'" width="100px" height="100px"></br></object></br>';											
+			echo '<input type="button" value="Elegir" '."onclick='submitVal(".'"/'.$_SESSION['email'].'/images/'.$nombres[$i].'"'.",".'"'.$url.'"'.")'".'  style="width: 100px;" /></td>';							
 		}
 		$i = $i+1;		
 	}	

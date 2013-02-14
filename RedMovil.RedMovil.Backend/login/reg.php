@@ -9,16 +9,16 @@ $pass = $pagina[1];
 
 	$pass = md5($pass);			
 	
-	$consulta=pg_exec("SELECT * FROM usuarios WHERE email = '".$email."'");
+	$consulta=pg_exec("SELECT * FROM usuarios WHERE correousuario = '".$email."'");
 	$filas=pg_numrows($consulta);
 	if($filas == 0 )
 	{
-		pg_free_result($consulta);		
-		$confirmar = md5($email);
-		pg_exec("INSERT INTO usuarios(email,pass,id_tipo_usuario,confirmacion) VALUES('".$email."','".$pass."','1','".$confirmar."')");
-		pg_free_result($consulta);									
-		$mensaje = "Bienvenido".PHP_EOL."Para la activacion de su cuenta pulse el siguiente link:".PHP_EOL."http://www.eddiseno.com/post/registrar.php?validar=".$confirmar.PHP_EOL."Gracias";
-		mail($email,"No responder",$mensaje);							
+		pg_free_result($consulta);				
+		pg_exec("INSERT INTO usuarios(correousuario,claveusuario) VALUES('".$email."','".$pass."')");
+		pg_free_result($consulta);										
+		$_SESSION['email'] = $fila['correousuario'];
+		mkdir("../../RedMovil.RedMovil.UserInterface/Html/paginas/".$email);
+		mkdir("../../RedMovil.RedMovil.UserInterface/Html/paginas/".$email."/images");
 		echo "si";
 	}
 	else

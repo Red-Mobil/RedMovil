@@ -24,7 +24,7 @@
 		mandar += document.getElementById('cssArchivo').href+"</titulo>";
 		mandar += "<script type='text/javascript'> max = "+max+"</script>-skip";
 		mandar += "<div id='expandible'>-skip";
-		mandar += '<a href="http://www.eddiseno.com/post/red/RedMovil.RedMovil.UserInterface/Html/edu.html" id="banner"><img src="../imagenes/fullBanner.png" width="100%"/></a>'
+		mandar += '<a href="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/redmovil.html" id="banner"><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/imagenes/fullBanner.png" width="100%"/></a>'
 		mandar += "<div id='preview_vista_portada'>-skip";
 		if (document.getElementById('gal').value != "")
 		{
@@ -240,7 +240,7 @@
 				window.open(xmlhttp.responseText);
 			}
 		}
-		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear.php?q="+str,true);
+		xmlhttp.open("GET","http://redmovil.mobi/editor/RedMovil.RedMovil.Backend/crear.php?q="+str,true);
 		xmlhttp.send();
 	}
 	
@@ -262,7 +262,7 @@
 				
 			}
 		}
-		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/crear2.php?q="+str,true);
+		xmlhttp.open("GET","http://redmovil.mobi/editor/RedMovil.RedMovil.Backend/crear2.php?q="+str,true);
 		xmlhttp.send();
 	}	
 	
@@ -288,18 +288,18 @@
 				if (r == "si")
 				{
 					//texto = 'La pagina Existe actualmente';	
-					texto = 'Error, la pagina Existe actualmente <img src="../imagenes/not_ok.png "width=20px" />';	
+					texto = 'Error, la pagina Existe actualmente <img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/imagenes/not_ok.png "width=20px" />';	
 
 				}
 				else if (r == "no")
 				{
 					//texto = 'La pagina no existe actualmente';	
-					texto = 'La pagina no existe actualmente <img src="../imagenes/ok.png "width=20px" />';	
+					texto = 'La pagina no existe actualmente <img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/imagenes/ok.png "width=20px" />';	
 				}
 				$("#recibir_respuesta").html(texto);				
 			}
 		}
-		xmlhttp.open("GET","../../RedMovil.RedMovil.Backend/buscarexistencia.php?q="+str,true);
+		xmlhttp.open("GET","http://redmovil.mobi/editor/RedMovil.RedMovil.Backend/buscarexistencia.php?q="+str,true);
 		xmlhttp.send();		
 	}
 
