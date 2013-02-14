@@ -855,7 +855,13 @@
 			
 		}
 		mandar += '</div></div>-skip';
-		}				
+		}
+		mandar += "</div>-skip";
+		mandar += "<div id='margen' style='display: none'>-skip";
+		mandar += "<div class='ac' id='cerrar' style='display: none'><a href='javascript:cerrarimagen();'><img src='../../imagenes/close.png' width='15' height='15'></a></div>-skip";
+		mandar += "<div id='fotos'></div>-skip";
+		mandar += "<div class='ac' id='der' style='display: none'><a href='javascript:moverderecha(valorimg);'><img src='../../imagenes/next.png' width='15' height='15'></a></div>-skip";
+		mandar += "<div class='ac' id='izq' style='display: none'><a href='javascript:moverizquierda(valorimg);'><img src='../../imagenes/prev.png' width='15' height='15'></a></div>-skip";
 		mandar += "</div>-skip";
 		mandar += "<div id='preview_vista_contacto'>-skip";
 		mandar += "<div id='llamanos'>-skip";
