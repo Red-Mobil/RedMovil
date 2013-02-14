@@ -115,7 +115,7 @@
 		mandar += '<input type="button" value="Galeria" class = "tt" onclick="mostrarimagenes()" id="botonimagen" \>-skip';		
 		}
 		mandar += "</div>-skip";
-		mandar += "<div id='preview_vista_galeria'>-skip";
+		mandar += "<div id='preview_vista_galeria' style='display: none'>-skip";
 		if (document.getElementById('f1').value == '' && document.getElementById('f2').value == '' && document.getElementById('f3').value == '')
 		{
 		}
