@@ -62,11 +62,11 @@ function login(str)
 			}
 			else if (r == "existe")
 			{
-				texto = 'Error. Usuario y contrasenia no coinciden <img src="../imagenes/not_ok.png "width=20px" />';
+				texto = 'Error. Usuario y contrasenia no coinciden ';
 			}			
 			else if (r == "validar")
 			{
-				texto = 'Error. Debe validar su cuenta antes de continuar. <img src="../imagenes/not_ok.png "width=20px" />';
+				texto = 'Error. Debe validar su cuenta antes de continuar. ';
 			}
 			$("#respuesta").html(texto);
 		}
@@ -98,7 +98,7 @@ function registro(str)
 			}
 			else if (r == "no")
 			{				
-				texto = 'Error. El mail ingresado ya existe en la base de datos <img src="../imagenes/not_ok.png "width=20px" />';
+				texto = 'Error. El mail ingresado ya existe en la base de datos ';
 			}		
 			$("#respuesta").html(texto);
 		}
