@@ -109,7 +109,7 @@ function mostrarimagen()
 }
 function insertarimagen(valor)
 {
- $("#fotos").html('<img src="../images/' + document.getElementById(valor).value + '"/>');
+ $("#fotos").html('<img src="paginas' + document.getElementById(valor).value + ' "width="100%"/>');
  hideall();
  document.getElementById('cerrar').style.display = 'block';
  document.getElementById('der').style.display = 'block';
