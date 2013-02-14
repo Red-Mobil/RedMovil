@@ -143,73 +143,73 @@
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f4').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
+				mandar += '<div class="single last" id=i4><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
 			}
 			if (document.getElementById('f5').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f5').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
+				mandar += '<div class="single last" id=i5><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
 			}
 			if (document.getElementById('f6').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
+				mandar += '<div class="single last" id=i6><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
 			}
 			if (document.getElementById('f7').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
+				mandar += '<div class="single last" id=i7><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
 			}
 			if (document.getElementById('f8').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+				mandar += '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
 			}
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				mandar += '<div class="single last" id=i9><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}	
 		else if (document.getElementById('f2').value != '')
@@ -227,73 +227,73 @@
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f4').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
+				mandar += '<div class="single last" id=i4><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
 			}
 			if (document.getElementById('f5').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f5').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
+				mandar += '<div class="single last" id=i5><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
 			}
 			if (document.getElementById('f6').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
+				mandar += '<div class="single last" id=i6><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
 			}
 			if (document.getElementById('f7').value != '')
 			{
 				objeto += "i";			
 				respaldo += '../images/http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
+				mandar += '<div class="single last" id=i7><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
 			}
 			if (document.getElementById('f8').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+				mandar += '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
 			}
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src=".http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				mandar += '<div class="single last" id=i9><img src=".http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f3').value != '')
@@ -305,553 +305,553 @@
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f4').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
+				mandar += '<div class="single last" id=i4><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
 			}
 			if (document.getElementById('f5').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f5').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
+				mandar += '<div class="single last" id=i5><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
 			}
 			if (document.getElementById('f6').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
+				mandar += '<div class="single last" id=i6><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
 			}
 			if (document.getElementById('f7').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
+				mandar += '<div class="single last" id=i7><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
 			}
 			if (document.getElementById('f8').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+				mandar += '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
 			}
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				mandar += '<div class="single last" id=i9><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f4').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f4').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
+			mandar += '<div class="single last" id=i4><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>-skip';
 			
 			if (document.getElementById('f5').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f5').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
+				mandar += '<div class="single last" id=i5><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
 			}
 			if (document.getElementById('f6').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
+				mandar += '<div class="single last" id=i6><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
 			}
 			if (document.getElementById('f7').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
+				mandar += '<div class="single last" id=i7><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
 			}
 			if (document.getElementById('f8').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+				mandar += '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
 			}
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				mandar += '<div class="single last" id=i9><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f5').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f5').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
+			mandar += '<div class="single last" id=i5><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>-skip';
 			
 			if (document.getElementById('f6').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f6').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
+				mandar += '<div class="single last" id=i6><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
 			}
 			if (document.getElementById('f7').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
+				mandar += '<div class="single last" id=i7><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
 			}
 			if (document.getElementById('f8').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+				mandar += '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
 			}
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				mandar += '<div class="single last" id=i9><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f6').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f6').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
+			mandar += '<div class="single last" id=i6><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>-skip';
 
 			if (document.getElementById('f7').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f7').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
+				mandar += '<div class="single last" id=i7><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
 			}
 			if (document.getElementById('f8').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+				mandar += '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
 			}
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				mandar += '<div class="single last" id=i9><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f7').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f7').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
+			mandar += '<div class="single last" id=i7><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>-skip';
 			
 			if (document.getElementById('f8').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+				mandar += '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
 			}
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				mandar += '<div class="single last" id=i9><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f8').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f8').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
+			mandar += '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>-skip';
 			
 			if (document.getElementById('f9').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src=".http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+				mandar += '<div class="single last" id=i9><img src=".http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			}
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="../images/http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="../images/http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f9').value != '')
 		{
 			objeto += "i";			
 			respaldo += '.http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f9').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
+			mandar += '<div class="single last" id=i9><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>-skip';
 			
 			if (document.getElementById('f10').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+				mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			}
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f10').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f10').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
+			mandar += '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>-skip';
 			
 			if (document.getElementById('f11').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+				mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			}
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f11').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f11').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
+			mandar += '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>-skip';
 			
 			if (document.getElementById('f12').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+				mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			}
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f12').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f12').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
+			mandar += '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>-skip';
 			
 			if (document.getElementById('f13').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+				mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			}
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f13').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f13').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
+			mandar += '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>-skip';
 			
 			if (document.getElementById('f14').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+				mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			}
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f14').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f14').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
+			mandar += '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>-skip';
 			
 			if (document.getElementById('f15').value != '')
 			{
 				objeto += "i";			
 				respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-				mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+				mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			}
 		}
 		else if (document.getElementById('f15').value != '')
 		{
 			objeto += "i";			
 			respaldo += 'http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas'+document.getElementById('f15').value +'-skip';
-			mandar += '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
+			mandar += '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>-skip';
 			
 		}
 		mandar += '</div></div>-skip';
