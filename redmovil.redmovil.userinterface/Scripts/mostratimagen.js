@@ -43,35 +43,35 @@ function mostrarimagen()
   
   texto = '<div class="imageRow"><div class="set">'; 
   if (document.getElementById('f1').value != '')
-  texto = texto + '<div class="single first" id=i1><img src="paginas' + document.getElementById('f1').value + '"width="100%" float="left" onclick="insertarimagen(\'f1\')" \></div>';
+  texto = texto + '<div class="single first" id=i1><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f1').value + '"width="100%" float="left" onclick="insertarimagen(\'f1\')" \></div>';
   if (document.getElementById('f2').value != '')
-  texto = texto + '<div class="single" id=i2><img src="paginas' + document.getElementById('f2').value + '"width="100%" float="left" onclick="insertarimagen(\'f2\')" \></div>';
+  texto = texto + '<div class="single" id=i2><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f2').value + '"width="100%" float="left" onclick="insertarimagen(\'f2\')" \></div>';
   if (document.getElementById('f3').value != '')
-  texto = texto + '<div class="single last" id=i3><img src="paginas' + document.getElementById('f3').value + '"width="100%" float="left" onclick="insertarimagen(\'f3\')" \></div>';
+  texto = texto + '<div class="single last" id=i3><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f3').value + '"width="100%" float="left" onclick="insertarimagen(\'f3\')" \></div>';
   if (document.getElementById('f4').value != '')
-  texto = texto + '<div class="single last" id=i4><img src="paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>';
+  texto = texto + '<div class="single last" id=i4><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f4').value + '"width="100%" float="left" onclick="insertarimagen(\'f4\')" \></div>';
   if (document.getElementById('f5').value != '')
-  texto = texto + '<div class="single last" id=i5><img src="paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>';
+  texto = texto + '<div class="single last" id=i5><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f5').value + '"width="100%" float="left" onclick="insertarimagen(\'f5\')" \></div>';
   if (document.getElementById('f6').value != '')
-  texto = texto + '<div class="single last" id=i6><img src="paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>';
+  texto = texto + '<div class="single last" id=i6><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f6').value + '"width="100%" float="left" onclick="insertarimagen(\'f6\')" \></div>';
   if (document.getElementById('f7').value != '')
-  texto = texto + '<div class="single last" id=i7><img src="paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>';
+  texto = texto + '<div class="single last" id=i7><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f7').value + '"width="100%" float="left" onclick="insertarimagen(\'f7\')" \></div>';
   if (document.getElementById('f8').value != '')
-  texto = texto + '<div class="single last" id=i8><img src="paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>';
+  texto = texto + '<div class="single last" id=i8><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f8').value + '"width="100%" float="left" onclick="insertarimagen(\'f8\')" \></div>';
   if (document.getElementById('f9').value != '')
-  texto = texto + '<div class="single last" id=i9><img src="paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>';
+  texto = texto + '<div class="single last" id=i9><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f9').value + '"width="100%" float="left" onclick="insertarimagen(\'f9\')" \></div>';
   if (document.getElementById('f10').value != '')
-  texto = texto + '<div class="single last" id=i10><img src="paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>';
+  texto = texto + '<div class="single last" id=i10><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f10').value + '"width="100%" float="left" onclick="insertarimagen(\'f10\')" \></div>';
   if (document.getElementById('f11').value != '')
-  texto = texto + '<div class="single last" id=i11><img src="paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>';
+  texto = texto + '<div class="single last" id=i11><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f11').value + '"width="100%" float="left" onclick="insertarimagen(\'f11\')" \></div>';
   if (document.getElementById('f12').value != '')
-  texto = texto + '<div class="single last" id=i12><img src="paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>';
+  texto = texto + '<div class="single last" id=i12><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f12').value + '"width="100%" float="left" onclick="insertarimagen(\'f12\')" \></div>';
   if (document.getElementById('f13').value != '')
-  texto = texto + '<div class="single last" id=i13><img src="paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>';
+  texto = texto + '<div class="single last" id=i13><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f13').value + '"width="100%" float="left" onclick="insertarimagen(\'f13\')" \></div>';
   if (document.getElementById('f14').value != '')
-  texto = texto + '<div class="single last" id=i14><img src="paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>';
+  texto = texto + '<div class="single last" id=i14><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f14').value + '"width="100%" float="left" onclick="insertarimagen(\'f14\')" \></div>';
   if (document.getElementById('f15').value != '')
-  texto = texto + '<div class="single last" id=i15><img src="paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>';
+  texto = texto + '<div class="single last" id=i15><img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById('f15').value + '"width="100%" float="left" onclick="insertarimagen(\'f15\')" \></div>';
   texto = texto +'</div></div>';
        
   $("#preview_vista_galeria").html(texto);
@@ -109,7 +109,7 @@ function mostrarimagen()
 }
 function insertarimagen(valor)
 {
- $("#fotos").html('<img src="paginas' + document.getElementById(valor).value + ' "width="100%"/>');
+ $("#fotos").html('<img src="http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas' + document.getElementById(valor).value + ' "width="100%"/>');
  hideall();
  document.getElementById('cerrar').style.display = 'block';
  document.getElementById('der').style.display = 'block';

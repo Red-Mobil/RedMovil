@@ -171,6 +171,11 @@ width: 90%;
 margin-top: 2%;
 margin-left:4%;
 padding:0px;
+background-color:#FFFFFF;
+-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
 }
 .single,single first,single last {
 	float:left;
@@ -179,7 +184,7 @@ padding:0px;
 	margin-top:2%;
 	margin-left:2%;
 	margin-bottom:2%;
-	
+		
 }
 #i1,i2,i3{
 	float:left;
@@ -193,32 +198,25 @@ img{
 	z-index:1000;
 	width:100%;
 	height:100%;
-	background-color:#fff;
-	opacity:0.80;
-	filter: alpha(opacity=80);
-	overflow:hidden;
+	float:left;
 	}
 #cerrar{
-	float:right;
-	position:absolute;
-	z-index:1002;
-
+	
+	float:left;
 }
 #der{
 	margin-top:100px;
 	float:rigth;
-	position:absolute;
-	z-index:1004;
+
 }
 #isq{
 	margin-top:100px;
 	float:left;
-	position:absolute;
-	z-index:1004;
+	
 }
 #fotos{
 	z-index:1001;
-	width:85%;
+	width:100%;
 	height:auto;
 	float:left;
 }
