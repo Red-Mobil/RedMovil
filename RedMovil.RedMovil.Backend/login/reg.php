@@ -16,7 +16,7 @@ $pass = $pagina[1];
 		pg_free_result($consulta);				
 		pg_exec("INSERT INTO usuarios(correousuario,claveusuario) VALUES('".$email."','".$pass."')");
 		pg_free_result($consulta);										
-		$_SESSION['email'] = $fila['correousuario'];
+		$_SESSION['email'] = $email;
 		mkdir("../../RedMovil.RedMovil.UserInterface/Html/paginas/".$email);
 		mkdir("../../RedMovil.RedMovil.UserInterface/Html/paginas/".$email."/images");
 		echo "si";
