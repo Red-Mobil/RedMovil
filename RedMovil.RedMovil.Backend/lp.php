@@ -14,15 +14,20 @@ if (file_exists($plantilla))
 	if (file_exists($claves))
 	{
 		$kw = new Spreadsheet_Excel_Reader($claves,false,"UTF-8");
+		
 		while($row < $kw->rowcount($sheet_index=0)+1)
 		{
-			$buffer = $kw->val($row,2);
 			$title = $kw->val($row,1);
-			$newplantilla = str_replace("-keyword-",$buffer,$auxplantilla);
+			$keyword = $kw->val($row,2);
+			
+			$newplantilla = str_replace("-keyword-",$keyword,$auxplantilla);
 			$new2plantilla = str_replace("-title-",$title,$newplantilla);
-			$new = fopen("../RedMovil.RedMovil.UserInterface/landingpages/landing_page_".$ix.".html","w");
+			
+			$new = fopen("../RedMovil.RedMovil.UserInterface/landingpages/".$keyword.".html","w");
+			
 			fwrite($new,$new2plantilla);
 			fclose($new);
+			
 			$ix++;
 			$row++;
 		}
