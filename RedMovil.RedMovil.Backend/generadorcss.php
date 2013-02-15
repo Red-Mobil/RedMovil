@@ -177,6 +177,10 @@
 	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'background-color:#FFFFFF;'.PHP_EOL);
+	fwrite($fp, '-moz-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, '-webkit-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, 'border-radius: 5px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
@@ -362,6 +366,10 @@
 	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'background-color:#FFFFFF;'.PHP_EOL);
+	fwrite($fp, '-moz-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, '-webkit-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, 'border-radius: 5px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
@@ -549,6 +557,10 @@
 	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'background-color:#FFFFFF;'.PHP_EOL);
+	fwrite($fp, '-moz-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, '-webkit-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, 'border-radius: 5px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
@@ -619,7 +631,7 @@
 	fwrite($fp, 'text-transform: capitalize;'.PHP_EOL);
 	fwrite($fp, 'font-size: 100%;'.PHP_EOL);
 	fwrite($fp, 'float: left;'.PHP_EOL);
-	fwrite($fp, 'margin-left: 5%;'.PHP_EOL);
+	fwrite($fp, 'margin-left: 11%;'.PHP_EOL);
 	fwrite($fp, 'margin-top: 3px;'.PHP_EOL);
 	fwrite($fp, '-moz-border-radius: 13px;'.PHP_EOL);
 	fwrite($fp, '-webkit-border-radius: 13px;'.PHP_EOL);
@@ -736,6 +748,10 @@
 	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'background-color:#FFFFFF;'.PHP_EOL);
+	fwrite($fp, '-moz-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, '-webkit-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, 'border-radius: 5px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);
@@ -921,6 +937,10 @@
 	fwrite($fp, 'margin-left:4%;'.PHP_EOL);
 	fwrite($fp, 'float: left;'.PHP_EOL);
 	fwrite($fp, 'padding:0px;'.PHP_EOL);
+	fwrite($fp, 'background-color:#FFFFFF;'.PHP_EOL);
+	fwrite($fp, '-moz-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, '-webkit-border-radius: 5px;'.PHP_EOL);
+	fwrite($fp, 'border-radius: 5px;'.PHP_EOL);
 	fwrite($fp, '}'.PHP_EOL.PHP_EOL);
 	
 	fwrite($fp, '.single,single first,single last {'.PHP_EOL);

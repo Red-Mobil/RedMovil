@@ -201,12 +201,11 @@ img{
 	float:left;
 	}
 #cerrar{
-	position:absolute;
-	top:20%;
-	float:rigth;
-	left:80%;
+	margin-left:90%;	
+	float:left;
 }
 #der{
+	margin-left:50%;
 	width:50%;
 	float:rigth;
 }
