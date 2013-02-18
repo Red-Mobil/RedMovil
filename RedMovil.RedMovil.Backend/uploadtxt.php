@@ -4,7 +4,7 @@
 		$tmpName  = $_FILES['userfile']['tmp_name'];
 		echo $tmpName;
 		$name = $_FILES['userfile']['name'];		
-		$name = $directorio."keywords.xls";				
+		$name = $directorio."keywords.txt";				
 		file_put_contents($name,file_get_contents($tmpName));
 		
 

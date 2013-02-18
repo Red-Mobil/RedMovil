@@ -1,30 +1,25 @@
 <?php
-require_once 'excel_reader2.php';
 
 
+$buffer = [];
 $ix = 0;
-$row = 2;
-
 $plantilla = "../RedMovil.RedMovil.UserInterface/Html/plantilla.html";
 if (file_exists($plantilla))
 {
 	$fp = fopen($plantilla,"r");
 	$auxplantilla = fread($fp,filesize($plantilla));
-	$claves = "../RedMovil.RedMovil.UserInterface/landingpages/keywords.xls";
+	$claves = "../RedMovil.RedMovil.UserInterface/landingpages/keywords.txt";
 	if (file_exists($claves))
 	{
-		$kw = new Spreadsheet_Excel_Reader($claves,false,"UTF-8");
-		while($row < $kw->rowcount($sheet_index=0)+1)
+		$kw = fopen($claves,"r");
+		while(! feof($kw))
 		{
-			$buffer = $kw->val($row,2);
-			$title = $kw->val($row,1);
-			$newplantilla = str_replace("-keyword-",$buffer,$auxplantilla);
-			$new2plantilla = str_replace("-title-",$title,$newplantilla);
+			$buffer[$ix] = fgets($kw);
+			$newplantilla = str_replace("-keyword-",$buffer[$ix],$auxplantilla);
 			$new = fopen("../RedMovil.RedMovil.UserInterface/landingpages/landing_page_".$ix.".html","w");
-			fwrite($new,$new2plantilla);
+			fwrite($new,$newplantilla);
 			fclose($new);
 			$ix++;
-			$row++;
 		}
 		fclose($kw);
 		fclose($fp);
@@ -33,7 +28,7 @@ if (file_exists($plantilla))
 	{
 		echo "No existen palabras claves";
 		return;
-	}	
+	}
 }
 else
 {

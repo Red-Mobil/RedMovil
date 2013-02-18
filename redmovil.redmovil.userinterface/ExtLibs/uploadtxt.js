@@ -3,18 +3,18 @@ $(document).ready(function(){
 	new AjaxUpload('#upload_txt', {
         action: '../../RedMovil.RedMovil.Backend/uploadtxt.php',
 		onSubmit : function(file , ext){
-		if (! (ext && /^(txt|xls)$/.test(ext))){
+		if (! (ext && /^(txt)$/.test(ext))){
 			// extensiones permitidas
 			alert('Error: Solo se permiten txt');
 			// cancela upload
 			return false;
 		} else {
-			document.getElementById('upload_txt').value = 'Subiendo';
+			document.getElementById('up').value = 'Subiendo';
 			this.disable();
 		}
 		},
 		onComplete: function(file, response){
-			document.getElementById('upload_txt').value = 'Subir Palabras clave';
+			document.getElementById('up').value = 'Subir Palabras clave';
 //			button.text('Subir txt');
 			// enable upload button
 			this.enable();			

@@ -13,9 +13,13 @@ padding:opx;
 	width: 100%;
 	min-height: 120%;
 	padding-bottom:25%;
-	float:left;
 		} 
-	
+#home{
+	position:absolute;
+	width:150px;
+	height:40px;
+	margin-left:20px;
+}
 #home:before {
 	content:url(../imagenes/home.svg);
 	float:left;
@@ -165,10 +169,9 @@ background:-webkit-gradient( linear, left top, left bottom, color-stop(46%, #378
 }
 */
 .imagerow{
-margin-top: 2%;
+margin-top: 50px;
 float:left;	
 width: 90%;
-margin-top: 2%;
 margin-left:4%;
 padding:0px;
 background-color:#FFFFFF;
@@ -195,28 +198,24 @@ img{
 }
 /*estilo galeria*/
 #margen{
-	z-index:1000;
-	width:100%;
-	height:100%;
+	z-index:999;
 	float:left;
+	background-color:#FFF;
+	padding:2px;
 	}
-#cerrar{
-	
-	float:left;
+#cerrar {
+    float: right;
+    z-index: 1001;
 }
-#der{
-	margin-top:100px;
-	float:rigth;
-
+#der {
+    float: right;
+    z-index: 1002;
 }
-#isq{
-	margin-top:100px;
-	float:left;
-	
+#izq {
+    float: left;
+    z-index: 1003;
 }
-#fotos{
-	z-index:1001;
+#fotos {
 	width:100%;
-	height:auto;
-	float:left;
+    z-index: 1000;
 }
