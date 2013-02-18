@@ -617,7 +617,7 @@ $(document).ready(function () {
 			$("#texto").append("<input type='hidden' id ="+h+" value='vacio'>");
 			$("#texto").append("<div id='count'></div>");
             $("#texto").append("<textarea id=" + t + " maxlength='10' style='width:320px;' onkeyup='ver()'>Titulo"+(id+1)+"</textarea><textarea id=" + b + " style='width:320px;' ></textarea><br>");
-			$("#preview_vista_botones").append("<button class='tt' id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+" </button><br>");
+			$("#preview_vista_botones").append("<button class='tt' id=" + tt + " onclick='mostrar ("+bb+")' >Titulo"+(id+1)+" </button>");
             $("#preview_vista_texto").append("<div class='title' id=" + title + "></div>");
             $("#preview_vista_texto").append("<div class='bb' id=" + bb + "></div>");
 			tinyMCE.execCommand('mceAddControl',true,b);
