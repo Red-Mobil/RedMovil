@@ -21,7 +21,8 @@ session_start();
 <?php
 
 	$url="http://".$_SERVER['HTTP_HOST'].":".$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'];	
-	$url = $url[strlen($url)-1];
+	$pagina = explode("?",$url);
+	$url = $pagina[1];
 	
 	$imagenes =  glob("../RedMovil.RedMovil.UserInterface/Html/paginas/".$_SESSION['email']."/images/*",GLOB_BRACE);
 

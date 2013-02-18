@@ -112,6 +112,10 @@ fclose($fp);
 // ---------------------- Fin Cel
 
 $response = $titulo.".html";
+
+$mensaje = "Felicitaciones".PHP_EOL."Su pagina ha sido creada con Exito.".PHP_EOL."Compartala el siguiente link con sus amigos: ".PHP_EOL."http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/Html/paginas/".$_SESSION['email']."/".$titulo."/m.".$titulo.".html";
+mail($_SESSION['email'],"Pagina",$mensaje);
+
 echo $response;
 
 ?>

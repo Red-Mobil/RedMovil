@@ -19,6 +19,7 @@ $pass = $pagina[1];
 		$_SESSION['email'] = $email;
 		mkdir("../../RedMovil.RedMovil.UserInterface/Html/paginas/".$email);
 		mkdir("../../RedMovil.RedMovil.UserInterface/Html/paginas/".$email."/images");
+		copy('http://redmovil.mobi/editor/RedMovil.RedMovil.UserInterface/images/trans.swf',"../../RedMovil.RedMovil.UserInterface/Html/paginas/".$email."/images/trans.swf");
 		echo "si";
 	}
 	else
